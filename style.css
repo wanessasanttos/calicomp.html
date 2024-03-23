@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    border: solid purple 5px;
+    background-color: #777;
+}
+
+header {
+    height: 20%;
+    border: solid purple 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 350px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 5%;
+    border: solid 5px black;
+    list-style-type: none;
+}
+
+li {
+    border: darkmagenta solid 5px;
+    padding: 5px 1% 5px 1%;
+}
+
+main {
+    height: 100%;
+    border: solid 5px darkmagenta;
+    margin:auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.noticias {
+    border: solid black 5px;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+    height: 50vh;
+    background-image: url(imagens/retoria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+}
+
+footer {
+    height: 15%;
+    border: black solid 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 523px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .icon_menu {
+        width: 40vw;
+        height: 20px;
+        padding: 3px;
+    }
+
+    main {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .noticias {
+        width: 60%;
+        height: 60vh;
+        font-size: 1.5em;
+    }
+}
+
+
+@media (min-width: 524px) {
+    .menu_mobile {
+        display: none;
+    }
+}
