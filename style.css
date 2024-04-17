@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    height: 30%;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +32,24 @@ header {
     z-index: 1;
 }
 
+.icon_menu{
+    width: 20px;
+    height: 20px;
+}
+
+.menu_mobile{
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.logo{
+    width: 10%;
+    height: 10%;
+}
+
 ul{
     display: flex;
     flex-direction: row;
@@ -45,7 +63,7 @@ li {
 a{
     color: #A78295;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 0.5em;
     display: flex;
     align-items: center;
     padding: 5px 25px 5px 25px;
@@ -74,19 +92,16 @@ a:hover{
 
 }
 
-.row{
+.marca{
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 30px;
+    justify-content: space-between;
     position: relative;
-    bottom: -60px;
+    top: 40px;
     z-index: 0;
 }
 
-.logo {
-    width: 200px;
-    height: 200px;
-}
 
 
 h1{
@@ -110,8 +125,8 @@ h3{
 
 .boxFlutuante{
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 2%;
+    left: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,13 +138,17 @@ h3{
 }
 
 
+
+
+
+
+
+
 main {
-    height: 100%;
-    border: solid 5px darkmagenta;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    padding: 3% 0% 3% 0%;
 }
 
 .noticias {
@@ -150,88 +169,89 @@ main {
 }
 
 footer {
-    height: 40px;
+    height: 50%;
     border: black solid 5px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@media (max-width: 301px) {
-    body{
-        height: 98vh;
-    }
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
 
+@media (max-width: 425px) {
+    header{
+        height: 15%;
+    }
+    .marca{
+        justify-content: space-around;
+        top: 5px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
     }
     .menu{
         display: none;
     }
+    h1{
+        font-size: 3em;
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+        font-size: 0.5em;
+        letter-spacing: 1px;
+        word-spacing: 10px;
+    }
+
+}
+
+@media (min-width: 426px){
+    .menu_mobile{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    header{
+        height: 20%;
+    }
+    .menu{
+        width: 90%;
+        padding: 5px 10px 5px 10px;
+    }
+    a{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .marca{
+        justify-content:center;
+    }
+    .logo{
+        width: 10%;
+        height: 10%;
+    }
+    h1{
+        font-size: 3.5em;
+    }
+    h3{
+        font-size: 0.6em;
+        letter-spacing: 2px;
+        word-spacing: 10px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    header{
+        height: 25%;
+    }
+    .menu{
+        width: 90%;
+    }
     
-
-    .icon_menu {
-        width: 40px;
-        height: 40px;
-        padding: 3px;
-        margin: 10px;
-    }
-    .logo{
-        width: 30vh;
-        height: auto;
-    }
-
-    main {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .noticias {
-        width: 60%;
-        height: 60vh;
-        font-size: 1.5em;
-    }
-    footer{
-        height: 30%;
-    }
 }
-@media (min-width:300px) {
-    body{
-        height: 100%;
-        width: auto;
-    }
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
 
-    }
-    .menu {
-        display: flex;
-    }
-
-    .icon_menu {
-        width: 10px;
-        height: auto;
-        padding: 3px;
-        margin: 10px;
-    }
-    .logo{
-        width: 20vh;
-        height: auto;
-    }
-
-    main {
-        margin-top: 10px; }
-
-    .noticias {
-        width: 60%;
-        height: 60vh;
-        font-size: 1.5em;
-    }
-    footer{
-        height: 30%;
-    }
+@media (min-width: 1440px) {
+    
 }
+
