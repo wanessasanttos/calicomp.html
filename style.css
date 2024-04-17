@@ -123,12 +123,6 @@ h3{
 }
 
 
-
-
-
-
-
-
 main {
     height: 100%;
     border: solid 5px darkmagenta;
@@ -156,14 +150,14 @@ main {
 }
 
 footer {
-    height: 30px;
+    height: 40px;
     border: black solid 5px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@media (max-width: 523px) {
+@media (max-width: 301px) {
     body{
         height: 98vh;
     }
@@ -173,10 +167,10 @@ footer {
         justify-content: space-between;
 
     }
-
-    .menu {
+    .menu{
         display: none;
     }
+    
 
     .icon_menu {
         width: 40px;
@@ -200,12 +194,44 @@ footer {
         font-size: 1.5em;
     }
     footer{
-        height: 15%;
+        height: 30%;
     }
 }
-@media (min-width: 524px) {
-    .menu_mobile {
-        display: none;
+@media (min-width:300px) {
+    body{
+        height: 100%;
+        width: auto;
     }
-}
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
+    }
+    .menu {
+        display: flex;
+    }
+
+    .icon_menu {
+        width: 10px;
+        height: auto;
+        padding: 3px;
+        margin: 10px;
+    }
+    .logo{
+        width: 20vh;
+        height: auto;
+    }
+
+    main {
+        margin-top: 10px; }
+
+    .noticias {
+        width: 60%;
+        height: 60vh;
+        font-size: 1.5em;
+    }
+    footer{
+        height: 30%;
+    }
+}
