@@ -4,57 +4,50 @@
 }
 
 body {
-    height: 100vh;
-    background-color: #777;
     font-family: Poppins;
     background: #331D2C;
-}
-
-header {
-    height: 300px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.menu {
-    list-style-type: none;
+header{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    top: 20px;
-    width: 1200px;
+}
+
+p{
+    font-size: 0.1em;
+    color: white;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
-    padding: 10px 50px 10px 50px;
-    border-radius: 10px;
-    background-color: #3F2E3E;
+}
+
+button{
+    width: 8em;
+    position: relative;
+    left: 12.5em;
+    bottom: 0.9em;
+    font-size: 0.5em;
+    font-family: Poppins;
+    border: none;
+    padding: 0.2em 0.7em 0.2em 0.7em;
+    border-radius: 5px;
     z-index: 1;
-}
-
-.row {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-}
-
-.icon_menu{
-    width: 20px;
-    height: 20px;
-}
-
-.menu_mobile{
-    position: absolute;
-    right: 5px;
-    top: 0px;
-    width: 20px;
-    height: 20px;
-}
-
-.logo{
-    width: 10%;
-    height: 10%;
 }
 
 ul{
@@ -73,7 +66,7 @@ a{
     font-size: 0.5em;
     display: flex;
     align-items: center;
-    padding: 5px 25px 5px 25px;
+    padding: 0.2em 1.2em 0.2em 1.2em;
 }
 
 a:hover{
@@ -82,237 +75,288 @@ a:hover{
     color: #331D2C;
 }
 
-.topicos {
-    display: flex;
-    gap: 5%;
-    width: 75%;
-}
-
-.ouvidoria {
-    background: #A78295;
-    border-radius: 10px;
-
-}
-
-.linkOuvidoria{
-    color: #331D2C;
-
-}
-
-.marca{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: space-between;
-    position: relative;
-    top: 40px;
-    z-index: 0;
+.box-flutuante{
+    z-index: 2;
 }
 
 
-
-h1{
-    font-size: 7em;
-}
-
-h3{
-    letter-spacing: 3px;
-    word-spacing: 27px;
-}
-
-.linha{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    line-height: 1;
-    letter-spacing: 1px;
-    color: white;
-}
-
-
-.boxFlutuante{
-    position: fixed;
-    bottom: 2%;
-    left: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-}
-
-.boxFlutuante a:hover{
-    background: none;
-}
-
-main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 3% 0% 3% 0%;
-}
-
-.noticias {
-    border: solid black 5px;
-    align-items: center;
-    align-self: center;
-    width:80%;
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2em;
-}
-
-footer {
-    height: 50%;
-    border: black solid 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-@media (max-width: 425px) {
-    header{
-        height: 15%;
-    }
-    .marca{
-        justify-content: space-around;
-        top: 5px;
-    }
-    .logo{
-        width: 100px;
-        height: 100px;
-    }
+@media (min-width: 320px){
     .menu{
         display: none;
     }
-    h1{
-        font-size: 3em;
-    }
-    h3{
-        display: flex;
-        justify-content: center;
-        font-size: 0.5em;
-        letter-spacing: 1px;
-        word-spacing: 10px;
-    }
-
-}
-
-@media (min-width: 426px){
-    .menu_mobile{
-        display: none;
-    }
-}
-
-
-@media (max-width: 300px) {
-    header{
-        height: 30%;
-    }
-    .marca{
-        justify-content: space-around;
-        top: 10vh;
-    }
     .logo{
-        width: 50px;
-        height: 50px;
+        width: 14.7em;
+        margin-top: 2.3em;
     }
-    .menu{
-        display: none;
+    .icon_menu{ /*menu mobile*/
+        width: 1.0em;
+        position: absolute;
+        top: 0.6em;
+        left: 0.6em;
+        background: #3F2E3E;
+        padding: 0.2em;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
-    h1{
-        font-size: 3em;
-    }
-    h3{
-        display: flex;
-        justify-content: center;
-        font-size: 0.5em;
-        letter-spacing: 1px;
-        word-spacing: 10px;
-    }
-    .main{
+    .elementos-header{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4em;
+    }
+    .text-header{
+        width: 90%;
+        text-indent: 1em;
+        text-align: center;
+
+    }
+    .divisao{
+        border-bottom: solid 1px #3F2E3E;
     }
 
+    .mural{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 18.5em;
+    }
+    .anuncio{
+        width: 13.5em;
+    }
+    .anuncios{
+        margin-top: 1em;
+        width: 17.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #4a374a;
+        border-radius: 5px;
+    }
+    .rodape{
+        width: 18.9em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding: 0.4em 0.3em 0.4em 0.3em;
+        background-color: #3F2E3E;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+    }
+    .texto-rodape{
+        color: #A78295;
+        font-size: 0.4em;
+    }
+    .box-flutuante{
+        position: fixed;
+        bottom: 3em;
+        right: 0em;
+    }
+    .box-flutuante-icon{
+        width: 7.5em;
+    }
 }
 
-@media (min-width: 768px) {
-    header{
-        height: 20%;
+@media (min-width: 375px){
+    .mural{
+        width: 20.5em;
     }
-    .menu{
-        width: 90%;
-        padding: 5px 10px 5px 10px;
+    .anuncios{
+        width: 20.5em;
     }
-    a{
-        padding-left: 10px;
-        padding-right: 10px;
+    button{
+        left: 16.5em;
     }
-    .marca{
-        justify-content:center;
+    .rodape{
+        width: 21.9em;
     }
-    .logo{
-        width: 10%;
-        height: 10%;
-    }
-    h1{
-        font-size: 3.5em;
-    }
-    h3{
-        font-size: 0.6em;
-        letter-spacing: 2px;
-        word-spacing: 10px;
-    }
-
 }
 
-@media (min-width: 1024px) {
-    header{
-        height: 25%;
+@media (min-width: 425px){
+    .text-header{
+        width: 80%;
+        text-indent: 1em;
+        text-align: center;
+
+    }
+    .mural{
+        width: 24.5em;
+    }
+    .anuncios{
+        width: 24.5em;
+    }
+    button{
+        left: 19.5em;
+    }
+    .rodape{
+        width: 24.9em;
+    }
+}
+
+@media (min-width: 768px){
+    .icon_menu{
+        display: none;
+    }
+    .elementos-header{
+        display: flex;
+        padding-top: 4em;
+        padding-bottom: 1em;
     }
     .menu{
-        width: 90%;
+        display: block;
+        list-style-type: none;
+        position: fixed;
+        width: 45.9em;
+        top: 20px;
+        padding: 0.4em 1.2em 0.4em 1.2em;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: #3F2E3E;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .topicos {
+        display: flex;
+        gap: 5%;
+        width: 75%;
+    } 
+    .ouvidoria {
+        background: #A78295;
+        border-radius: 10px;
+    }
+    .linkOuvidoria{
+        color: #331D2C;
+    }
+    .text-header{
+        width: 65%;
+        text-indent: 1em;
+        text-align: center;
+    }
+    .mural{
+        width: 40.5em;
+    }
+    .anuncios{
+        width: 40.5em;
+    }
+    button{
+        left: 35.5em;
+    }
+    .rodape{
+        width: 45.9em;
+        padding: 0.5em 0.3em 0.5em 0.3em;
+    }
+    .texto-rodape{
+        color: #A78295;
+        font-size: 0.5em;
     }
     
 }
 
-/* Novas Media Queries */
-@media (min-width: 1440px) {
-    header{
-        height: 25%;
-     
-    }
+@media (min-width: 1024px){
     .menu{
-        width: 80%;
+        width: 60.9em;
+        padding: 0.4em 3em 0.4em 3em;
     }
-    .linkMenu a {
-        font-size: 15px; 
+ 
+    .text-header{
+        width: 45%;
+        text-indent: 1em;
+        text-align: center;
     }
-    .ouvidoria a {
-        font-size: 15px; 
+    .mural{
+        width: 57.5em;
     }
-   
+    .anuncios{
+        width: 57.5em;
+    }
+    button{
+        left: 52.5em;
+    }
+    .rodape{
+        width: 60.9em;
+        padding: 0.5em 0.3em 0.5em 0.3em;
+    }
+    .texto-rodape{
+        color: #A78295;
+        font-size: 0.5em;
+    }
+    .box-flutuante-icon{
+        width: 9.5em;
+    }
 }
 
-@media (min-width: 2560px) {
-    header{
-        height: 25%;
-     
+@media (min-width: 1440px){
+    .menu{
+        width: 85.9em;
+    }
+    a{
+        font-size: 0.7em;
+    }
+    .logo{
+        width: 22.7em;
+    }
+    .text-header{
+        width: 45%;
+        font-size: 0.5em;
+    }
+    .mural{
+        width: 80.5em;
+    }
+    .anuncios{
+        width: 80.5em;
+    }
+    button{
+        left: 75.5em;
+    }
+    .rodape{
+        width: 85.9em;
+    }
+    .texto-rodape{
+        color: #A78295;
+        font-size: 0.6em;
+    }
+}
+
+@media (min-width: 2560px){
+    .elementos-header{
+        padding-top: 6em;
+        padding-bottom: 3em;
     }
     .menu{
-        width: 80%;
+        width: 150.9em;
+        padding-left: 5em;
+        padding-right: 5em;
     }
-    .linkMenu a {
-        font-size: 20px; 
+    a{
+        font-size: 1em;
     }
-    .ouvidoria a {
-        font-size: 20px; 
+    .logo{
+        width: 30.7em;
     }
-   
+    .text-header{
+        width: 35%;
+        font-size: 0.7em;
+    }
+    .mural{
+        width: 135.5em;
+    }
+    .anuncios{
+        width: 135.5em;
+    }
+    button{
+        left: 130.5em;
+    }
+    .rodape{
+        width: 150.9em;
+    }
+    .texto-rodape{
+        color: #A78295;
+        font-size: 1em;
+    }
 }
