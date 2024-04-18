@@ -237,6 +237,7 @@ a:hover{
         width: 65%;
         text-indent: 1em;
         text-align: center;
+        font-size: 0.6em;
     }
     .mural{
         width: 40.5em;
@@ -265,7 +266,8 @@ a:hover{
     }
  
     .text-header{
-        width: 45%;
+        font-size: 0.7em;
+        width: 55%;
         text-indent: 1em;
         text-align: center;
     }
@@ -302,8 +304,8 @@ a:hover{
         width: 22.7em;
     }
     .text-header{
-        width: 45%;
-        font-size: 0.5em;
+        width: 40%;
+        font-size: 0.9em;
     }
     .mural{
         width: 80.5em;
@@ -334,14 +336,14 @@ a:hover{
         padding-right: 5em;
     }
     a{
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .logo{
         width: 30.7em;
     }
     .text-header{
-        width: 35%;
-        font-size: 0.7em;
+        width: 40%;
+        font-size: 1.2em;
     }
     .mural{
         width: 135.5em;
