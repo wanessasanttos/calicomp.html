@@ -168,7 +168,7 @@ a:hover{
         width: 20.5em;
     }
     button{
-        left: 16.5em;
+        left: 15em;
     }
     .rodape{
         width: 21.9em;
@@ -189,7 +189,7 @@ a:hover{
         width: 24.5em;
     }
     button{
-        left: 19.5em;
+        left: 17.5em;
     }
     .rodape{
         width: 24.9em;
@@ -249,7 +249,9 @@ a:hover{
         width: 25.5em;
     }
     button{
-        left: 35.5em;
+        left: 32.5em;
+        width: 12em;
+        height: 2.5em;
     }
     .rodape{
         width: 45.9em;
@@ -284,7 +286,8 @@ a:hover{
         width: 30.5em;
     }
     button{
-        left: 52.5em;
+        left: 28em;
+        font-size: 0.8em;
     }
     .rodape{
         width: 60.9em;
@@ -323,7 +326,8 @@ a:hover{
         width: 35.5em;
     }
     button{
-        left: 75.5em;
+        left: 38em;
+        font-size: 0.9em;
     }
     .rodape{
         width: 85.9em;
@@ -364,7 +368,8 @@ a:hover{
         width: 60.5em;
     }
     button{
-        left: 130.5em;
+        left: 38em;
+        font-size: 1.5em;
     }
     .rodape{
         width: 150.9em;
