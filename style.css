@@ -245,6 +245,9 @@ a:hover{
     .anuncios{
         width: 40.5em;
     }
+    .anuncio{
+        width: 25.5em;
+    }
     button{
         left: 35.5em;
     }
@@ -276,6 +279,9 @@ a:hover{
     }
     .anuncios{
         width: 57.5em;
+    }
+    .anuncio{
+        width: 30.5em;
     }
     button{
         left: 52.5em;
@@ -312,6 +318,9 @@ a:hover{
     }
     .anuncios{
         width: 80.5em;
+    }
+    .anuncio{
+        width: 35.5em;
     }
     button{
         left: 75.5em;
@@ -350,6 +359,9 @@ a:hover{
     }
     .anuncios{
         width: 135.5em;
+    }
+    .anuncio{
+        width: 60.5em;
     }
     button{
         left: 130.5em;
