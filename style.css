@@ -50,23 +50,19 @@ button{
     z-index: 1;
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-}
 
 li {
     display: flex;
     align-items: center;
+    
 }
 
 a{
-    color: #A78295;
+    color: #a7909c;
     text-decoration: none;
     font-size: 0.5em;
-    display: flex;
-    align-items: center;
-    padding: 0.2em 1.2em 0.2em 1.2em;
+    letter-spacing: 1.5px;
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 a:hover{
@@ -83,16 +79,48 @@ a:hover{
 @media (min-width: 320px){
     .menu{
         display: none;
+        background-color: #3F2E3E;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        width: 100px;
+        position: absolute;
+        top: 0.65em;
+        left: 2em;
+        padding: 5px;
+        font-size: 1.3em;
     }
+
+    .topicos{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .ouvidoria {
+        background: #A78295;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: #331D2C;
+    }
+
+    a{  
+        width: 100px;
+        padding: 0.4em 0em 0.4em 1.2em;
+    }
+    .ouvidoria a{
+        color: #331D2C;
+        padding-right: 15px;
+    }
+    
     .logo{
         width: 14.7em;
         margin-top: 2.3em;
     }
     .icon_menu{ /*menu mobile*/
-        width: 1.0em;
+        width: 1.3em;
         position: absolute;
-        top: 0.6em;
-        left: 0.6em;
+        top: 0.9em;
+        left: 0.7em;
         background: #3F2E3E;
         padding: 0.2em;
         border-radius: 5px;
@@ -145,10 +173,12 @@ a:hover{
         justify-content: center;
         letter-spacing: 1px;
         word-spacing: 4px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
     .texto-rodape{
-        color: #A78295;
+        color: #a7909c;
         font-size: 0.4em;
+        text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
     }
     .box-flutuante{
         position: fixed;
@@ -161,6 +191,16 @@ a:hover{
 }
 
 @media (min-width: 375px){
+    .icon_menu{
+        width: 1.6em;
+        height: 1.6em;
+        top: 1.4em;
+        left: 1.2em;
+    }
+    .menu{
+        top: 1.05em;
+        left: 2.6em;
+    }
     .mural{
         width: 20.5em;
     }
@@ -182,6 +222,19 @@ a:hover{
         text-align: center;
 
     }
+    .icon_menu{
+        width: 1.7em;
+        height: 1.7em;
+        top: 1.4em;
+        left: 1.2em;
+    }
+    .menu{
+        top: 1.05em;
+        left: 2.7em;
+    }
+    a{
+        padding: 0.4em 0em 0.4em 1.2em;
+    }
     .mural{
         width: 24.5em;
     }
@@ -201,32 +254,42 @@ a:hover{
         display: none;
     }
     .elementos-header{
-        display: flex;
         padding-top: 4em;
         padding-bottom: 1em;
     }
     .menu{
-        display: block;
         list-style-type: none;
         position: fixed;
-        width: 45.9em;
+        width: 90%;
         top: 20px;
-        padding: 0.4em 1.2em 0.4em 1.2em;
+        padding: 0;
         box-sizing: border-box;
         border-radius: 10px;
         background-color: #3F2E3E;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.4em 1em;
         left: 50%;
         transform: translateX(-50%);
     }
     .topicos {
         display: flex;
-        gap: 5%;
-        width: 75%;
-    } 
+        flex-direction: row;
+        width: 600px;
+        gap: 10px;
+    }
+
+    a{  
+        width: 100%;
+        padding: 0.2em 1em;
+    }
+
+
     .ouvidoria {
+        margin-top: 0px;
+        margin-bottom: 0px;
         background: #A78295;
         border-radius: 10px;
     }
@@ -254,20 +317,20 @@ a:hover{
         height: 2.5em;
     }
     .rodape{
-        width: 45.9em;
-        padding: 0.5em 0.3em 0.5em 0.3em;
+        width: 90%;
+        padding: 0.6em 0em;;
     }
     .texto-rodape{
-        color: #A78295;
-        font-size: 0.5em;
+        color: #a7909c;
+        font-size: 0.7em;
     }
+
     
 }
 
 @media (min-width: 1024px){
     .menu{
-        width: 60.9em;
-        padding: 0.4em 3em 0.4em 3em;
+        width: 95%;
     }
  
     .text-header{
@@ -290,22 +353,16 @@ a:hover{
         font-size: 0.8em;
     }
     .rodape{
-        width: 60.9em;
-        padding: 0.5em 0.3em 0.5em 0.3em;
+        width: 95%;
     }
-    .texto-rodape{
-        color: #A78295;
-        font-size: 0.5em;
-    }
+
     .box-flutuante-icon{
         width: 9.5em;
     }
 }
 
 @media (min-width: 1440px){
-    .menu{
-        width: 85.9em;
-    }
+
     a{
         font-size: 0.7em;
     }
@@ -330,36 +387,36 @@ a:hover{
         font-size: 0.9em;
     }
     .rodape{
-        width: 85.9em;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .texto-rodape{
-        color: #A78295;
-        font-size: 0.6em;
+        font-size: 0.9em;
     }
 }
 
 @media (min-width: 2560px){
     .elementos-header{
-        padding-top: 6em;
+        padding-top: 9em;
         padding-bottom: 3em;
     }
     .menu{
-        width: 150.9em;
-        padding-left: 5em;
-        padding-right: 5em;
+        padding: 0.5em 5em 0.5em 5em;
+        justify-content: space-between;
     }
+
     a{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .logo{
-        width: 30.7em;
+        width: 39.7em;
     }
     .text-header{
-        width: 40%;
-        font-size: 1.2em;
+        width: 50%;
+        font-size: 1.5em;
     }
     .mural{
-        width: 135.5em;
+        width: 145.5em;
     }
     .anuncios{
         width: 135.5em;
@@ -372,10 +429,10 @@ a:hover{
         font-size: 1.5em;
     }
     .rodape{
-        width: 150.9em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
     }
     .texto-rodape{
-        color: #A78295;
-        font-size: 1em;
+        font-size: 1.3em;
     }
 }
