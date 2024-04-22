@@ -362,7 +362,10 @@ a:hover{
 }
 
 @media (min-width: 1440px){
-
+    .topicos{
+        width: 1000px;
+        gap: 50px;
+    }
     a{
         font-size: 0.7em;
     }
