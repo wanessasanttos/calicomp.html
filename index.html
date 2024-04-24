@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <!-- LOGO E MENU -->
+    <!-- CABEÇALHO -->
     <header>
         <!-- MENU-->
         <div class="menu" id="menu_click">
@@ -30,7 +30,7 @@
         <!-- LOGO -->
         <div class="elementos-header">
             <img src="imagens/logo2.png" class="logo">
-                <!--MENU MOBILE-->
+            <!--MENU MOBILE-->
             <div class="menu_mobile">
                 <img src="imagens/icon_menu.png" onclick="click_menu()" class="icon_menu">
             </div>
@@ -47,11 +47,53 @@
     </header>
 
     <main>
-         <!-- MURAL DE NOTÍCIAS -->
-        <div class="noticias divisao"> 
-            <img src="imagens/Carrossel.png" class="mural">
-        </div>
+         <!-- SLIDESHOW NOTÍCIAS -->
+         <div class="slideshow" onclick="proximaImagem()">
+            <div class="slideshow-filho">
+                <!--botões os slides-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
 
+                <!--imagens dos slides-->
+                <div class="imagem primeira">
+                    <img src="imagens/1.jpg">
+                </div>
+                <div class="imagem">
+                    <img src="imagens/2.jpg">
+                </div>
+                <div class="imagem">
+                    <img src="imagens/3.jpg">
+                </div>
+                <div class="imagem">
+                    <img src="imagens/4.jpg">
+                </div>
+                <div class="imagem">
+                    <img src="imagens/5.jpg">
+                </div>
+
+                <!--Navegação automatica-->
+                <div class="navegacaoAuto">
+                    <div class="auto1"></div>
+                    <div class="auto2"></div>
+                    <div class="auto3"></div>
+                    <div class="auto4"></div>
+                    <div class="auto5"></div>
+                </div>
+            </div>
+
+            <!--Navegação Manual-->
+            <div class="navegacaoManual">
+                <label for="radio1" class="manual"></label>
+                <label for="radio2" class="manual"></label>
+                <label for="radio3" class="manual"></label>
+                <label for="radio4" class="manual"></label>
+                <label for="radio5" class="manual"></label>
+            </div>
+         </div>
+        
           <!-- ANUNCIOS DE EVENTOS -->
         <div class="anuncios"> 
             <img src="imagens/anuncio.jpg" class="anuncio">

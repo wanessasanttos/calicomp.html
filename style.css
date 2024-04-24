@@ -76,6 +76,7 @@ a:hover{
 }
 
 
+
 @media (min-width: 320px){
     .menu{
         display: none;
@@ -133,6 +134,7 @@ a:hover{
         justify-content: center;
         align-items: center;
         gap: 0.4em;
+        padding-top: 1em;
     }
     .text-header{
         width: 90%;
@@ -140,15 +142,101 @@ a:hover{
         text-align: center;
 
     }
-    .divisao{
-        border-bottom: solid 1px #3F2E3E;
+    .slideshow{
+        margin: 1em auto;
+        width: 20em;
+        height: 8.1em;
+        overflow: hidden;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        margin-top: 2em;
+        margin-bottom: 1em;  
     }
+    .slideshow-filho{
+        display: flex;
+    }
+    .slideshow-filho input{
+        display: none;
+    }
+    .imagem img {
+        width: 20em;
+        height: 8.1em;
+    }
+    .navegacaoManual{
+        position: absolute;
+        width: 20em;
+        margin-top: -25px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .manual{
+        border: 1px #3F2E3E solid;
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .manual:hover{
+        background-color: #fff;
+    }
+    #radio1:checked ~ .primeira{
+        margin-left: 0;
+        transition: 2s;
+    }
+    #radio2:checked ~ .primeira{
+        margin-left: -100%;
+        transition: 2s;
+    }
+    #radio3:checked ~ .primeira{
+        margin-left: -200%;
+        transition: 2s;
+    }
+    #radio4:checked ~ .primeira{
+        margin-left: -300%;
+        transition: 2s;
+    }
+    #radio5:checked ~ .primeira{
+        margin-left: -400%;
+        transition: 2s;
+    }
+    .navegacaoAuto div{
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .navegacaoAuto{
+        position: absolute;
+        width: 20em;
+        margin-top: 112px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+    #radio1:checked ~ .navegacaoAuto .auto1,
+    #radio2:checked ~ .navegacaoAuto .auto2,
+    #radio3:checked ~ .navegacaoAuto .auto3,
+    #radio4:checked ~ .navegacaoAuto .auto4,
+    #radio5:checked ~ .navegacaoAuto .auto5{
+    background-color: #fff;
+}
+    
 
-    .mural{
-        margin-top: 1em;
-        margin-bottom: 1em;
-        width: 18.5em;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .anuncio{
         width: 13.5em;
     }
@@ -201,8 +289,16 @@ a:hover{
         top: 1.05em;
         left: 2.6em;
     }
-    .mural{
-        width: 20.5em;
+    .slideshow, .imagem img{
+        width: 24em;
+        height: 11em; 
+    }
+    .navegacaoManual{
+        width: 24em;
+    }
+    .navegacaoAuto{
+        width: 24em;
+        margin-top: 159px; /*+47px*/
     }
     .anuncios{
         width: 20.5em;
@@ -235,8 +331,8 @@ a:hover{
     a{
         padding: 0.4em 0em 0.4em 1.2em;
     }
-    .mural{
-        width: 24.5em;
+    .slideshow, .imagem img, .navegacaoManual, .navegacaoAuto{
+        width: 27em;
     }
     .anuncios{
         width: 24.5em;
@@ -280,13 +376,10 @@ a:hover{
         width: 600px;
         gap: 10px;
     }
-
     a{  
         width: 100%;
         padding: 0.2em 1em;
     }
-
-
     .ouvidoria {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -296,14 +389,27 @@ a:hover{
     .linkOuvidoria{
         color: #331D2C;
     }
+    .logo{
+        width: 17.7em;
+        margin-top: 3.3em;
+    }
     .text-header{
         width: 65%;
         text-indent: 1em;
         text-align: center;
         font-size: 0.6em;
     }
-    .mural{
-        width: 40.5em;
+    .slideshow, .imagem img{
+        width: 48em;
+        height: 17em;
+    }
+    .navegacaoManual{
+        width: 48em;
+        margin-top: -30px;
+    }
+    .navegacaoAuto{
+        width: 48em;
+        margin-top: 249.4px;
     }
     .anuncios{
         width: 40.5em;
@@ -339,9 +445,19 @@ a:hover{
         text-indent: 1em;
         text-align: center;
     }
-    .mural{
-        width: 57.5em;
+    .slideshow, .imagem img{
+        width: 64em;
+        height: 23em;
     }
+    .navegacaoManual{
+        width: 64em;
+        margin-top: -35px;
+    }
+    .navegacaoAuto{
+        width: 64em;
+        margin-top: 341.8px;
+    }
+    
     .anuncios{
         width: 57.5em;
     }
@@ -376,8 +492,17 @@ a:hover{
         width: 40%;
         font-size: 0.9em;
     }
-    .mural{
-        width: 80.5em;
+    .slideshow, .imagem img{
+        width: 90em;
+        height: 29em;
+    }
+    .navegacaoManual{
+        width: 90em;
+        margin-top: -35px;
+    }
+    .navegacaoAuto{
+        width: 90em;
+        margin-top: 436.8px;
     }
     .anuncios{
         width: 80.5em;
@@ -418,8 +543,17 @@ a:hover{
         width: 50%;
         font-size: 1.5em;
     }
-    .mural{
-        width: 145.5em;
+    .slideshow, .imagem img{
+        width: 160em;
+        height: 47em;
+    }
+    .navegacaoManual{
+        width: 160em;
+        margin-top: -45px;
+    }
+    .navegacaoAuto{
+        width: 160em;
+        margin-top: 714.8px;
     }
     .anuncios{
         width: 135.5em;
