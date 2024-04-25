@@ -37,19 +37,6 @@ footer{
     box-sizing: border-box;
 }
 
-button{
-    width: 8em;
-    position: relative;
-    left: 12.5em;
-    bottom: 0.9em;
-    font-size: 0.5em;
-    font-family: Poppins;
-    border: none;
-    padding: 0.2em 0.7em 0.2em 0.7em;
-    border-radius: 5px;
-    z-index: 1;
-}
-
 
 li {
     display: flex;
@@ -58,7 +45,7 @@ li {
 }
 
 a{
-    color: #fcdfef;
+    color: #a7909c;
     text-decoration: none;
     font-size: 0.5em;
     letter-spacing: 1.5px;
@@ -112,7 +99,6 @@ a:hover{
         color: #331D2C;
         padding-right: 15px;
     }
-    
     .logo{
         width: 14.7em;
         margin-top: 2.3em;
@@ -161,6 +147,30 @@ a:hover{
         width: 20em;
         height: 8.1em;
     }
+    .seta_click_pai{
+        width: 20em;
+        height: 8em;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+    .seta_click, .seta_click_right{
+        width: 4em;
+        height: 8em;
+        display: flex;
+        align-items: center;
+    }
+    .seta_click_right{
+        justify-content: flex-end;
+    }
+    .icon_seta, .icon_seta_right{
+        width: 0.7em;
+        height: 0.7em;
+        padding-left: 0.5em;
+    }
+    .icon_seta_right{
+        padding-right: 0.5em;
+    }
     .navegacaoManual{
         position: absolute;
         width: 20em;
@@ -181,23 +191,23 @@ a:hover{
     }
     #radio1:checked ~ .primeira{
         margin-left: 0;
-        transition: 2s;
+        transition: 1s;
     }
     #radio2:checked ~ .primeira{
         margin-left: -100%;
-        transition: 2s;
+        transition: 1s;
     }
     #radio3:checked ~ .primeira{
         margin-left: -200%;
-        transition: 2s;
+        transition: 1s;
     }
     #radio4:checked ~ .primeira{
         margin-left: -300%;
-        transition: 2s;
+        transition: 1s;
     }
     #radio5:checked ~ .primeira{
         margin-left: -400%;
-        transition: 2s;
+        transition: 1s;
     }
     .navegacaoAuto div{
         padding: 5px;
@@ -220,23 +230,6 @@ a:hover{
     #radio5:checked ~ .navegacaoAuto .auto5{
     background-color: #fff;
 }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .anuncio{
         width: 13.5em;
     }
@@ -303,9 +296,6 @@ a:hover{
     .anuncios{
         width: 20.5em;
     }
-    button{
-        left: 15em;
-    }
     .rodape{
         width: 21.9em;
     }
@@ -337,9 +327,7 @@ a:hover{
     .anuncios{
         width: 24.5em;
     }
-    button{
-        left: 17.5em;
-    }
+
     .rodape{
         width: 24.9em;
     }
@@ -417,11 +405,6 @@ a:hover{
     .anuncio{
         width: 25.5em;
     }
-    button{
-        left: 32.5em;
-        width: 12em;
-        height: 2.5em;
-    }
     .rodape{
         width: 90%;
         padding: 0.6em 0em;;
@@ -463,10 +446,6 @@ a:hover{
     }
     .anuncio{
         width: 30.5em;
-    }
-    button{
-        left: 28em;
-        font-size: 0.8em;
     }
     .rodape{
         width: 95%;
@@ -510,10 +489,6 @@ a:hover{
     .anuncio{
         width: 35.5em;
     }
-    button{
-        left: 38em;
-        font-size: 0.9em;
-    }
     .rodape{
         padding-top: 10px;
         padding-bottom: 10px;
@@ -553,17 +528,13 @@ a:hover{
     }
     .navegacaoAuto{
         width: 160em;
-        margin-top: 714.8px;
+        margin-top: 71.8px;
     }
     .anuncios{
         width: 135.5em;
     }
     .anuncio{
         width: 60.5em;
-    }
-    button{
-        left: 38em;
-        font-size: 1.5em;
     }
     .rodape{
         padding-top: 1.5em;

@@ -19,9 +19,9 @@
                 <li><a href="#" >INÍCIO</a></li>
                 <li><a href="#" >EVENTOS</a></li>
                 <li><a href="#" >MEMBROS</a></li>
+                <li><a href="#" >CONTATO</a></li>
                 <li><a href="#" >REQUISIÇÕES</a></li>
                 <li><a href="#" >SOBRE</a></li>
-                <li><a href="#" >CONTATO</a></li>
             </ul>
             <ul class="ouvidoria">
                 <li><a href="#">OUVIDORIA</a></li>
@@ -48,8 +48,18 @@
 
     <main>
          <!-- SLIDESHOW NOTÍCIAS -->
-         <div class="slideshow" onclick="proximaImagem()">
+         <div class="slideshow">
             <div class="slideshow-filho">
+                <!--botões para passar imagem-->
+                <div class="seta_click_pai">
+                    <div class="seta_click" onclick="antecederImagem()">
+                        <img src="imagens/icon_seta2.png" class="icon_seta">
+                    </div>
+                    <div class="seta_click_right" onclick="proximaImagem()">
+                        <img src="imagens/icon_seta.png" class="icon_seta_right">
+                    </div>
+                </div>
+
                 <!--botões os slides-->
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
