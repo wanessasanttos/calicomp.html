@@ -250,7 +250,7 @@ a:hover{
     }
     .texto-rodape{
         color: #a7909c;
-        font-size: 0.3em;
+        font-size: 0.2em;
         text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
     }
     .box-flutuante{
@@ -262,10 +262,10 @@ a:hover{
         width: 7.5em;
     }
     .titulo_pagina{
-        font-size: 1em;
+        font-size: 1.5em;
         color: white;
         padding-top: 1em;
-        padding-bottom: 1em;
+        padding-bottom: 0.5em;
         font-weight: normal;
         letter-spacing: 2px; 
     }
@@ -278,10 +278,10 @@ a:hover{
         gap: 1em;
     }
     .perfil{
-        width: 7em;
-        height: 5em;
-        margin-left: 1em;
-        margin-right: 1em;
+        width: 8em;
+        height: 6em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
         background: #ffffff63;
         border-radius: 10px;
         box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
@@ -322,7 +322,7 @@ a:hover{
     .perfil_destaque{
         display: flex;
         width: 15em;
-        height: 20em;
+        height: 25em;
         background: #82757e;
         border-radius: 10px;
         margin-top: 15em;
