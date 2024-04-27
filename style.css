@@ -65,8 +65,8 @@ a:hover{
         left: 2em;
         padding: 5px;
         font-size: 1.3em;
+        z-index: 3;
     }
-
     .topicos{
         display: flex;
         flex-direction: column;
@@ -124,7 +124,6 @@ a:hover{
         width: 20em;
         height: 8.1em;
         overflow: hidden;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
         margin-top: 2em;
         margin-bottom: 1em;  
     }
@@ -246,6 +245,7 @@ a:hover{
         justify-content: center;
         letter-spacing: 1px;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        
     }
     .texto-rodape{
         color: #a7909c;
@@ -260,6 +260,8 @@ a:hover{
     .box-flutuante-icon{
         width: 7.5em;
     }
+
+    /*ESTILIZAÇÃO PÁGINA MEMBROS*/
     .titulo_pagina{
         font-size: 1.5em;
         color: white;
@@ -268,8 +270,6 @@ a:hover{
         font-weight: normal;
         letter-spacing: 2px; 
     }
-
-    /*ESTILIZAÇÃO PÁGINA MEMBROS*/
     .membros{
         width: 100%;
         display: flex;
@@ -313,10 +313,11 @@ a:hover{
     .fundo_detalhes{
         display: none;
         position: absolute;
-        top: 0px;
         width: 100%;
-        height: 108%;
+        height: 110%;
+        top: 0px;
         background-color: rgba(0, 0, 0, 0.5);
+        align-items: center;
         justify-content: center;
     }
     .perfil_destaque{
@@ -325,7 +326,6 @@ a:hover{
         height: 25em;
         background: #82757e;
         border-radius: 10px;
-        margin-top: 15em;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -352,6 +352,8 @@ a:hover{
         margin-top: 1em;
         padding: 2em;
     }
+    /*ESTILIZAÇÃO PÁGINA EVENTOS*/
+
 }
 
 @media (min-width: 375px){
@@ -386,7 +388,6 @@ a:hover{
     .rodape{
         width: 21.9em;
     }
-    /*ESTILIZAÇÃO PÁGINA MEMBROS*/
 }
 
 @media (min-width: 425px){
@@ -419,7 +420,6 @@ a:hover{
     .rodape{
         width: 24.9em;
     }
-    /*ESTILIZAÇÃO PÁGINA MEMBROS*/
 }
 
 @media (min-width: 768px){
@@ -517,7 +517,6 @@ a:hover{
         color: #a7909c;
         font-size: 0.7em;
     }
-    /*ESTILIZAÇÃO PÁGINA MEMBROS*/
 }
 
 @media (min-width: 1024px){
@@ -561,6 +560,51 @@ a:hover{
         width: 9.5em;
     }
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
+    .titulo_pagina{
+        font-size: 1.8em;
+        color: white;
+        padding-top: 0em;
+    }
+    .perfil{
+        width: 12em;
+        height: 10em;
+        margin-left: 1;
+        margin-right: 1em;
+        margin-bottom: 1em;  
+    }
+    .icon_perfil{
+        width: 5em;
+        height: 5em;
+        padding-bottom: 0.8em;
+    }
+    .perfil h2{
+        font-size: 0.9em;
+    }
+    .perfil h3{
+        font-size: 0.7em; 
+    }
+    .fundo_detalhes{
+        height: 120%;
+    }
+    .perfil_destaque{
+        width: 20em;
+        height: 30em;
+    }
+    .icon_perfil_destaque{
+        width: 10em;
+        height: 10em;
+        padding-bottom: 2em;
+    }
+    .perfil_destaque h2{
+        font-size: 1.2em;
+    }
+    .perfil_destaque h3{
+        font-size: 1em;
+ 
+    }
+    .perfil_destaque p{
+        font-size: 0.7em;
+    }
 }
 
 @media (min-width: 1440px){
@@ -615,6 +659,44 @@ a:hover{
         font-size: 0.9em;
     }
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
+    .titulo_pagina{
+        font-size: 2.5em;
+    }
+    .perfil{
+        width: 18em;
+        height: 16em;
+        margin-left: 2;
+        margin-right: 2em;
+        margin-bottom: 2em;  
+    }
+    .icon_perfil{
+        width: 8em;
+        height: 8em;
+        padding-bottom: 1.2em;
+    }
+    .perfil h2{
+        font-size: 1.1em;
+    }
+    .perfil h3{
+        font-size: 0.9em; 
+    }
+    .fundo_detalhes{
+        height: 145%;
+    }
+    .perfil_destaque{
+        width: 25em;
+        height: 35em;
+    }
+    .icon_perfil_destaque{
+        width: 12em;
+        height: 12em;
+    }
+    .perfil_destaque h2{
+        font-size: 1.3em;
+    }
+    .perfil_destaque p{
+        font-size: 0.8em;
+    }
 }
 
 @media (min-width: 2560px){
@@ -674,4 +756,42 @@ a:hover{
         font-size: 1.3em;
     }
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
+    .titulo_pagina{
+        font-size: 4em;
+    }
+    .perfil{
+        width: 30em;
+        height: 25em;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 3em;  
+    }
+    .icon_perfil{
+        width: 12em;
+        height: 12em;
+        padding-bottom: 2em;
+    }
+    .perfil h2{
+        font-size: 1.7em;
+    }
+    .perfil h3{
+        font-size: 1.4em; 
+    }
+    .perfil_destaque{
+        width: 35em;
+        height: 55em;
+    }
+    .icon_perfil_destaque{
+        width: 20em;
+        height: 20em;
+    }
+    .perfil_destaque h2{
+        font-size: 2em;
+    }
+    .perfil_destaque h3{
+        font-size: 1.5em;
+    }
+    .perfil_destaque p{
+        font-size: 1.3em;
+    }
 }
