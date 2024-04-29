@@ -357,6 +357,7 @@ a:hover{
     .menu_sobre{           
         display: flex;
         flex-direction: column;
+        align-items: center;
         font-size: 0.7em;
         gap: 5px;
         background-color: #3F2E3E;
@@ -364,10 +365,10 @@ a:hover{
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         padding: 5px;
         margin-top: 1.5em;
+        width: 35%;
     }
     .menu_sobre>li>a{
         display: flex;
-        align-items: center;
         justify-content: center;
     }
     .conteudo{
