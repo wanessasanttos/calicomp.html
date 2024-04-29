@@ -365,7 +365,7 @@ a:hover{
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         padding: 5px;
         margin-top: 1.5em;
-        width: 10em;
+        width: 40%;
     }
     .menu_sobre>li>a{
         display: flex;
