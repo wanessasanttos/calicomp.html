@@ -363,13 +363,14 @@ a:hover{
         background-color: #3F2E3E;
         border-radius: 5px;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        padding: 5px;
         margin-top: 1.5em;
-        width: 40%;
+        padding: 5px;
     }
     .menu_sobre>li>a{
         display: flex;
         justify-content: center;
+        padding: 2px 8px;
+        width: 20em;
     }
     .conteudo{
         display: flex;
