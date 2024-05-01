@@ -11,20 +11,24 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 header{
     width: 100%;
     display: flex;
 }
+
 p{
     font-size: 0.1em;
     color: white;
 }
+
 main{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 footer{
     width: 100%;
     margin-top: 1em;
@@ -32,26 +36,31 @@ footer{
     justify-content: center;
     box-sizing: border-box;
 }
+
+
 li {
     display: flex;
-    align-items: center; 
+    align-items: center;
+    
 }
+
 a{
-    color: #a7909c;
+    color: #fcdfef;
     text-decoration: none;
     font-size: 0.5em;
     letter-spacing: 1.5px;
     text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
 }
+
 a:hover{
     background: #A78295;
     border-radius: 10px;
     color: #331D2C;
 }
+
 .box-flutuante{
     z-index: 2;
 }
-
 
 @media (min-width: 320px){
     .menu{
@@ -65,8 +74,8 @@ a:hover{
         left: 2em;
         padding: 5px;
         font-size: 1.3em;
-        z-index: 3;
     }
+
     .topicos{
         display: flex;
         flex-direction: column;
@@ -110,13 +119,11 @@ a:hover{
         align-items: center;
         gap: 0.4em;
         padding-top: 1em;
-        box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.5);
     }
     .text-header{
         width: 90%;
         text-indent: 1em;
         text-align: center;
-        padding-bottom: 10px;
 
     }
     .slideshow{
@@ -124,6 +131,7 @@ a:hover{
         width: 20em;
         height: 8.1em;
         overflow: hidden;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
         margin-top: 2em;
         margin-bottom: 1em;  
     }
@@ -225,7 +233,6 @@ a:hover{
     }
     .anuncios{
         margin-top: 1em;
-        margin-bottom: 1em;
         width: 17.5em;
         display: flex;
         flex-direction: column;
@@ -244,12 +251,12 @@ a:hover{
         display: flex;
         justify-content: center;
         letter-spacing: 1px;
+        word-spacing: 4px;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        
     }
     .texto-rodape{
         color: #a7909c;
-        font-size: 0.3em;
+        font-size: 0.4em;
         text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
     }
     .box-flutuante{
@@ -260,179 +267,99 @@ a:hover{
     .box-flutuante-icon{
         width: 7.5em;
     }
+    /*BARRA DE PESQUISA*/
 
-    /*ESTILIZAÇÃO PÁGINA MEMBROS*/
-    .titulo_pagina{
-        font-size: 1.5em;
-        color: white;
-        padding-top: 1em;
-        padding-bottom: 0.5em;
-        font-weight: normal;
-        letter-spacing: 2px; 
-    }
-    .membros{
-        width: 100%;
+    .search-box{
+        position: relative;
+        background: #A78295;
+        left:-5em;
+        right: 5em;
+        top:auto;
+        height: 1em;
+        border-radius: 0.4em;
+        padding: 0.2em;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1em;
-    }
-    .perfil{
-        width: 8em;
-        height: 6em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-        background: #ffffff63;
-        border-radius: 10px;
-        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s;  
-    }
-    .perfil:hover{
-        transform: scale(1.2);
-    }
-    .icon_perfil{
-        width: 3em;
-        height: 3em;
-        padding-bottom: 0.3em;
-    }
-    .perfil h2{
-        font-size: 0.6em;
-        color: #331D2C;
-        font-weight: normal;
-    }
-    .perfil h3{
-        font-size: 0.2em;
-        color: white;
-        letter-spacing: 1px;
-        font-weight: normal; 
-    }
-    .fundo_detalhes{
-        display: none;
-        position: absolute;
-        width: 100%;
-        height: 110%;
-        top: 0px;
-        background-color: rgba(0, 0, 0, 0.5);
-        align-items: center;
-        justify-content: center;
-    }
-    .perfil_destaque{
-        display: flex;
-        width: 15em;
-        height: 25em;
-        background: #82757e;
-        border-radius: 10px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .icon_perfil_destaque{
         width: 6em;
-        height: 6em;
-        padding-bottom: 0.5em;
+        justify-content: space-around;
     }
-    .perfil_destaque h2{
-        font-size: 1em;
-        color: #331D2C;
-        font-weight: normal;
+    .search-btn{
+        left: auto;
+        top: auto;
+        border: #a7909c;
+        width: 6em;
+        height: 1em;
+        border-radius:0.4em;
+        background-color: #331D2C;
+        color: #fff;
+        display: flex;
+        float: right;
     }
-    .perfil_destaque h3{
+    .search-txt{
+        color: #fff;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
         font-size: 0.7em;
-        color: white;
-        letter-spacing: 1px;
-        font-weight: normal; 
-    }
-    .perfil_destaque p{
-        font-size: 0.5em;
-        text-align: justify;
-        margin-top: 1em;
-        padding: 2em;
-    }
-
-    /*ESTILIZAÇÃO PÁGINA SOBRE*/
-    .menu_sobre{           
+        line-height: 0,5em;
+        width: 6em;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 0.7em;
-        gap: 5px;
-        background-color: #3F2E3E;
-        border-radius: 5px;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        margin-top: 1.5em;
-        padding: 5px;
+        cursor: pointer;
     }
-    .menu_sobre>li>a{
-        display: flex;
-        justify-content: center;
-        padding: 2px 8px;
-        width: 20em;
-    }
-    .conteudo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .sobre{
-        width: 85%;
-        background: #82757e;
-        border-radius: 5px;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        padding: 5px;
-        margin-top: 1.5em;
-    }
-    .sobre>h1{
-        width: 85%;
-        padding-left: 3px;
-        font-size: 1em;
-        color: white;
-        padding-top: 1em;
-        padding-bottom: 0.5em;
-        font-weight: normal;
-        letter-spacing: 2px;
-        border-bottom: #3F2E3E solid 3px;
-    }
-    .sobre>p{
-        padding: 10px 5px 5px 5px;
-        text-align: justify;
-        line-height: 1.7;
-        text-indent: 10px;
-    }
-    .objetivos{
-        list-style-type: disc; /*nota: não ta funcionando devido a sobreposição de alguma estilização css*/
-    }
-    .objetivos>li{
-        color: white;
-        font-size: 0.4em;
-        padding: 10px 5px 5px 5px;
-        text-align: justify;
-        line-height: 1.7;
-    }
-    .sobre_datas{
-        display: flex;
-        flex-direction: row;
-        padding: 10px 5px 5px 5px;
-        gap: 5px;
-    }
-    .data{
+    .search-box:hover{
+        width: 6em;
+        transition: 0,1s;
+    } 
+    .logo3{
         width: 12em;
-        box-sizing: border-box;
+        margin-top: 2.3em;
     }
-    .data>h2{
+    .eventosBig{
+        width: 20em;
+        margin: auto;
+        padding-top: 1em;
+        text-align:right;
+        margin-top: 15px;
         color: #3F2E3E;
-        font-size: 1em;
+        display: block;
     }
-    .sobre_datas>p{
-        text-align: justify;
-        line-height: 1.7;
+    .eventos{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .eventos-lista{
+        flex-basis: 44%;
+        border-radius: 1em;
+        margin-bottom: 5%;
+        text-align: left;
+        background:#A78295;
+        padding: 20px;
+        cursor: pointer;
+        display: flex;
+    }
+    .eventos-lista p{
+        color: black;
+        text-align: end;
+        height: 1em;
+        font-weight:20em;
+    }
+    .eventos-lista h3{
+        color: #3F2E3E;
+        margin-top: 15px;
+        text-align: left;
+    }
+    
 
+    .button{
+        width: 10em;
+        height: 4em;
+        display: flex;
+        color:red;
     }
 }
-
 @media (min-width: 375px){
     .icon_menu{
         width: 1.6em;
@@ -444,13 +371,9 @@ a:hover{
         top: 1.05em;
         left: 2.6em;
     }
-    .slideshow, .imagem img, .seta_click_pai{
+    .slideshow, .imagem img{
         width: 24em;
         height: 11em; 
-    }
-
-    .seta_click, .seta_click_right{
-        height: 11em;
     }
     .navegacaoManual{
         width: 24em;
@@ -487,7 +410,7 @@ a:hover{
     a{
         padding: 0.4em 0em 0.4em 1.2em;
     }
-    .slideshow, .imagem img, .navegacaoManual, .navegacaoAuto, .seta_click_pai{
+    .slideshow, .imagem img, .navegacaoManual, .navegacaoAuto{
         width: 27em;
     }
     .anuncios{
@@ -547,31 +470,16 @@ a:hover{
         width: 17.7em;
         margin-top: 3.3em;
     }
-    .elementos-header{
-        margin-bottom: 2em;
-    }
     .text-header{
         width: 65%;
         text-indent: 1em;
         text-align: center;
         font-size: 0.6em;
     }
-    .slideshow, .imagem img, .seta_click_pai{
+    .slideshow, .imagem img{
         width: 48em;
         height: 17em;
     }
-    .seta_click, .seta_click_right{
-        height: 17em;    
-    }
-    .icon_seta, .icon_seta_right{
-        width: 1em;
-        height: 1em;
-        padding-left: 0.7em;
-    }
-    .icon_seta_right{
-        padding-right: 0.7em;
-    }
-
     .navegacaoManual{
         width: 48em;
         margin-top: -30px;
@@ -594,56 +502,6 @@ a:hover{
         color: #a7909c;
         font-size: 0.7em;
     }
-
-
-    /*ESTILIZAÇÃO PÁGINA SOBRE*/
-    .row{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    .menu_sobre{           
-        display: flex;
-        flex-direction: column;
-        margin-left: 3em;
-        gap: 10px;
-        padding: 10px;
-        margin-top: 0;
-        width: 20em;
-    }
-    .menu_sobre>li>a{
-        display: flex;
-        justify-content:flex-start;
-        width: 14.5em;
-        font-size: 1em;
-    }
-    .conteudo{
-        gap: 2em;
-    }
-    .sobre{
-        margin: 0em;
-    }
-    .sobre>h1{
-        font-size: 1.3em;
-    }
-    .sobre>p{
-        font-size: 0.6em;
-        padding: 15px 10px 10px 10px;
-        text-indent: 20px;
-    }
-    .objetivos>li{
-        font-size: 0.6em;
-        padding: 15px 10px 10px 10px;
-    }
-    .sobre_datas{
-        padding: 15px 10px 10px 10px;
-    }
-    .data>h2{
-        font-size: 1.3em;
-    }
-    .sobre_datas>p{
-        font-size: 0.6em;
-    }
 }
 
 @media (min-width: 1024px){
@@ -657,12 +515,9 @@ a:hover{
         text-indent: 1em;
         text-align: center;
     }
-    .slideshow, .imagem img, .seta_click_pai{
+    .slideshow, .imagem img{
         width: 64em;
         height: 23em;
-    }
-    .seta_click, .seta_click_right{
-        height: 23em;    
     }
     .navegacaoManual{
         width: 64em;
@@ -686,83 +541,6 @@ a:hover{
     .box-flutuante-icon{
         width: 9.5em;
     }
-    /*ESTILIZAÇÃO PÁGINA MEMBROS*/
-    .titulo_pagina{
-        font-size: 1.8em;
-        color: white;
-        padding-top: 0em;
-    }
-    .perfil{
-        width: 12em;
-        height: 10em;
-        margin-left: 1;
-        margin-right: 1em;
-        margin-bottom: 1em;  
-    }
-    .icon_perfil{
-        width: 5em;
-        height: 5em;
-        padding-bottom: 0.8em;
-    }
-    .perfil h2{
-        font-size: 0.9em;
-    }
-    .perfil h3{
-        font-size: 0.7em; 
-    }
-    .fundo_detalhes{
-        height: 120%;
-    }
-    .perfil_destaque{
-        width: 20em;
-        height: 30em;
-    }
-    .icon_perfil_destaque{
-        width: 10em;
-        height: 10em;
-        padding-bottom: 2em;
-    }
-    .perfil_destaque h2{
-        font-size: 1.2em;
-    }
-    .perfil_destaque h3{
-        font-size: 1em;
-    }
-    .perfil_destaque p{
-        font-size: 0.7em;
-    }
-    /*ESTILIZAÇÃO PÁGINA SOBRE*/
-    .menu_sobre{           
-        margin-left: 4.5em;
-        padding: 15px;
-    }
-    .conteudo{
-        gap: 2.5em;
-    }
-    .sobre>h1{
-        font-size: 1.5em;
-    }
-    .sobre>p{
-        font-size: 0.7em;
-        padding: 20px 15px 15px 15px;
-        text-indent: 25px;
-    }
-    .objetivos>li{
-        font-size: 0.7em;
-        padding: 20px 15px 15px 15px;
-    }
-    .sobre_datas{
-        padding: 20px 15px 15px 15px;
-    }
-    .data{
-        width: 20em;
-    }
-    .data>h2{
-        font-size: 1.5em;
-    }
-    .sobre_datas>p{
-        font-size: 0.7em;
-    }
 }
 
 @media (min-width: 1440px){
@@ -780,20 +558,9 @@ a:hover{
         width: 40%;
         font-size: 0.9em;
     }
-    .slideshow, .imagem img, .seta_click_pai{
+    .slideshow, .imagem img{
         width: 90em;
         height: 29em;
-    }
-    .seta_click, .seta_click_right{
-        height: 29em;    
-    }
-    .icon_seta, .icon_seta_right{
-        width: 1.5em;
-        height: 1.5em;
-        padding-left: 1em;
-    }
-    .icon_seta_right{
-        padding-right: 1em;
     }
     .navegacaoManual{
         width: 90em;
@@ -815,78 +582,6 @@ a:hover{
     }
     .texto-rodape{
         font-size: 0.9em;
-    }
-    /*ESTILIZAÇÃO PÁGINA MEMBROS*/
-    .titulo_pagina{
-        font-size: 2.5em;
-    }
-    .perfil{
-        width: 18em;
-        height: 16em;
-        margin-left: 2;
-        margin-right: 2em;
-        margin-bottom: 2em;  
-    }
-    .icon_perfil{
-        width: 8em;
-        height: 8em;
-        padding-bottom: 1.2em;
-    }
-    .perfil h2{
-        font-size: 1.1em;
-    }
-    .perfil h3{
-        font-size: 0.9em; 
-    }
-    .fundo_detalhes{
-        height: 145%;
-    }
-    .perfil_destaque{
-        width: 25em;
-        height: 35em;
-    }
-    .icon_perfil_destaque{
-        width: 12em;
-        height: 12em;
-    }
-    .perfil_destaque h2{
-        font-size: 1.3em;
-    }
-    .perfil_destaque p{
-        font-size: 0.8em;
-    }
-    /*ESTILIZAÇÃO PÁGINA SOBRE*/
-    .menu_sobre{           
-        margin-left: 6.5em;
-        padding: 20px;
-        width: 20em;
-    }
-    .menu_sobre>li>a{
-        font-size: 1.3em;
-    }
-    .conteudo{
-        gap: 3em;
-    }
-    .sobre>h1{
-        font-size: 1.8em;
-    }
-    .sobre>p{
-        font-size: 0.8em;
-        padding: 25px 20px 20px 20px;
-        text-indent: 30px;
-    }
-    .objetivos>li{
-        font-size: 0.8em;
-        padding: 25px 20px 20px 20px;
-    }
-    .sobre_datas{
-        padding: 25px 20px 20px 20px;
-    }
-    .data>h2{
-        font-size: 1.8em;
-    }
-    .sobre_datas>p{
-        font-size: 0.8em;
     }
 }
 
@@ -910,20 +605,9 @@ a:hover{
         width: 50%;
         font-size: 1.5em;
     }
-    .slideshow, .imagem img, .seta_click_pai{
+    .slideshow, .imagem img{
         width: 160em;
         height: 47em;
-    }
-    .seta_click, .seta_click_right{
-        height: 47em;    
-    }
-    .icon_seta, .icon_seta_right{
-        width: 2.5em;
-        height: 2.5em;
-        padding-left: 2em;
-    }
-    .icon_seta_right{
-        padding-right: 2em;
     }
     .navegacaoManual{
         width: 160em;
@@ -931,7 +615,7 @@ a:hover{
     }
     .navegacaoAuto{
         width: 160em;
-        margin-top: 715.8px;
+        margin-top: 71.8px;
     }
     .anuncios{
         width: 135.5em;
@@ -945,82 +629,5 @@ a:hover{
     }
     .texto-rodape{
         font-size: 1.3em;
-    }
-    /*ESTILIZAÇÃO PÁGINA MEMBROS*/
-    .titulo_pagina{
-        font-size: 4em;
-    }
-    .perfil{
-        width: 30em;
-        height: 25em;
-        margin-left: 3em;
-        margin-right: 3em;
-        margin-bottom: 3em;  
-    }
-    .icon_perfil{
-        width: 12em;
-        height: 12em;
-        padding-bottom: 2em;
-    }
-    .perfil h2{
-        font-size: 1.7em;
-    }
-    .perfil h3{
-        font-size: 1.4em; 
-    }
-    .perfil_destaque{
-        width: 35em;
-        height: 55em;
-    }
-    .icon_perfil_destaque{
-        width: 20em;
-        height: 20em;
-    }
-    .perfil_destaque h2{
-        font-size: 2em;
-    }
-    .perfil_destaque h3{
-        font-size: 1.5em;
-    }
-    .perfil_destaque p{
-        font-size: 1.3em;
-    }
-
-    /*ESTILIZAÇÃO PÁGINA SOBRE*/
-    .menu_sobre{           
-        margin-left: 13em;
-        padding: 25px;
-        width: 35em;
-    }
-    .conteudo{
-        gap: 6em;
-    }
-    .menu_sobre>li>a{
-        font-size: 2.2em;
-    }
-    .sobre>h1{
-        font-size: 3.3em;
-    }
-    .sobre>p{
-        font-size: 1.5em;
-        padding: 55px 40px 40px 40px;
-        text-indent: 60px;
-    }
-    .objetivos>li{
-        font-size: 1.5em;
-        padding: 55px 40px 40px 40px;
-    }
-    .sobre_datas{
-        padding: 55px 40px 40px 40px;
-    }
-    .data{
-        width: 40em;
-        box-sizing: border-box;
-    }
-    .data>h2{
-        font-size: 3.3em;
-    }
-    .sobre_datas>p{
-        font-size: 1.5em;
     }
 }
