@@ -431,7 +431,87 @@ a:hover{
         line-height: 1.7;
 
     }
+
+    /*Estilização Página Eventos*/
+    .search-btn{
+        left: auto;
+        top: auto;
+        border: #a7909c;
+        width: 6em;
+        height: 1em;
+        border-radius:0.4em;
+        background-color: #331D2C;
+        color: #fff;
+        display: flex;
+        float: right;
+    }
+    .search-txt{
+        color: #fff;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        font-size: 0.7em;
+        line-height: 0,5em;
+        width: 6em;
+        display: flex;
+        cursor: pointer;
+    }
+    .search-box:hover{
+        width: 6em;
+        transition: 0,1s;
+    } 
+    .logo3{
+        width: 12em;
+        margin-top: 2.3em;
+    }
+    .eventosBig{
+        width: 20em;
+        margin: auto;
+        padding-top: 1em;
+        text-align:right;
+        margin-top: 15px;
+        color: #3F2E3E;
+        display: block;
+    }
+    .eventos{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .eventos-lista{
+        flex-basis: 44%;
+        border-radius: 1em;
+        margin-bottom: 5%;
+        text-align: left;
+        background:#A78295;
+        padding: 20px;
+        cursor: pointer;
+        display: flex;
+    }
+    .eventos-lista p{
+        color: black;
+        text-align: end;
+        height: 1em;
+        font-weight:20em;
+    }
+    .eventos-lista h3{
+        color: #3F2E3E;
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    .button{
+        width: 10em;
+        height: 4em;
+        display: flex;
+        color:red;
+    }
+
 }
+
 
 @media (min-width: 375px){
     .icon_menu{
