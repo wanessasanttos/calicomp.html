@@ -433,17 +433,53 @@ a:hover{
     }
 
     /*Estilização Página Eventos*/
-    .search-btn{
-        left: auto;
-        top: auto;
-        border: #a7909c;
-        width: 6em;
-        height: 1em;
-        border-radius:0.4em;
-        background-color: #331D2C;
-        color: #fff;
+    .search-box{
+        width: 19em;
         display: flex;
-        float: right;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1em;
+    }
+    .busca{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .busca>input{
+        width: 10em;
+        padding: 5px;
+        background-color: #A78295;
+        color: white;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .search-btn{
+        width: 1em;
+        height: 1em;
+        padding: 0.13em 0.3em;
+        border: solid 1px #A78295;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .historico{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 3px 2px 3px 2px;
+        gap: 5px;
+        border-radius: 5px;
+        border: none;
+        background: rgb(167, 130, 149);
+        background: linear-gradient(203deg, rgba(167, 130, 149, 1) 2%, rgba(239, 225, 209, 1) 34%);
+    }
+    .search-btn1{
+        width: 1.2em;
+        height: 1.2em;
+        padding-left: 0.3em;
+    }
+    .eventos_icon{
+        width: 10px;
+        height: 10px;
     }
     .search-txt{
         color: #fff;
@@ -457,59 +493,51 @@ a:hover{
         display: flex;
         cursor: pointer;
     }
-    .search-box:hover{
-        width: 6em;
-        transition: 0,1s;
-    } 
-    .logo3{
-        width: 12em;
-        margin-top: 2.3em;
-    }
-    .eventosBig{
-        width: 20em;
-        margin: auto;
-        padding-top: 1em;
-        text-align:right;
-        margin-top: 15px;
-        color: #3F2E3E;
-        display: block;
-    }
-    .eventos{
-        margin-top: 5%;
+    .todosEventos{
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 1em;
+        gap: 1em;
+    }
+    .evento{
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        background: rgb(63, 46, 62);
+        background: linear-gradient(180deg, rgba(63, 46, 62, 0.4780111873851103) 6%, rgba(167, 130, 149, 0.19509802211900384) 50%, rgba(63, 46, 62, 0.48081230783328954) 94%);
+        border: solid 1px black;
+        border-radius: 5px;
     }
-    .eventos-lista{
-        flex-basis: 44%;
-        border-radius: 1em;
-        margin-bottom: 5%;
-        text-align: left;
-        background:#A78295;
-        padding: 20px;
-        cursor: pointer;
+    .data_evento{
         display: flex;
+        flex-direction: column;
+        width: 30%;
+        align-items: center;
     }
-    .eventos-lista p{
-        color: black;
-        text-align: end;
-        height: 1em;
-        font-weight:20em;
+    .dia{
+        font-size: 3.5em; 
     }
-    .eventos-lista h3{
-        color: #3F2E3E;
-        margin-top: 15px;
-        text-align: left;
+    .mes{
+        position: relative;
+        bottom: 20px;
+        
+    }
+    .conteudo_evento{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 25px;
+        width: 70%;
     }
 
-    .button{
-        width: 10em;
-        height: 4em;
-        display: flex;
-        color:red;
-    }
 
+
+
+
+ 
 }
 
 
@@ -724,6 +752,17 @@ a:hover{
     .sobre_datas>p{
         font-size: 0.6em;
     }
+
+    /*Estilização Página Eventos*/ 
+    .todosEventos{
+        border: solid white 5px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .eventoPC{
+        width: 50%;
+    } 
 }
 
 @media (min-width: 1024px){

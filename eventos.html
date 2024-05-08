@@ -15,15 +15,17 @@
 </head>
     
 <body>
+    <!-- CABEÇALHO -->
     <header>
+        <!-- MENU-->
         <div class="menu" id="menu_click">
             <ul class="topicos">
-                <li><a href="#" >INÍCIO</a></li>
-                <li><a href="#" >"eventos.html"</a></li>
-                <li><a href="#" >MEMBROS</a></li>
-                <li><a href="#" >REQUISIÇÕES</a></li>
-                <li><a href="#" >SOBRE</a></li>
-                <li><a href="#" >CONTATO</a></li>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="#">EVENTOS</a></li>
+                <li><a href="membros.html">MEMBROS</a></li>
+                <li><a href="#">REQUISIÇÕES</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="#">CONTATO</a></li>
             </ul>
             <ul class="ouvidoria">
                 <li><a href="#">OUVIDORIA</a></li>
@@ -37,73 +39,82 @@
                 <img src="imagens/icon_menu.png" onclick="click_menu()" class="icon_menu">
             </div>
         </div>
-
+    
         <!--CAIXA FLUTUANTE P/ OUVIDORIA-->
         <div class="box-flutuante">
-            <a href="#" >
-            <img src="imagens/Ouvidoria.png" class="box-flutuante-icon">
-                </a>
-            </div>
-    </header>
-
-        <div class="search-box">
-            <input class="search-txt" type="text" name="" placeholder="Buscar Evento">
-            <a class="search-btn" href="#">
-                <i class="fas fa-search"></i>
+            <a href="#">
+                <img src="imagens/Ouvidoria.png" class="box-flutuante-icon">
             </a>
         </div>
-
-        <button>Histórico de Eventos</button>
-
-        <div class="eventos">
-
-        <div class="eventos-lista">
-                <div class="eventosBig">
-                    <h3>14 Maio</h3>
-                    <p> SAC 2024</p>
-                    <p> Descrição do Evento...</p>
+    
+    </header>
+    <main>
+        <div class="search-box">
+            <div class="busca">
+                <input class="search-txt" type="text" name="" placeholder="Buscar Evento" class="pink">
+                <img src="imagens/eventos_icon.png" class="search-btn">
+            </div>
+            <button class="historico">
+                Histórico de Eventos
+                <img src="imagens/historico.png" class="search-btn1">
+            </button>
+        </div>
+        <div class="todosEventos">
+            <div class="evento">
+                <div class="data_evento">
+                    <h3 class="dia">14</h3>
+                    <h3 class="mes">Maio</h3>
                 </div>
-        </div>
-        <div class="eventos">
-                <div class="eventos-lista">
-                    <p>"21 Maio"</p>
-                    <h3>Título do Evento</h3>
-                    <p>Descrição do Evento...</p>
+                <div class="conteudo_evento">
+                    <h2>EVENTO X</h2>
+                    <p>LOREM ISPUM DKFSKDFSKFASDLSF</p>
                 </div>
-        </div>
-        <div class="eventos">
-                    <div class="eventos-lista">
-                    <p>"21 Maio"</p>
-                    <h3>Título do Evento</h3>
-                    <p>Descrição do Evento...</p>
-        </div>
-        <div class="eventos">
-                    <div class="eventos-lista">
-                        <p>"21 Maio"</p>
-                        <h3>Título do Evento</h3>
-                        <p>Descrição do Evento...</p>
-        </div>
-        <div class="eventos">
-                        <div class="eventos-lista">
-                            <p>"21 Maio"</p>
-                            <h3>Título do Evento</h3>
-                            <p>Descrição do Evento...</p>
-        </div>
-        <div class="eventos">
-                            <div class="eventos-lista">
-                                <p>"21 Maio"</p>
-                                <h3>Título do Evento</h3>
-                                <p>Descrição do Evento...</p>
-                            </div>
-        </div>
-        </div>
+            </div>
+            <div class="evento eventoPC">
+                <div class="data_evento">
+            
+                </div>
+                <div class="conteudo_evento">
+            
+                </div>
+            </div>
+            <div class="evento eventoPC">
+                <div class="data_evento">
+            
+                </div>
+                <div class="conteudo_evento">
+            
+                </div>
+            </div>
+            <div class="evento eventoPC">
+                <div class="data_evento">
+            
+                </div>
+                <div class="conteudo_evento">
+            
+                </div>
+            </div>
+            <div class="evento eventoPC">
+                <div class="data_evento">
+            
+                </div>
+                <div class="conteudo_evento">
+            
+                </div>
+            </div>
 
+
+
+
+        </div>
+    </main>
 
     <footer>
         <div class="rodape">
             <p class="texto-rodape">© 2024 CALICOMP - Centro Acadêmico Livre de Computação</p>
         </div>
     </footer> 
+    <script src="script.js"></script>
 </html>
 
 
