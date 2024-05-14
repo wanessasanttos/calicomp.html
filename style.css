@@ -235,7 +235,7 @@ a:hover{
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
     }
     .anuncios_f>p{
-        margin-bottom: 9em;
+        margin-bottom: 1em;
         color: #A78295;
         text-align: justify;
     }
@@ -246,7 +246,7 @@ a:hover{
     }
     .botao{
         position: relative;
-        left: 5em;
+        left: 6em;
         width: 12em;
         color: #331D2C;
         font-family: Poppins;
@@ -610,9 +610,6 @@ a:hover{
         width: 24em;
         margin-top: 159px; /*+47px*/
     }
-    .anuncios{
-        width: 20.5em;
-    }
     .rodape{
         width: 21.9em;
     }
@@ -640,12 +637,6 @@ a:hover{
     }
     .slideshow, .imagem img, .navegacaoManual, .navegacaoAuto, .seta_click_pai{
         width: 27em;
-    }
-    .anuncios{
-        width: 24.5em;
-    }
-    .botao{
-        left: 15em;
     }
     .rodape{
         width: 24.9em;
