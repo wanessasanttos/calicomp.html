@@ -236,6 +236,7 @@ a:hover{
     }
     .anuncios_f>p{
         margin-bottom: 1em;
+        font-size: 6px;
         color: #A78295;
         text-align: justify;
     }
