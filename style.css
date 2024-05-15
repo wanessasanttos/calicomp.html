@@ -27,10 +27,10 @@ main{
 }
 footer{
     width: 100%;
-    margin-top: 1em;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    margin-top: 2em;
 }
 li {
     display: flex;
@@ -79,7 +79,6 @@ a:hover{
         margin-bottom: 5px;
         color: #331D2C;
     }
-
     a{  
         width: 100px;
         padding: 0.4em 0em 0.4em 1.2em;
@@ -87,10 +86,6 @@ a:hover{
     .ouvidoria a{
         color: #331D2C;
         padding-right: 15px;
-    }
-    .logo{
-        width: 14.7em;
-        margin-top: 2.3em;
     }
     .icon_menu{ /*menu mobile*/
         width: 1.3em;
@@ -110,6 +105,24 @@ a:hover{
         align-items: center;
         gap: 0.4em;
         padding-top: 1em;
+    }
+    .elementos-header-row{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.3em;
+        align-items: center;
+        gap: 1em;
+    }
+    .logo{
+        width: 4em;
+    }
+    .title{
+        font-size: 2.2em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
     }
     .text-header{
         color: #A78295;
@@ -300,14 +313,6 @@ a:hover{
     }
 
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
-    .titulo_pagina{
-        font-size: 1.5em;
-        color: white;
-        padding-top: 1em;
-        padding-bottom: 0.5em;
-        font-weight: normal;
-        letter-spacing: 2px; 
-    }
     .membros{
         margin-top: 2em;
         width: 100%;
@@ -392,84 +397,62 @@ a:hover{
     }
 
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
-    .menu_sobre{           
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 0.7em;
-        gap: 5px;
-        background-color: #3F2E3E;
-        border-radius: 5px;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        margin-top: 1.5em;
-        padding: 5px;
-    }
-    .menu_sobre>li>a{
-        display: flex;
-        justify-content: center;
-        padding: 2px 8px;
-        width: 20em;
-    }
-    .conteudo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     .sobre{
-        width: 85%;
-        background: #82757e;
-        border-radius: 5px;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        padding: 5px;
-        margin-top: 1.5em;
-    }
-    .sobre>h1{
-        width: 85%;
-        padding-left: 3px;
-        font-size: 1em;
-        color: white;
-        padding-top: 1em;
-        padding-bottom: 0.5em;
-        font-weight: normal;
-        letter-spacing: 2px;
-        border-bottom: #3F2E3E solid 3px;
-    }
-    .sobre>p{
-        padding: 10px 5px 5px 5px;
-        text-align: justify;
-        line-height: 1.7;
-        text-indent: 10px;
-    }
-    .objetivos{
-        list-style-type: disc; /*nota: não ta funcionando devido a sobreposição de alguma estilização css*/
-    }
-    .objetivos>li{
-        color: white;
-        font-size: 0.4em;
-        padding: 10px 5px 5px 5px;
-        text-align: justify;
-        line-height: 1.7;
-    }
-    .sobre_datas{
         display: flex;
         flex-direction: row;
-        padding: 10px 5px 5px 5px;
-        gap: 5px;
+        align-items: center;
+        width: 19em;
+        box-sizing: border-box;
+        background: rgb(63,46,62);
+        gap: 1em;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        padding: 1em;
     }
-    .data{
-        width: 12em;
+    .sobre>.logo{
+        width: 5em;
+        height: 5em;
+    }
+    .sobre>p{
+        text-align: justify;
+        color: #A78295;
+        font-size: 6px;
+    }
+
+    .historia{
+        width: 19em;
+        box-sizing: border-box;
+        background: #DBB8CA;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        padding: 1em;
+        margin-top: 1em;
+    }
+    .historia>h1{
+        font-size: 1em;
+        color: #3F2E3E;
+    }
+    .topico_hist{
+        display: flex;
+        flex-direction: row;
+        padding-top: 1em;
+        gap: 1em;
+    }
+    .topico_hist>p{
+        text-align: justify;
+        color: #3F2E3E;
+        font-size: 6px;
+        font-weight: bold;
+    }
+    .topico_hist>h2{
+        color: #331d2c7e;
+        font-weight: normal;
+        width: 15em;
         box-sizing: border-box;
     }
-    .data>h2{
-        color: #3F2E3E;
-        font-size: 1em;
+    .h2-1997{
+        letter-spacing: 3px;
     }
-    .sobre_datas>p{
-        text-align: justify;
-        line-height: 1.7;
-
-    }
-
     /*Estilização Página Eventos*/
     .search-box{
         width: 19em;
@@ -642,6 +625,40 @@ a:hover{
     .rodape{
         width: 24.9em;
     }
+        /*ESTILIZAÇÃO PÁGINA SOBRE*/
+        .sobre{
+            width: 25em;
+        }
+        .sobre>p{
+            font-size: 0.5em;
+        }
+        .historia{
+            width: 25em;
+        }
+        .historia>h1{
+            font-size: 1.3em;
+        }
+        .topico_hist{
+            display: flex;
+            flex-direction: row;
+            padding-right: 2em;
+            gap: 2em;
+        }
+        .topico_hist>p{
+            text-align: justify;
+            color: #3F2E3E;
+            font-size: 6px;
+            font-weight: bold;
+        }
+        .topico_hist>h2{
+            color: #331d2c7e;
+            font-weight: normal;
+            width: 15em;
+            box-sizing: border-box;
+        }
+        .h2-1997{
+            letter-spacing: 3px;
+        }
 }
 
 @media (min-width: 768px){
@@ -687,12 +704,17 @@ a:hover{
     .linkOuvidoria{
         color: #331D2C;
     }
-    .logo{
-        width: 20.7em;
-        margin-top: 3.3em;
-    }
     .elementos-header{
         margin-bottom: 2em;
+    }
+    .elementos-header-row{
+        margin-top: 4em;
+    }
+    .logo{
+        width: 6em;
+    }
+    .title{
+        font-size: 2.9em;
     }
     .text-header{
         width: 65%;
@@ -752,54 +774,43 @@ a:hover{
         font-size: 0.7em;
     }
 
-
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
-    .row{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    .menu_sobre{           
-        display: flex;
-        flex-direction: column;
-        margin-left: 3em;
-        gap: 10px;
-        padding: 10px;
-        margin-top: 0;
-        width: 20em;
-    }
-    .menu_sobre>li>a{
-        display: flex;
-        justify-content:flex-start;
-        width: 14.5em;
-        font-size: 1em;
-    }
-    .conteudo{
-        gap: 2em;
-    }
     .sobre{
-        margin: 0em;
+        width: 40em;
+        gap: 2em;
+        border-radius: 10px;
+        padding: 2em;
+        margin-top: -2em;
     }
-    .sobre>h1{
-        font-size: 1.3em;
+    .sobre>.logo{
+        width: 9em;
+        height: 9em;
     }
     .sobre>p{
-        font-size: 0.6em;
-        padding: 15px 10px 10px 10px;
-        text-indent: 20px;
+        font-size: 0.7em;
     }
-    .objetivos>li{
-        font-size: 0.6em;
-        padding: 15px 10px 10px 10px;
+    .historia{
+        width: 40em;
+        border-radius: 10px;
+        padding: 2em 5em 2em 2em;
+        margin-top: 2em;
     }
-    .sobre_datas{
-        padding: 15px 10px 10px 10px;
+    .historia>h1{
+        font-size: 1.5em;
     }
-    .data>h2{
-        font-size: 1.3em;
+    .topico_hist{
+        gap: 2.5em;
+        margin-top: 0.7em;
     }
-    .sobre_datas>p{
-        font-size: 0.6em;
+    .topico_hist>p{
+        font-size: 0.7em;
+    }
+    .topico_hist>h2{
+        font-size: 3em;
+        box-sizing: border-box;
+    }
+    .h2-1997{
+        letter-spacing: 6px;
     }
 
     /*Estilização Página Eventos*/ 
@@ -818,7 +829,9 @@ a:hover{
     .menu{
         width: 95%;
     }
- 
+    .title{
+        font-size: 4em;
+    }
     .text-header{
         font-size: 0.7em;
         width: 55%;
@@ -861,16 +874,10 @@ a:hover{
     .rodape{
         width: 95%;
     }
-
     .box-flutuante-icon{
         width: 9.5em;
     }
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
-    .titulo_pagina{
-        font-size: 1.8em;
-        color: white;
-        padding-top: 0em;
-    }
     .perfil{
         width: 12em;
         height: 10em;
@@ -910,37 +917,41 @@ a:hover{
     .perfil_destaque p{
         font-size: 0.7em;
     }
+
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
-    .menu_sobre{           
-        margin-left: 4.5em;
-        padding: 15px;
+    .sobre{
+        width: 55em;
+        gap: 3em;
+        border-radius: 15px;
+        margin-top: -1em;
     }
-    .conteudo{
-        gap: 2.5em;
-    }
-    .sobre>h1{
-        font-size: 1.5em;
+    .sobre>.logo{
+        width: 12em;
+        height: 12em;
     }
     .sobre>p{
-        font-size: 0.7em;
-        padding: 20px 15px 15px 15px;
-        text-indent: 25px;
+        font-size: 0.8em;
     }
-    .objetivos>li{
-        font-size: 0.7em;
-        padding: 20px 15px 15px 15px;
+
+    .historia{
+        width: 55em;
+        border-radius: 15px;
+        margin-top: 2em;
     }
-    .sobre_datas{
-        padding: 20px 15px 15px 15px;
+    .historia>h1{
+        font-size: 2em;
     }
-    .data{
-        width: 20em;
+    .topico_hist{
+        gap: 3em;
     }
-    .data>h2{
-        font-size: 1.5em;
+    .topico_hist>p{
+        font-size: 0.8em;;
     }
-    .sobre_datas>p{
-        font-size: 0.7em;
+    .topico_hist>h2{
+        font-size: 3.5em;
+    }
+    .h2-1997{
+        letter-spacing: 6px;
     }
 }
 
@@ -955,11 +966,17 @@ a:hover{
     .elementos-header{
         margin-top: 2em;
     }
+    .elementos-header-row{
+        gap: 2em;
+    }
     .logo{
-        width: 35.7em;
+        width: 8em;
+    }
+    .title{
+        font-size: 6em;
     }
     .text-header{
-        width: 50%;
+        width: 45%;
         font-size: 0.9em;
     }
     .slideshow, .imagem img, .seta_click_pai{
@@ -1049,38 +1066,38 @@ a:hover{
     .perfil_destaque p{
         font-size: 0.8em;
     }
+
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
-    .menu_sobre{           
-        margin-left: 6.5em;
-        padding: 20px;
-        width: 20em;
+    .sobre{
+        width: 75em;
+        padding: 4em;
+        margin-top: -1em;
     }
-    .menu_sobre>li>a{
-        font-size: 1.3em;
-    }
-    .conteudo{
-        gap: 3em;
-    }
-    .sobre>h1{
-        font-size: 1.8em;
+    .sobre>.logo{
+        width: 15em;
+        height: 15em;
     }
     .sobre>p{
-        font-size: 0.8em;
-        padding: 25px 20px 20px 20px;
-        text-indent: 30px;
+        font-size: 1em;
     }
-    .objetivos>li{
-        font-size: 0.8em;
-        padding: 25px 20px 20px 20px;
+    .historia{
+        width: 75em;
+        padding: 3em;
     }
-    .sobre_datas{
-        padding: 25px 20px 20px 20px;
+    .historia>h1{
+        font-size: 2.5em;
     }
-    .data>h2{
-        font-size: 1.8em;
+    .topico_hist{
+        gap: 4em;
     }
-    .sobre_datas>p{
-        font-size: 0.8em;
+    .topico_hist>p{
+        font-size: 1em;;
+    }
+    .topico_hist>h2{
+        font-size: 5em;
+    }
+    .h2-1997{
+        letter-spacing: 8px;
     }
 }
 
@@ -1097,11 +1114,17 @@ a:hover{
     a{
         font-size: 1.3em;
     }
+    .elementos-header-row{
+        gap: 3em;
+    }
     .logo{
-        width: 59.7em;
+        width: 15em;
+    }
+    .title{
+        font-size: 9em;
     }
     .text-header{
-        width: 30%;
+        width: 45%;
         font-size: 1.5em;
     }
     .slideshow, .imagem img, .seta_click_pai{
@@ -1195,42 +1218,37 @@ a:hover{
     .perfil_destaque p{
         font-size: 1.3em;
     }
-
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
-    .menu_sobre{           
-        margin-left: 13em;
-        padding: 25px;
-        width: 35em;
+    .sobre{
+        width: 130em;
     }
-    .conteudo{
-        gap: 6em;
-    }
-    .menu_sobre>li>a{
-        font-size: 2.2em;
-    }
-    .sobre>h1{
-        font-size: 3.3em;
+    .sobre>.logo{
+        width: 25em;
+        height: 25em;
     }
     .sobre>p{
-        font-size: 1.5em;
-        padding: 55px 40px 40px 40px;
-        text-indent: 60px;
+        font-size: 1.7em;
     }
-    .objetivos>li{
-        font-size: 1.5em;
-        padding: 55px 40px 40px 40px;
+    .historia{
+        width: 130em;
+        padding: 4em;
+        padding-right: 10em;
     }
-    .sobre_datas{
-        padding: 55px 40px 40px 40px;
+    .historia>h1{
+        font-size: 4em;
     }
-    .data{
-        width: 40em;
-        box-sizing: border-box;
+    .topico_hist{
+        margin-top: 2em;
+        gap: 6em;
     }
-    .data>h2{
-        font-size: 3.3em;
+    .topico_hist>p{
+        font-size: 1.7em;;
     }
-    .sobre_datas>p{
-        font-size: 1.5em;
+    .topico_hist>h2{
+        font-size: 7em;
     }
+    .h2-1997{
+        letter-spacing: 8px;
+    }
+
 }
