@@ -774,6 +774,16 @@ a:hover{
         font-size: 0.7em;
     }
 
+    /*ESLIZAÇÃO PÁGINA MEMBROS*/
+    .membros{
+        margin-top: 2em;
+        width: 40em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
     .sobre{
         width: 40em;
@@ -878,6 +888,9 @@ a:hover{
         width: 9.5em;
     }
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
+    .membros{
+        width: 70em;
+    }
     .perfil{
         width: 12em;
         height: 10em;
@@ -1028,6 +1041,9 @@ a:hover{
         font-size: 0.9em;
     }
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
+    .membros{
+        width: 85em;
+    }
     .titulo_pagina{
         font-size: 2.5em;
     }
@@ -1180,6 +1196,9 @@ a:hover{
         font-size: 1.3em;
     }
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
+    .membros{
+        width: 95%;
+    }
     .titulo_pagina{
         font-size: 4em;
     }
