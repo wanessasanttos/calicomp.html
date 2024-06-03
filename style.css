@@ -122,7 +122,6 @@ a:hover{
         background-clip: text;
         background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-
     }
     .text-header{
         color: #A78295;
@@ -597,6 +596,60 @@ a:hover{
         padding-left: 25px;
         width: 70%;
     }
+    /*ESTILIZAÇÃO PÁGINA CONTATO*/
+    .contato{
+        width: 19em;
+        margin-top: 2em;
+        box-sizing: border-box;
+        background: rgb(63,46,62);
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    .contato>p{
+        text-align: justify;
+        margin-bottom: 2em;
+        color: #918185;
+        font-size: 0.6em;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.3em;
+        margin-bottom: 0.5em;
+    }
+    .icon_contato{
+        width: 1em;
+        height: 1em;
+    }
+    .row>h5{
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, #624f5d 16%,  #918185 43%, #918185 63%);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .row>h4{
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .mapa{
+        width: 19em;
+        height: 10em;
+        box-sizing: border-box;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        padding: 0.5em;
+    }
+    .mapa iframe{
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 
@@ -658,40 +711,56 @@ a:hover{
         width: 24.9em;
     }
 
-        /*ESTILIZAÇÃO PÁGINA SOBRE*/
-        .sobre{
-            width: 25em;
-        }
-        .sobre>p{
-            font-size: 0.5em;
-        }
-        .historia{
-            width: 25em;
-        }
-        .historia>h1{
-            font-size: 1.3em;
-        }
-        .topico_hist{
-            display: flex;
-            flex-direction: row;
-            padding-right: 2em;
-            gap: 2em;
-        }
-        .topico_hist>p{
-            text-align: justify;
-            color: #3F2E3E;
-            font-size: 6px;
-            font-weight: bold;
-        }
-        .topico_hist>h2{
-            color: #331d2c7e;
-            font-weight: normal;
-            width: 15em;
-            box-sizing: border-box;
-        }
-        .h2-1997{
-            letter-spacing: 3px;
-        }
+    /*ESTILIZAÇÃO PÁGINA SOBRE*/
+    .sobre{
+        width: 25em;
+    }
+    .sobre>p{
+        font-size: 0.5em;
+    }
+    .historia{
+        width: 25em;
+    }
+    .historia>h1{
+        font-size: 1.3em;
+    }
+    .topico_hist{
+        display: flex;
+        flex-direction: row;
+        padding-right: 2em;
+        gap: 2em;
+    }
+    .topico_hist>p{
+        text-align: justify;
+        color: #3F2E3E;
+        font-size: 6px;
+        font-weight: bold;
+    }
+    .topico_hist>h2{
+        color: #331d2c7e;
+        font-weight: normal;
+        width: 15em;
+        box-sizing: border-box;
+    }
+    .h2-1997{
+        letter-spacing: 3px;
+    }
+    /*ESTILIZAÇÃO PÁGINA CONTATO*/
+    .contato{
+        width: 25em;
+    }
+    .row{
+        gap: 1em;
+        align-items: center;
+    }
+    .icon_contato{
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .mapa{
+        width: 25em;
+        height: 13em;
+    }
 }
 
 
@@ -892,6 +961,26 @@ a:hover{
     .texto-rodape{
         font-size: 0.7em;
     }
+    /*ESTILIZAÇÃO PÁGINA CONTATO*/
+    .contato{
+        width: 40em;
+        padding: 1.5em 3em 1.5em 3em;
+        margin-bottom: 2em;
+    }
+    .contato>p{
+        font-size: 0.7em;
+    }
+    .row>h5{
+        font-size: 1em;
+    }
+    .row>h4{
+        font-size: 1.3em;
+    }
+    .mapa{
+        width: 40em;
+        height: 17em;
+        margin-bottom: 2em;
+    }
 }
 
 @media (min-width: 1024px){
@@ -1045,6 +1134,25 @@ a:hover{
     }
     .box-flutuante-icon{
         width: 9.5em;
+    }
+
+    /*ESTILIZAÇÃO PÁGINA CONTATO*/
+    .contato{
+        width: 55em;
+        margin-bottom: 3em;
+    }
+    .contato>p{
+        font-size: 0.8em;
+    }
+    .row>h5{
+        font-size: 1.2em;
+    }
+    .row>h4{
+        font-size: 1.6em;
+    }
+    .mapa{
+        width: 55em;
+        height: 20em;
     }
 }
 
@@ -1212,6 +1320,33 @@ a:hover{
     }
     .texto-rodape{
         font-size: 0.9em;
+    }
+
+    /*ESTILIZAÇÃO PÁGINA CONTATO*/
+    .contato{
+        width: 75em;
+        padding: 2em 4em;
+    }
+    .contato>p{
+        font-size: 1em;
+    }
+    .row{
+        margin-bottom: 1em;
+    }
+    .icon_contato{
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .row>h5{
+        font-size: 1.6em;
+    }
+    .row>h4{
+        font-size: 2.3em;
+    }
+    .mapa{
+        width: 75em;
+        height: 25em;
+        margin-bottom: 4em;
     }
 }
 
@@ -1435,11 +1570,31 @@ a:hover{
         font-size: 2em;
         width: 10em;
     }
-    .rodape{
-        padding-top: 3em;
-        padding-bottom: 3em;
+    /*ESTILIZAÇÃO PÁGINA CONTATO*/
+    .contato{
+        width: 130em;
+        padding: 3em 6em;
     }
-    .texto-rodape{
-        font-size: 1.8em;
+    .row{
+        margin-bottom: 2em;
+        gap: 2em;
+    }
+    .icon_contato{
+        width: 3.5em;
+        height: 3.5em;
+    }
+    .contato>p{
+        font-size: 1.7em;
+    }
+    .row>h5{
+        font-size: 3em;
+    }
+    .row>h4{
+        font-size: 4em;
+    }
+    .mapa{
+        width: 130em;
+        height: 40em;
+        margin-bottom: 6em;
     }
 }
