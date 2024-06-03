@@ -1116,21 +1116,33 @@ a:hover{
     }
 
     /*Estilização Página Eventos*/
-    .busca>input{
-        width: 15em;
+    /*Estilização Página Eventos*/
+    .search-btn{
+        width: 2em;
+        height: 2em;
     }
-    .todosEventos{
+    .search-box{
+        width: 50em;
+    }
+    .evento{
         width: 98%;
     }
     .eventoPC{
         width: 49,9%;
+    } 
+    .historico{
+        font-size: 1.6em;
     }
-    .busca>input{
-        width: 18em;
-        padding: 5px;
+    .search-txt{
+        font-size: 1.5em;
     }
     .rodape{
+        padding-top: 10px;
+        padding-bottom: 10px;
         width: 95%;
+    }
+    .texto-rodape{
+        font-size: 0.9em;
     }
     .box-flutuante-icon{
         width: 9.5em;
@@ -1311,7 +1323,7 @@ a:hover{
         width: 49,9%;
     } 
     .busca>input{
-        width: 18em;
+        width: 15em;
         padding: 5px;
     }
     .rodape{
@@ -1320,6 +1332,38 @@ a:hover{
     }
     .texto-rodape{
         font-size: 0.9em;
+    }
+    .search-box{
+        width: 60em;
+        margin-top: 1em;
+    }
+    .busca>input{
+        width: 13em;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .search-btn{
+        width: 2em;
+        height: 2em;
+        padding: 0.2em 0.2em;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .historico{
+        font-size: 1.6em;
+        padding: 2px 2px 2px 2px;
+        gap: 5px;
+        border-radius: 10px;
+        width: 12em;
+    }
+    .search-btn1{
+        width: 2em;
+        height:2em;
+        padding-left: 0.3em;
+    }
+    .search-txt{
+        font-size: 1.6em;
+        width: 13em;
     }
 
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
@@ -1348,6 +1392,77 @@ a:hover{
         height: 25em;
         margin-bottom: 4em;
     }
+}
+@media (min-width: 1920px) {
+
+     /*Estilização Página Eventos*/
+     .todosEventos{
+        width: 100%;
+        height: 26%;
+    }
+    .eventoPC{
+        width: 49%;
+    }
+    .evento{
+        height: 200px;
+    }
+    .conteudo_evento>h2{
+        font-size: 3em;
+    }
+    .conteudo_evento>p{
+        font-size:2em;
+    }
+    .dia{
+        font-size: 7em; 
+    }
+    .mes{
+        bottom: 50px;
+        font-size:2em;
+    }
+    .search-box{
+        width: 100em;
+        margin-top: 1em;
+    }
+    .busca>input{
+        width: 20em;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .search-btn{
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0.2em 0.2em;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .historico{
+        font-size: 1.8em;
+        padding: 3px 2px 3px 2px;
+        gap: 5px;
+        border-radius: 10px;
+        width: 12em;
+    }
+    .search-btn1{
+        width: 2em;
+        height:2em;
+        padding-left: 0.3em;
+    }
+    .eventos_icon{
+        width: 10px;
+        height: 5px;
+    }
+    .search-txt{
+        font-size: 2em;
+        width: 10em;
+    }
+    .rodape{
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    .texto-rodape{
+        font-size: 1.6em;
+    }
+    
 }
 
 @media (min-width: 2560px){
@@ -1502,74 +1617,73 @@ a:hover{
     .h2-1997{
         letter-spacing: 8px;
     }
-
     /*Estilização Página Eventos*/
-    .todosEventos{
-        width: 100%;
-        height: 24em;
-    }
-    .eventoPC{
-        width: 74,9em;
-    }
-    .evento{
-        height: 200px;
-    }
-    .conteudo_evento>h2{
-        font-size: 3em;
-    }
-    .conteudo_evento>p{
-        font-size:2em;
-    }
-    .dia{
-        font-size: 7em; 
-    }
-    .mes{
-        bottom: 50px;
-        font-size:2em;
-    }
-    .search-box{
-        width: 80em;
-        margin-top: 1em;
-    }
-    .busca>input{
-        width: 30em;
-        padding: 5px;
-    }
-    .search-box{
-        width: 100em;
-    }
-    .busca>input{
-        width: 10em;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    .search-btn{
-        width: 2.5em;
-        height: 2.5em;
-        padding: 0.2em 0.2em;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .historico{
-        font-size: 1.8em;
-        padding: 3px 2px 3px 2px;
-        gap: 5px;
-        border-radius: 10px;
-        width: 12em;
-    }
-    .search-btn1{
-        width: 2em;
-        height:2em;
-        padding-left: 0.3em;
-    }
-    .eventos_icon{
-        width: 10px;
-        height: 5px;
-    }
-    .search-txt{
-        font-size: 2em;
-        width: 10em;
-    }
+.todosEventos{
+    width: 100%;
+    height: 26%;
+}
+.eventoPC{
+    width: 49%;
+}
+.evento{
+    height: 200px;
+}
+.conteudo_evento>h2{
+    font-size: 3em;
+}
+.conteudo_evento>p{
+    font-size:2em;
+}
+.dia{
+    font-size: 7em; 
+}
+.mes{
+    bottom: 50px;
+    font-size:2em;
+}
+.search-box{
+    width: 100em;
+    margin-top: 1em;
+}
+.busca>input{
+    width: 20em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.search-btn{
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.2em 0.2em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.historico{
+    font-size: 1.8em;
+    padding: 3px 2px 3px 2px;
+    gap: 5px;
+    border-radius: 10px;
+    width: 12em;
+}
+.search-btn1{
+    width: 2em;
+    height:2em;
+    padding-left: 0.3em;
+}
+.eventos_icon{
+    width: 10px;
+    height: 5px;
+}
+.search-txt{
+    font-size: 2em;
+    width: 10em;
+}
+ .rodape{
+     padding-top: 1.5em;
+     padding-bottom: 1.5em;
+}
+ .texto-rodape{
+     font-size: 1.6em;
+}
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
         width: 130em;
