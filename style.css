@@ -1140,7 +1140,11 @@ a:hover{
         width: 49,9%;
     } 
     .historico{
-        font-size: 1.6em;
+        font-size: 1.4em;
+        width: 11em;
+        padding: 2px 1px 2px 1px;
+        gap: 4px;
+        border-radius: 10px;
     }
     .search-txt{
         font-size: 1.5em;
@@ -1323,17 +1327,14 @@ a:hover{
         width: 49,9%;
     } 
     .busca>input{
-        width: 15em;
+        width: 10em;
         padding: 5px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
     .search-box{
         width: 60em;
         margin-top: 1em;
-    }
-    .busca>input{
-        width: 13em;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
     }
     .search-btn{
         width: 2em;
@@ -1343,8 +1344,8 @@ a:hover{
         border-bottom-right-radius: 10px;
     }
     .historico{
-        font-size: 1.6em;
-        padding: 2px 2px 2px 2px;
+        font-size: 1.4em;
+        padding: 3px 2px 3px 2px;
         gap: 5px;
         border-radius: 10px;
         width: 12em;
