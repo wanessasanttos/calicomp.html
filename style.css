@@ -478,7 +478,6 @@ a:hover{
         background-clip: text;
         background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-
     }
     .search-box{
         width: 19em;
@@ -605,7 +604,7 @@ a:hover{
         border-radius: 5px;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         padding: 1em;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
     .contato>p{
         text-align: justify;
@@ -638,7 +637,7 @@ a:hover{
     }
     .mapa{
         width: 19em;
-        height: 10em;
+        height: 12em;
         box-sizing: border-box;
         background: #fff;
         border-radius: 5px;
@@ -682,6 +681,24 @@ a:hover{
     .rodape{
         width: 21.9em;
     }
+    /*ESTILIZAÇÃO PÁGINA CONTATO*/
+    .contato{
+        width: 22em;
+        margin-bottom: 2em;
+    }
+    .row{
+        gap: 1em;
+        align-items: center;
+    }
+    .icon_contato{
+        width: 1.2em;
+        height: 1.2em;
+    }
+    .mapa{
+        width: 22em;
+        height: 15em;
+        margin-bottom: 2em;
+    }
 }
 
 @media (min-width: 425px){
@@ -689,7 +706,6 @@ a:hover{
         width: 80%;
         text-indent: 1em;
         text-align: center;
-
     }
     .icon_menu{
         width: 1.7em;
@@ -870,10 +886,12 @@ a:hover{
     }
     .rodape{
         width: 90%;
-        padding: 0.6em 0em;;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        padding: 0.6em 0.3em 0.6em 0.3em;
+        border-radius: 10px;
     }
     .texto-rodape{
-        color: #a7909c;
         font-size: 0.7em;
     }
 
@@ -953,13 +971,6 @@ a:hover{
     }
     .eventoPC{
         width: 49%; 
-    }
-    .rodape{
-        width: 90%;
-        padding: 0.6em 0em;;
-    }
-    .texto-rodape{
-        font-size: 0.7em;
     }
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
@@ -1114,8 +1125,6 @@ a:hover{
     .h2-1997{
         letter-spacing: 6px;
     }
-
-    /*Estilização Página Eventos*/
     /*Estilização Página Eventos*/
     .search-btn{
         width: 2em;
@@ -1135,14 +1144,6 @@ a:hover{
     }
     .search-txt{
         font-size: 1.5em;
-    }
-    .rodape{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 95%;
-    }
-    .texto-rodape{
-        font-size: 0.9em;
     }
     .box-flutuante-icon{
         width: 9.5em;
@@ -1234,11 +1235,10 @@ a:hover{
         left: 23em;
     }
     .rodape{
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 0.7em 0;
     }
     .texto-rodape{
-        font-size: 0.9em;
+        font-size: 1em;
     }
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
     .membros{
@@ -1325,13 +1325,6 @@ a:hover{
     .busca>input{
         width: 15em;
         padding: 5px;
-    }
-    .rodape{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .texto-rodape{
-        font-size: 0.9em;
     }
     .search-box{
         width: 60em;
@@ -1455,13 +1448,6 @@ a:hover{
         font-size: 2em;
         width: 10em;
     }
-    .rodape{
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
-    }
-    .texto-rodape{
-        font-size: 1.6em;
-    }
     
 }
 
@@ -1535,13 +1521,6 @@ a:hover{
     }
     .seta_botao{
         width: 20px;
-    }
-    .rodape{
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
-    }
-    .texto-rodape{
-        font-size: 1.8em;
     }
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
     .membros{
