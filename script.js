@@ -11,7 +11,7 @@ function click_menu(){
 }
 
 //SLIDESHOW NOTÍCIAS -------------------------------------
-if(window.location.pathname.includes('/index.html') || window.location.hostname.includes('/calicomp.vercel.app')){ //verifica se é a página inicial
+if(window.location.pathname.includes('/index.html') || window.location.hostname.includes('calicomp.vercel.app')){ //verifica se é a página inicial
     let contador = 1;
 
     document.getElementById("radio1").checked = true;
