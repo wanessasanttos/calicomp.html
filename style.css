@@ -452,65 +452,41 @@ a:hover{
     .h2-1997{
         letter-spacing: 3px;
     }
-    /*Estilização Página Eventos*/
-    /*Estilização Página Eventos*/
-    .elementos-header{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.4em;
-        padding-top: 1em;
-    }
-    .elementos-header-row{
-        display: flex;
-        flex-direction: row;
-        margin-top: 2.3em;
-        align-items: center;
-        gap: 1em;
-    }
-    .logo{
-        width: 4em;
-    }
-    .title{
-        font-size: 2.2em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    }
+
+    /*ESTILIZAÇÃO PÁGINA EVENTOS*/
     .search-box{
-        width: 19em;
+        width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 1em;
+        margin-top: 2em;
+        margin-bottom: 1em;
     }
     .busca{
         display: flex;
         flex-direction: row;
         align-items: center;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
     }
     .busca>input{
-        width: 10em;
+        width: 18em;
         padding: 5px;
         background-color: #A78295;
-        color: white;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
+    .busca>input::placeholder{
+        color: white;
+    }
     .search-btn{
-        width: 1em;
-        height: 1em;
-        cursor: pointer;
+        width: 1.3em;
+        height: 1.3em;
         padding: 0.13em 0.3em;
         border: solid 1px #A78295;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
     .historico{
-        cursor: pointer;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -520,15 +496,18 @@ a:hover{
         border: none;
         background: rgb(167, 130, 149);
         background: linear-gradient(203deg, rgba(167, 130, 149, 1) 2%, rgba(239, 225, 209, 1) 34%);
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+        font-family: Poppins;
+        font-size: 0.7em;
+    }
+    .texto-botao-historico{
+        display: none;
     }
     .search-btn1{
-        width: 1.2em;
-        height: 1.2em;
-        padding-left: 0.3em;
-    }
-    .eventos_icon{
-        width: 10px;
-        height: 10px;
+        width: 1.7em;
+        height: 1.7em;
+        padding: 0em 0.3em;
+    
     }
     .search-txt{
         color: #fff;
@@ -540,7 +519,7 @@ a:hover{
         line-height: 0,5em;
         width: 6em;
         display: flex;
-        cursor: pointer;
+        font-family: Poppins;
     }
     .todosEventos{
         display: flex;
@@ -552,11 +531,13 @@ a:hover{
     .evento{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        height: 100px;
+        height: 6em;
         background: linear-gradient(180deg, rgba(63, 46, 62, 0.4780111873851103) 6%, rgba(167, 130, 149, 0.19509802211900384) 50%, rgba(63, 46, 62, 0.48081230783328954) 94%);
         border-radius: 5px;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+        gap: 0.5em;
     }
     .eventoPC{
         width:100%;
@@ -568,35 +549,42 @@ a:hover{
     .data_evento{
         display: flex;
         flex-direction: column;
-        width: 30%;
-        padding-left: 20px;
+        align-items: center;
+        width: 6em;
+        padding: 0.5em;
         color:transparent;
         background-clip: text;
         background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
     }
     .dia{
-        font-size: 3.5em; 
+        font-size: 3em;
+        width: 100%;
+        height: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .mes{
-        position: relative;
-        bottom: 20px;
-        color: #FFF2ED;
-    }
-    .conteudo_evento>h2{
-        color:#A78295;
-        font-size: 0.8em;
-        font-style: normal;
-    }
-    .conteudo_evento>p{
-        color: #EFE1D1;
-        font-size:1em;
+        font-size: 0.7em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
     }
     .conteudo_evento{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding-left: 25px;
-        width: 70%;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .conteudo_evento>h2{
+        color:#A78295;
+        font-size: 1.1em;
+        font-style: normal;
+        margin-bottom: 0.5em;
+    }
+    .conteudo_evento>p{
+        color: #EFE1D1;
+        font-size:0.7em;
     }
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
@@ -684,6 +672,12 @@ a:hover{
     .rodape{
         width: 21.9em;
     }
+    
+    /*ESTILIZAÇÃO PÁGINA EVENTOS*/
+    .busca>input{
+        width: 22em;
+    }
+
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
         width: 22em;
@@ -728,6 +722,15 @@ a:hover{
     }
     .rodape{
         width: 24.9em;
+    }
+    /*ESTILIZAÇÃO PÁGINA EVENTOS*/
+    .busca>input{
+        width: 26em;
+        padding: 5px;
+        background-color: #A78295;
+        color: white;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
 
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
@@ -947,35 +950,33 @@ a:hover{
         letter-spacing: 6px;
     }
 
-    /*Estilização Página Eventos*/ 
-    .search-box{
-        width: 25em;
+    /*ESTILIZAÇÃO PÁGINA EVENTOS*/ 
+    .busca>input{
+        width: 40em;
     }
-    .elementos-header{
-        margin-bottom: 2em;
-    }
-    .elementos-header-row{
-        margin-top: 4em;
-    }
-    .logo{
-        width: 6em;
-    }
-    .title{
-        font-size: 2.9em;
+    .texto-botao-historico{
+        display: block;
+        color: #331D2C;
+        font-size: 1em;
+        font-weight: bold;
+        padding-left: 0.5em;
     }
      .todosEventos{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
     }
     .evento{
-        width: 98%;
+        width: 100%;
     }
     .eventoPC{
-        width: 48%; 
+        width: 48%;
     }
-    
+    .data_eventoPC{
+        width: 5em;
+    }
+ 
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
         width: 40em;
@@ -1129,38 +1130,6 @@ a:hover{
     .h2-1997{
         letter-spacing: 6px;
     }
-    /*Estilização Página Eventos*/
-    .search-box{
-        width: 56em;
-        margin-top: 1em;
-    }
-    .search-box>.busca{
-        margin-right: 20em;
-    }
-    .busca>input{
-        width: 20em;
-        padding: 5px;
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px;
-    }
-    .search-btn{
-        width: 1em;
-        height: 1em;
-        padding: 0.25em 0.4em;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-    .historico{
-        padding: 2.5px 2px 2.5px 2px;
-        gap: 3px;
-        font-size: 1.2em;
-        width: 11.1em;
-    }
-    .search-txt{
-        font-size: 0.9em;
-        line-height: 0,5em;
-        width: 20em;
-    }
 
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
@@ -1253,6 +1222,7 @@ a:hover{
     .texto-rodape{
         font-size: 1em;
     }
+
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
     .membros{
         width: 85em;
@@ -1328,55 +1298,55 @@ a:hover{
     .h2-1997{
         letter-spacing: 8px;
     }
-    /*Estilização Página Eventos*/
-    .evento{
-        width: 98%;
-        height: 170px;   
-    }
+
+    /*ESTILIZAÇÃO PÁGINA EVENTOS*/
     .busca>input{
-        width: 20em;
-    }
-    .search-box{
-        width: 79em;
+        width: 40em;
+        font-size: 1em;
     }
     .search-btn{
-        width: 2em;
-        height: 2em;
-        padding: 0.2em 0.2em;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        width: 1.8em;
+        height: 1.8em;
+        padding: 0.13em 0.5em;
     }
     .historico{
-        font-size: 1.6em;
-        padding: 3px 2px 3px 2px;
-        gap: 5px;
-        border-radius: 10px;
-        width: 12em;
+        font-size: 1em;
     }
     .search-btn1{
         width: 2em;
-        height:2em;
-        padding-left: 0.3em;
+        height: 2em;
+        padding: 0em 0.5em;
     }
-    .search-txt{
-        font-size: 1.8em;
-        width: 20em;
+    .todosEventos{
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    .evento{
+        height: 10em;
     }
     .data_evento{
-        width: 25%;
+        width: 10em;
+    }
+    .data_eventoPC{
+        width: 8.5em;
     }
     .dia{
-        font-size: 5em; 
+        font-size: 5em;
     }
     .mes{
-        font-size: 2em;
+        font-size: 1em;
+    }
+    .conteudo_evento{
+        margin-bottom: 2em;
     }
     .conteudo_evento>h2{
-        font-size: 3em;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
     }
     .conteudo_evento>p{
-        font-size:2em;
+        font-size:0.9em;
     }
+
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
         width: 75em;
@@ -1403,67 +1373,6 @@ a:hover{
         height: 25em;
         margin-bottom: 4em;
     }
-}
-@media (min-width: 1920px) {
-     /*Estilização Página Eventos*/
-    .evento{
-        width: 99%;
-        height: 190px;   
-    }
-    .eventoPC{
-        width: 49%;
-    }
-    .search-box>.busca{
-        margin-right: 30em;
-    }
-    .busca>input{
-        width: 22em;
-    }
-    .search-box{
-        width: 107em;
-    }
-    .search-btn{
-        width: 2.6em;
-        height: 2.6em;
-        padding: 0.2em 0.2em;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .eventos_icon{
-        width: 10px;
-        height: 10px;
-    }
-    .historico{
-        font-size: 2.5em;
-        padding: 3px 2px 3px 2px;
-        gap: 5px;
-        border-radius: 10px;
-        width: 12em;
-    }
-    .search-btn1{
-        width: 2em;
-        height:2em;
-        padding-left: 0.3em;
-    }
-    .search-txt{
-        font-size: 2em;
-        width: 22em;
-    }
-    .data_evento{
-        width: 25%;
-    }
-    .dia{
-        font-size: 6.3em; 
-    }
-    .mes{
-        font-size: 2,9em;
-    }
-    .conteudo_evento>h2{
-        font-size: 4.5em;
-    }
-    .conteudo_evento>p{
-        font-size:2.8em;
-    }    
 }
 
 @media (min-width: 2560px){
@@ -1536,6 +1445,12 @@ a:hover{
     }
     .seta_botao{
         width: 20px;
+    }
+    .rodape{
+        padding: 1em 0;
+    }
+    .texto-rodape{
+        font-size: 1.7em;
     }
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
     .membros{
@@ -1611,63 +1526,58 @@ a:hover{
     .h2-1997{
         letter-spacing: 8px;
     }
-    /*Estilização Página Eventos*/
-    .evento{
-        width: 99.2%;
-        height: 300px;   
-    }
-    .eventoPC{
-        width: 49.6%;
-    }
-    .search-box>.busca{
-        margin-right: 30em;
-    }
+
+    /*ESTILIZAÇÃO PÁGINA EVENTOS*/
     .busca>input{
-        width: 22em;
-    }
-    .search-box{
-        width: 143em;
+        width: 50em;
+        font-size: 1.7em;
     }
     .search-btn{
-        width: 3.3em;
-        height: 3.3em;
-        padding: 0.3em 0.3em;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .eventos_icon{
-        width: 10px;
-        height: 10px;
+        width: 2.7em;
+        height: 2.7em;
+        padding: 0.13em 1em;
+        border: solid 2px #A78295;
     }
     .historico{
-        font-size: 3em;
-        padding: 3px 2px 3px 2px;
-        gap: 6px;
-        border-radius: 10px;
-        width: 12em;
+        font-size: 1.7em;
+        gap: 2em;
     }
     .search-btn1{
         width: 2em;
-        height:2em;
-        padding-left: 0.3em;
+        height: 2em;
+        padding: 0em 0.5em;
     }
-    .search-txt{
-        font-size: 3em;
-        width: 22em;
+    .todosEventos{
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+    .evento{
+        height: 15em;
+    }
+    .data_evento{
+        width: 15em;
+    }
+    .data_eventoPC{
+        width: 13em;
     }
     .dia{
-        font-size: 11em; 
+        font-size: 7em;
     }
     .mes{
-        font-size: 3.7em;
-        bottom:80px;
-        padding-left: 0.15em;
+        font-size: 2em;
+    }
+    .conteudo_evento{
+        margin-bottom: 4em;
     }
     .conteudo_evento>h2{
-        font-size: 4.5em;
+        color:#A78295;
+        font-size: 2.5em;
+        font-style: normal;
+        margin-bottom: 0.2em;
     }
     .conteudo_evento>p{
-        font-size:2.8em;
+        color: #EFE1D1;
+        font-size:1.5em;
     }
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
