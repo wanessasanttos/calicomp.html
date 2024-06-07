@@ -241,12 +241,14 @@ a:hover{
         background: linear-gradient(194deg, rgba(63,46,62,0.49) 48%, rgba(63,46,62,0.49) 48%);
         border-radius: 5px;
         padding: 1em;
-        width: 85%;
-        height: 7.5em;
+        width: 90%;
+        height: 100%;
         gap: 1em;
         margin-top: 1em;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        box-sizing: border-box;
     }
     .anuncios_f>p{
         font-size: 0.4em;
@@ -264,7 +266,7 @@ a:hover{
         margin-top: 0.5em;
     }
     .botao{
-        margin-left: 5em;
+        margin-left: 2em;
         width: 12em;
         color: #331D2C;
         font-family: Poppins;
@@ -273,7 +275,7 @@ a:hover{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 5px 8px 5px 8px;
+        padding: 3px 5px 3px 5px;
         border: none;
         border-radius: 0.5em;
         cursor: pointer;
@@ -673,9 +675,6 @@ a:hover{
         width: 24em;
         margin-top: 159px; /*+47px*/
     }
-    .anuncios{
-        height: 8.5em;
-    }
     .anuncios_f>p{
         font-size: 0.5em;
     }
@@ -683,7 +682,7 @@ a:hover{
         font-size: 3.5em;
     }
     .botao{
-        margin-left: 9em;
+        margin-left: 4em;
     }
     .rodape{
         width: 21.9em;
@@ -737,9 +736,6 @@ a:hover{
     .slideshow, .imagem img, .navegacaoManual, .navegacaoAuto, .seta_click_pai{
         width: 27em;
     }
-    .anuncios{
-        height: 10.5em;
-    }
     .anuncios_f>p{
         font-size: 0.6em;
     }
@@ -747,7 +743,7 @@ a:hover{
         font-size: 4em;
     }
     .botao{
-        margin-left: 8em;
+        margin-left: 5em;
         font-size: 0.6em;
     }
     .rodape{
@@ -905,7 +901,7 @@ a:hover{
         margin-top: 249.4px;
     }
     .anuncios{
-        width: 35.5em;
+        width: 85%;
         margin-top: 2em;
         border-radius: 10px;
         gap: 2em;
@@ -1062,7 +1058,6 @@ a:hover{
         margin-top: 341.8px;
     }
     .anuncios{
-        width: 50.5em;
         margin-top: 2em;
         padding: 3em 4em;
         border-radius: 15px;
@@ -1078,8 +1073,7 @@ a:hover{
 
     }
     .botao{
-        margin-left: 21em;
-        top: 0em;
+        margin-left: 13em;
         font-size: 0.9em;
         padding: 10px 14px 10px 14px;
     }
@@ -1241,12 +1235,12 @@ a:hover{
         margin-top: 436.8px;
     }
     .anuncios{
+        width: 75em;
         display: flex;
         align-items: center;
-        width: 65.5em;
         margin-top: 4em;
         margin-bottom: 4em;
-        padding: 7em;
+        padding: 4em;
         gap: 5em;
         border-radius: 25px;
     }
@@ -1476,22 +1470,21 @@ a:hover{
         margin-top: 715.8px;
     }
     .anuncios{
-        width: 115.5em;
+        width: 125em;
         margin-top: 6em;
         margin-bottom: 6em;
-        padding: 150px;
+        padding: 7em;
         gap: 10em;
-        height: 15em;
     }
     .anuncios_f>p{
         font-size: 2em;
         margin-bottom: 3em;
     }
     .anuncios>h1{
-        font-size: 15em;
+        font-size: 17em;
     }
     .botao{
-        left: 23em;
+        margin-left: 23em;
         padding: 20px 30px 20px 30px;
         font-size: 2em;
     }
