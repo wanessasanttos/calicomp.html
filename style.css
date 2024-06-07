@@ -240,26 +240,30 @@ a:hover{
         background: rgb(63,46,62);
         background: linear-gradient(194deg, rgba(63,46,62,0.49) 48%, rgba(63,46,62,0.49) 48%);
         border-radius: 5px;
-        padding: 20px;
+        padding: 1em;
         width: 85%;
-        gap: 1.5em;
+        height: 7em;
+        gap: 1em;
         margin-top: 1em;
+        margin-bottom: 2em;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
     }
     .anuncios_f>p{
-        margin-bottom: 1em;
-        font-size: 6px;
+        font-size: 0.4em;
         color: #A78295;
         text-align: justify;
+        margin-top: 1em;
     }
     .anuncios>h1{
         color:transparent;
         background-clip: text;
         background-image: linear-gradient(180deg, #8f7281 0%, #331D2C 90%);
+        font-size: 3em;
     }
     .botao{
         position: relative;
-        left: 6em;
+        left: 5.5em;
+        top: 1em;
         width: 12em;
         color: #331D2C;
         font-family: Poppins;
@@ -658,7 +662,6 @@ a:hover{
         width: 24em;
         height: 11em; 
     }
-
     .seta_click, .seta_click_right{
         height: 11em;
     }
@@ -668,6 +671,18 @@ a:hover{
     .navegacaoAuto{
         width: 24em;
         margin-top: 159px; /*+47px*/
+    }
+    .anuncios{
+        height: 8em;
+    }
+    .anuncios_f>p{
+        font-size: 0.5em;
+    }
+    .anuncios>h1{
+        font-size: 3.5em;
+    }
+    .botao{
+        left: 9em;
     }
     .rodape{
         width: 21.9em;
@@ -700,9 +715,10 @@ a:hover{
 
 @media (min-width: 425px){
     .text-header{
-        width: 80%;
+        width: 82%;
         text-indent: 1em;
         text-align: center;
+        font-size: 0.4em;
     }
     .icon_menu{
         width: 1.7em;
@@ -719,6 +735,19 @@ a:hover{
     }
     .slideshow, .imagem img, .navegacaoManual, .navegacaoAuto, .seta_click_pai{
         width: 27em;
+    }
+    .anuncios{
+        height: 10em;
+    }
+    .anuncios_f>p{
+        font-size: 0.6em;
+    }
+    .anuncios>h1{
+        font-size: 4em;
+    }
+    .botao{
+        left: 8em;
+        font-size: 0.6em;
     }
     .rodape{
         width: 24.9em;
@@ -878,16 +907,17 @@ a:hover{
         width: 35.5em;
         margin-top: 2em;
         border-radius: 10px;
+        gap: 2em;
+        padding: 2em;
     }
     .anuncios_f>p{
         font-size: 0.7em;
-        margin-bottom: 2em;
     }
     .anuncios>h1{
-        font-size: 4em;
+        font-size: 5em;
     }
     .botao{
-        left: 20em;
+        left: 19em;
         font-size: 0.7em;
     }
     .rodape{
@@ -1030,20 +1060,28 @@ a:hover{
     .anuncios{
         width: 50.5em;
         margin-top: 2em;
-        padding: 50px;
+        padding: 3em 4em;
         border-radius: 15px;
     }
     .anuncios_f>p{
         font-size: 0.9em;
-        margin-bottom: 3em;
+        margin-bottom: 1em;
     }
     .anuncios>h1{
-        font-size: 6em;
+        font-size: 8em;
+        position: relative;
+        bottom: 0.2em;
+
     }
     .botao{
-        left: 20em;
+        left: 22em;
+        top: 0em;
         font-size: 0.9em;
         padding: 10px 14px 10px 14px;
+    }
+    .seta_botao{
+        padding-left: 2em;
+        width: 14px;
     }
     .rodape{
         width: 95%;
@@ -1199,22 +1237,29 @@ a:hover{
         margin-top: 436.8px;
     }
     .anuncios{
+        display: flex;
+        align-items: center;
         width: 65.5em;
         margin-top: 4em;
         margin-bottom: 4em;
-        padding: 70px;
+        padding: 7em;
         gap: 5em;
         border-radius: 25px;
     }
     .anuncios_f>p{
-        font-size: 1em;
-        margin-bottom: 3em;
+        font-size: 1.2em;
     }
     .anuncios>h1{
-        font-size: 8em;
+        font-size: 10em;
     }
     .botao{
-        left: 23em;
+        left: 16em;
+        font-size: 1.3em;
+    }
+    .seta_botao{
+
+        width: 20px;
+        height: 20px;
     }
     .rodape{
         padding: 0.7em 0;
@@ -1384,7 +1429,6 @@ a:hover{
         padding: 0.5em 5em 0.5em 5em;
         justify-content: space-between;
     }
-
     a{
         font-size: 1.3em;
     }
@@ -1428,23 +1472,25 @@ a:hover{
         width: 115.5em;
         margin-top: 6em;
         margin-bottom: 6em;
-        padding: 100px;
+        padding: 150px;
         gap: 10em;
+        height: 15em;
     }
     .anuncios_f>p{
-        font-size: 1.5em;
+        font-size: 2em;
         margin-bottom: 3em;
     }
     .anuncios>h1{
-        font-size: 10em;
+        font-size: 15em;
     }
     .botao{
         left: 23em;
         padding: 20px 30px 20px 30px;
-        font-size: 1.5em;
+        font-size: 2em;
     }
     .seta_botao{
-        width: 20px;
+        width: 30px;
+        height: 30px;
     }
     .rodape{
         padding: 1em 0;
