@@ -321,6 +321,7 @@ a:hover{
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
     .membros{
         margin-top: 2em;
+        margin-bottom: 2em;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -329,7 +330,7 @@ a:hover{
     }
     .perfil{
         width: 8em;
-        height: 6em;
+        height: 7em;
         margin-left: 0.5em;
         margin-right: 0.5em;
         background: #cbacc39c;
@@ -696,6 +697,28 @@ a:hover{
     .rodape{
         width: 21.9em;
     }
+    /*ESTILIZAÇÃO PÁGINA MEMBROS*/
+    .perfil{
+        width: 41%;
+        height: 9em; 
+        margin-bottom: 0.5em;
+
+    }
+    .perfil:hover{
+        transform: scale(1.2);
+    }
+    .icon_perfil{
+        width: 5em;
+        height: 5em;
+        padding-bottom: 0.4em;
+    }
+    .perfil h2{
+        font-size: 0.7em;
+    }
+    .perfil h3{
+        font-size: 0.5em;
+    }
+
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
     .historia>h1{
         font-size: 1.5em;
@@ -943,6 +966,13 @@ a:hover{
         justify-content: center;
         gap: 1em;
     }
+    .perfil h2{
+        font-size: 0.9em;
+    }
+    .perfil h3{
+        font-size: 0.7em;
+    }
+
 
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
     .sobre{
