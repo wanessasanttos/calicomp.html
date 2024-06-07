@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALICOMP- Eventos</title>
+    <title>CALICOMP - Eventos</title>
     <link rel="stylesheet" type="text/css" href="style.css" media ="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +68,7 @@
 
         <!--BLOCO DE  EVENTOS MAIOR-->
         <div class="todosEventos">
-            <div class="evento">
+            <div class="evento" onclick="destacarEvento('evento1')">
                 <div class="data_evento data_eventoPC">
                     <h3 class="dia">14</h3>
                     <h3 class="mes">Janeiro</h3>
@@ -80,7 +80,7 @@
             </div>
 
             <!--BLOCO DE EVENTOS MENOR-->
-            <div class="eventoPC">
+            <div class="eventoPC" onclick="destacarEvento('evento2')">
                     <div class="evento">
                         <div class="data_evento">
                             <h3 class="dia">11</h3>
@@ -92,45 +92,46 @@
                     </div>
                     </div>
             </div>
-            <div class="eventoPC">
+            <div class="eventoPC" onclick="destacarEvento('evento3')">
                 <div class="evento">
                     <div class="data_evento">
                         <h3 class="dia">02</h3>
                         <h3 class="mes">Junho</h3>
                     </div>
                 <div class="conteudo_evento">
-                    <h2>Evento W</h2>
+                    <h2>Evento Z</h2>
                     <p>Descrição do evento...</p>
                 </div>
                 </div>
             </div>
-            <div class="eventoPC">
+            <div class="eventoPC" onclick="destacarEvento('evento4')">
                 <div class="evento">
                     <div class="data_evento">
                         <h3 class="dia">13</h3>
                         <h3 class="mes">Agosto</h3>
                     </div>
                 <div class="conteudo_evento">
-                    <h2>Evento W</h2>
+                    <h2>Evento A</h2>
                     <p>Descrição do evento...</p>
                 </div>
                 </div>
             </div>
-            <div class="eventoPC">
+            <div class="eventoPC" onclick="destacarEvento('evento5')">
                 <div class="evento">
                     <div class="data_evento">
                         <h3 class="dia">27</h3>
                         <h3 class="mes">Dezembro</h3>
                     </div>
                 <div class="conteudo_evento">
-                    <h2>Evento W</h2>
+                    <h2>Evento J</h2>
                     <p>Descrição do evento...</p>
                 </div>
                 </div>
             </div>
         </div>
+
         <!--EVENTOS - DETALHES-->
-        <div class="evento-click">
+        <div class="evento-click" id="evento1">
             <div class="evento-destaque">
                 <div class="evento-img">
                     <!--img de divulgação do evento-->
@@ -138,7 +139,59 @@
                 <h3>EVENTO V</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
                 <div class="evento-row">
-                    <button class="evento-botao">VOLTAR</button>
+                    <button class="evento-botao" onclick="botaoVoltar('evento1')">VOLTAR</button>
+                    <button class="evento-botao">INCREVER-SE</button>
+                </div>
+            </div>
+        </div>
+        <div class="evento-click" id="evento2">
+            <div class="evento-destaque">
+                <div class="evento-img">
+                    <!--img de divulgação do evento-->
+                </div>
+                <h3>EVENTO W</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
+                <div class="evento-row">
+                    <button class="evento-botao" onclick="botaoVoltar('evento2')">VOLTAR</button>
+                    <button class="evento-botao">INCREVER-SE</button>
+                </div>
+            </div>
+        </div>
+        <div class="evento-click" id="evento3">
+            <div class="evento-destaque">
+                <div class="evento-img">
+                    <!--img de divulgação do evento-->
+                </div>
+                <h3>EVENTO Z</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
+                <div class="evento-row">
+                    <button class="evento-botao" onclick="botaoVoltar('evento3')">VOLTAR</button>
+                    <button class="evento-botao">INCREVER-SE</button>
+                </div>
+            </div>
+        </div>
+        <div class="evento-click" id="evento4">
+            <div class="evento-destaque">
+                <div class="evento-img">
+                    <!--img de divulgação do evento-->
+                </div>
+                <h3>EVENTO A</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
+                <div class="evento-row">
+                    <button class="evento-botao" onclick="botaoVoltar('evento4')">VOLTAR</button>
+                    <button class="evento-botao">INCREVER-SE</button>
+                </div>
+            </div>
+        </div>
+        <div class="evento-click" id="evento5">
+            <div class="evento-destaque">
+                <div class="evento-img">
+                    <!--img de divulgação do evento-->
+                </div>
+                <h3>EVENTO J</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
+                <div class="evento-row">
+                    <button class="evento-botao" onclick="botaoVoltar('evento5')">VOLTAR</button>
                     <button class="evento-botao">INCREVER-SE</button>
                 </div>
             </div>

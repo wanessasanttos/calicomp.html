@@ -62,3 +62,23 @@ function retirarDestaque(ID){
         destaque.style.display = "none";
     }
 }
+
+//EVENTOS - CLIQUE PARA DETALHES -------------------------------------
+function destacarEvento(ID){                                               
+    let destaque = document.getElementById(ID);
+    destaque.style.display = "flex";
+}
+
+function retirarDestaqueEvento(ID){
+    let destaque = document.getElementById(ID);
+    if(destaque.style.display === "flex"){
+        destaque.style.display = "none";
+    }
+}
+
+function botaoVoltar(ID){
+    let destaque = document.getElementById(ID);
+    if(destaque.style.display === "flex"){
+        destaque.style.display = "none";
+    }
+}
