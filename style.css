@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 header{
     width: 100%;
@@ -598,6 +599,75 @@ a:hover{
         color: #EFE1D1;
         font-size:0.7em;
     }
+    .evento-click{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 130%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .evento-destaque{
+        position: fixed;
+        bottom: 2em;
+        display: flex;
+        width: 80%;
+        height: auto;
+        background: rgb(56,37,52);
+        background: linear-gradient(0deg, rgba(56,37,52,1) 12%, rgba(71,48,63,1) 40%, rgba(68,46,61,1) 55%, rgba(56,37,52,1) 83%);
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+    .evento-img{
+        width: 15em;
+        height: 7em;
+        margin-top: 1em;
+        background-color: white;
+    }
+    .evento-destaque>h3{
+        font-size: 1.5em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+        margin-top: 2em;
+
+    }
+    .evento-destaque>p{
+        font-size: 0.7em;
+        text-align: justify;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+    .evento-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 15em;
+        box-sizing: border-box;
+        margin-bottom: 1em;
+    }
+    .evento-botao{
+        width: 8em;
+        color: #331D2C;
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 0.7em;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        border: none;
+        border-radius: 0.5em;
+        cursor: pointer;
+        background: rgb(167, 130, 149);
+        background: linear-gradient(203deg, rgba(167, 130, 149, 1) 2%, rgba(239, 225, 209, 1) 34%); 
+    }
 
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
@@ -733,6 +803,9 @@ a:hover{
     .busca>input{
         width: 22em;
     }
+    .evento-img{
+        width: 17em;
+    }
     
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
@@ -797,6 +870,10 @@ a:hover{
         color: white;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+    }
+    .evento-img{
+        width: 19em;
+        height: 8em;
     }
 
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
@@ -1039,6 +1116,46 @@ a:hover{
     .data_eventoPC{
         width: 5em;
     }
+    .evento-img{
+        width: 36em;
+        height: 15em;
+    }
+    .evento-destaque>h3{
+        font-size: 2em;
+        margin-top: 1em;
+
+    }
+    .evento-destaque>p{
+        font-size: 0.8em;
+    }
+
+
+
+
+    .evento-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 15em;
+        box-sizing: border-box;
+    }
+    .evento-botao{
+        width: 8em;
+        color: #331D2C;
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 0.7em;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        border: none;
+        border-radius: 0.5em;
+        cursor: pointer;
+        background: rgb(167, 130, 149);
+        background: linear-gradient(203deg, rgba(167, 130, 149, 1) 2%, rgba(239, 225, 209, 1) 34%); 
+    }
+
  
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
