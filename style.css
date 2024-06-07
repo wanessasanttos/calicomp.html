@@ -645,7 +645,7 @@ a:hover{
     }
     .mapa{
         width: 90%;
-        height: 12em;
+        height: 11em;
         box-sizing: border-box;
         background: #fff;
         border-radius: 5px;
@@ -749,7 +749,7 @@ a:hover{
     }
     .mapa{
         width: 22em;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
 }
 
