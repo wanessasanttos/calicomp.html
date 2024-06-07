@@ -260,10 +260,11 @@ a:hover{
         background-image: linear-gradient(180deg, #8f7281 0%, #331D2C 90%);
         font-size: 3em;
     }
+    .div-botao{
+        margin-top: 0.5em;
+    }
     .botao{
-        position: relative;
-        left: 5.5em;
-        top: 1em;
+        margin-left: 5em;
         width: 12em;
         color: #331D2C;
         font-family: Poppins;
@@ -682,7 +683,7 @@ a:hover{
         font-size: 3.5em;
     }
     .botao{
-        left: 9em;
+        margin-left: 9em;
     }
     .rodape{
         width: 21.9em;
@@ -746,7 +747,7 @@ a:hover{
         font-size: 4em;
     }
     .botao{
-        left: 8em;
+        margin-left: 8em;
         font-size: 0.6em;
     }
     .rodape{
@@ -916,8 +917,11 @@ a:hover{
     .anuncios>h1{
         font-size: 5em;
     }
+    .div-botao{
+        margin-top: 1.5em;
+    }
     .botao{
-        left: 19em;
+        margin-left: 19em;
         font-size: 0.7em;
     }
     .rodape{
@@ -1074,7 +1078,7 @@ a:hover{
 
     }
     .botao{
-        left: 22em;
+        margin-left: 21em;
         top: 0em;
         font-size: 0.9em;
         padding: 10px 14px 10px 14px;
@@ -1252,8 +1256,11 @@ a:hover{
     .anuncios>h1{
         font-size: 10em;
     }
+    .div-botao{
+        margin-top: 3em;
+    }
     .botao{
-        left: 16em;
+        margin-left: 15em;
         font-size: 1.3em;
     }
     .seta_botao{
