@@ -688,7 +688,7 @@ a:hover{
     .contato>p{
         text-align: justify;
         margin-bottom: 2em;
-        color: #918185;
+        color: #A78295;
         font-size: 0.6em;
     }
     .row{
@@ -706,11 +706,22 @@ a:hover{
         display: flex;
         align-items: center;
     }
-    .row>h5{
+    .row>a{
+        font-size: 0.8em;
+        font-weight: bold;
+        padding: 0;
+        text-shadow: none;
+        width: 80%;
         color:transparent;
         background-clip: text;
-        background-image: linear-gradient(-192deg, #624f5d 16%,  #918185 43%, #918185 63%);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgb(236, 223, 224) 43%, rgba(239,225,209,1) 73%);
+    }
+    .row>a:hover{
+        background: none;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgb(139, 118, 129) 26%, rgb(211, 200, 201) 43%, rgb(212, 201, 189) 63%);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
     .row>h4{
         color:transparent;
@@ -731,8 +742,8 @@ a:hover{
         width: 100%;
         height: 100%;
     }
+    
     /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
-
     .requisicoes{
         display: flex;
         flex-direction: row;
@@ -851,6 +862,9 @@ a:hover{
         gap: 1em;
         align-items: center;
     }
+    .row>a{
+        font-size: 0.9em;
+    }
     .icon_contato{
         width: 1.2em;
         height: 1.2em;
@@ -937,6 +951,9 @@ a:hover{
     .row{
         gap: 1em;
         align-items: center;
+    }
+    .row>a{
+        font-size: 1.1em;
     }
     .icon_contato{
         width: 1.5em;
@@ -1186,8 +1203,13 @@ a:hover{
     .contato>p{
         font-size: 0.7em;
     }
-    .row>h5{
-        font-size: 1em;
+    .row>a{
+        font-size: 1.3em;
+        padding: 0.2em 0.5em;
+    }
+    .icon_contato{
+        width: 35px;
+        height: auto;
     }
     .row>h4{
         font-size: 1.3em;
@@ -1370,8 +1392,14 @@ a:hover{
     .contato>p{
         font-size: 0.8em;
     }
-    .row>h5{
-        font-size: 1.2em;
+    .row>a{
+        font-size: 1.3em;
+        padding: 0.2em 0.5em;
+        width: 60%;
+    }
+    .icon_contato{
+        width: 40px;
+        height: auto;
     }
     .row>h4{
         font-size: 1.6em;
@@ -1629,8 +1657,9 @@ a:hover{
         width: 2.5em;
         height: 2.5em;
     }
-    .row>h5{
-        font-size: 1.6em;
+    .row>a{
+        font-size: 1.5em;
+        padding: 0.2em 0.5em;
     }
     .row>h4{
         font-size: 2.3em;
@@ -1899,8 +1928,14 @@ a:hover{
     .contato>p{
         font-size: 1.7em;
     }
-    .row>h5{
-        font-size: 3em;
+    .icon_contato{
+        width: 4em;
+        height: auto;
+    }
+    .row>a{
+        font-size: 2.5em;
+        padding: 0.2em 0.5em;
+        width: 40%;
     }
     .row>h4{
         font-size: 4em;
