@@ -632,7 +632,7 @@ a:hover{
     .evento-img{
         width: 15em;
         height: 7em;
-        margin-top: 1em;
+        margin-top:1em;
         background-color: white;
     }
     .evento-destaque>h3{
@@ -731,9 +731,39 @@ a:hover{
         width: 100%;
         height: 100%;
     }
+    /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
 
+    .requisicoes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 6em;
+        background: linear-gradient(180deg, rgba(63, 46, 62, 0.4780111873851103) 6%, rgba(167, 130, 149, 0.19509802211900384) 50%, rgba(63, 46, 62, 0.48081230783328954) 94%);
+        border-radius: 5px;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+        gap: 0.5em;
+    }
+    .requisicoes_enquad{
+        display: flex;
+        align-items: center;
+        padding: 2em 1em 1.5em 1em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+    }
+    .req_dowload{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 4.5em;
+        padding: 0.5em;
+    }
+    .icon_dowload{
+        width: 4.5em;
+        padding: 0.5em;
+    }
 }
-
 
 @media (min-width: 375px){
     .icon_menu{
@@ -1610,6 +1640,20 @@ a:hover{
         height: 25em;
         margin-bottom: 4em;
     }
+    /*ESPECIFICACOES PAGINA REQUISICOES*/
+    .todosEventos{
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    .requisicoes{
+        height: 10em;
+    }
+    .req_dowload{
+        width: 10em;
+    }
+    .icon_dowload{
+        width: 7.5em;
+    }
 }
 
 @media (min-width: 2560px){
@@ -1865,5 +1909,19 @@ a:hover{
         width: 130em;
         height: 40em;
         margin-bottom: 6em;
+    }
+    /*ESPECIFICACOES PAGINA REQUISICOES*/
+    .todosEventos{
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+    .requisicoes{
+        height: 15em;
+    }
+    .req_dowload{
+        width: 15em;
+    }
+    .icon_dowload{
+        width: 11em;
     }
 }
