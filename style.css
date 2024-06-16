@@ -755,6 +755,31 @@ a:hover{
         box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
         gap: 0.5em;
     }
+    .requisicoes_big{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 6em;
+        background: rgb(63,46,62);
+        border-radius: 5px;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+        gap: 0.5em;
+    }
+    .conteudo_req_big>p{
+        text-align: justify;
+        margin-bottom: 0.5em;
+        color: #A78295;
+        font-size: 0.9em;
+    }
+    .conteudo_req_big>h2{
+        text-align: justify;
+        color: #A78295;
+        font-size: 0.6em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
+    }
     .requisicoes_enquad{
         display: flex;
         align-items: center;
@@ -765,14 +790,31 @@ a:hover{
     }
     .req_dowload{
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
         align-items: center;
         width: 4.5em;
         padding: 0.5em;
     }
     .icon_dowload{
         width: 4.5em;
+    }
+    .req_dowload>a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 4.5em;
         padding: 0.5em;
+    }
+    .req_dowload>a:hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 4.5em;
+        padding: 0.5em;
+    }
+    .req_dowload>h5{
+        color: #fff;
+        font-size: 0.6em;
     }
 }
 
@@ -962,6 +1004,57 @@ a:hover{
     .mapa{
         width: 25em;
         height: 13em;
+    }
+     /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
+    .conteudo_req_big>p{
+        text-align: justify;
+        margin-bottom: 0.5em;
+        color: #A78295;
+        font-size: 1em;
+    }
+    .conteudo_req_big>h2{
+        text-align: justify;
+        color: #A78295;
+        font-size: 0.9em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
+    }
+    .requisicoes_enquad{
+        display: flex;
+        align-items: center;
+        padding: 2em 1em 1.5em 1em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+    }
+    .req_dowload{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 5em;
+        padding: 0.5em;
+    }
+    .icon_dowload{
+        width: 4.5em;
+    }
+    .req_dowload>a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 4.5em;
+        padding: 0.5em;
+    }
+    .req_dowload>a:hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 4.5em;
+        padding: 0.5em;
+    }
+    .req_dowload>h5{
+        color: #fff;
+        font-size: 0.6em;
     }
 }
 
@@ -1220,6 +1313,67 @@ a:hover{
         margin-bottom: 2em;
         border-radius: 10px;
     }
+    /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
+    .eventoPC{
+        width: 48%;
+    }
+    .todosEventos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .conteudo_req_big>p{
+        text-align: justify;
+        margin-bottom: 0.5em;
+        color: #A78295;
+        font-size: 1em;
+    }
+    .conteudo_req_big>h2{
+        text-align: justify;
+        color: #A78295;
+        font-size: 0.9em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
+    }
+    .requisicoes_enquad{
+        display: flex;
+        align-items: center;
+        padding: 2em 1em 1.5em 1em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+    }
+    .req_dowload{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 5em;
+        padding: 0.5em;
+    }
+    .icon_dowload{
+        width: 4.5em;
+    }
+    .req_dowload>a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 4.5em;
+        padding: 0.5em;
+    }
+    .req_dowload>a:hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 4.5em;
+        padding: 0.5em;
+    }
+    .req_dowload>h5{
+        color: #fff;
+        font-size: 0.6em;
+    }
+
 }
 
 @media (min-width: 1024px){
@@ -1407,6 +1561,57 @@ a:hover{
     .mapa{
         width: 55em;
         height: 20em;
+    }
+    /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
+    .conteudo_req_big>p{
+        text-align: justify;
+        margin-bottom: 0.5em;
+        color: #A78295;
+        font-size: 1.2em;
+    }
+    .conteudo_req_big>h2{
+        text-align: justify;
+        color: #A78295;
+        font-size: 0.9em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
+    }
+    .requisicoes_enquad{
+        display: flex;
+        align-items: center;
+        padding: 2em 1em 1.5em 1em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+    }
+    .req_dowload{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 5em;
+        padding: 0.5em;
+    }
+    .icon_dowload{
+        width: 5em;
+    }
+    .req_dowload>a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 5em;
+        padding: 0.5em;
+    }
+    .req_dowload>a:hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 5em;
+        padding: 0.5em;
+    }
+    .req_dowload>h5{
+        font-size: 0.8em;
+        color: #fff;
     }
 }
 
@@ -1670,18 +1875,51 @@ a:hover{
         margin-bottom: 4em;
     }
     /*ESPECIFICACOES PAGINA REQUISICOES*/
+     .conteudo_req_big>p{
+        text-align: justify;
+        margin-bottom: 0.5em;
+        color: #A78295;
+        font-size: 1.4em;
+    }
+    .conteudo_req_big>h2{
+        text-align: justify;
+        color: #A78295;
+        font-size: 1em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
+    }
+    .requisicoes_enquad{
+        display: flex;
+        align-items: center;
+        padding: 2em 1em 1.5em 1em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+    }
+    .req_dowload{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 5em;
+        padding: 0.5em;
+    }
+    .icon_dowload{
+        width: 5em;
+    }
+    .req_dowload>a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 5em;
+        padding: 0.5em;
+    }
     .todosEventos{
         margin-top: 2em;
         margin-bottom: 1em;
     }
     .requisicoes{
         height: 10em;
-    }
-    .req_dowload{
-        width: 10em;
-    }
-    .icon_dowload{
-        width: 7.5em;
     }
 }
 
@@ -1956,7 +2194,58 @@ a:hover{
     .req_dowload{
         width: 15em;
     }
-    .icon_dowload{
-        width: 11em;
+     .conteudo_req_big>p{
+        text-align: justify;
+        margin-bottom: 0.5em;
+        color: #A78295;
+        font-size: 2.4em;
     }
+    .conteudo_req_big>h2{
+        text-align: justify;
+        color: #A78295;
+        font-size: 1.8em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
+    }
+    .requisicoes_enquad{
+        display: flex;
+        align-items: center;
+        padding: 2em 1em 1.5em 1em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+    }
+    .icon_dowload{
+        width: 4.5em;
+    }
+    .req_dowload>a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 5em;
+        padding: 0.5em;
+    }
+    .req_dowload>a:hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 5em;
+        padding: 0.5em;
+    }
+    .req_dowload>h5{
+        font-size: 1.2em;
+        color: #fff;
+    }
+    .requisicoes_big{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 12em;
+        background: rgb(63,46,62);
+        border-radius: 5px;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+        gap: 0.5em;
+    }    
 }
