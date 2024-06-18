@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALICOMP - Histórico</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media ="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- ICONE DA ABA -->
+    <link rel="icon" type="image/png" href="imagens/logo.png">
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <!-- MENU-->
+        <div class="menu" id="menu_click">
+            <ul class="topicos">
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="eventos.html">EVENTOS</a></li>
+                <li><a href="membros.html">MEMBROS</a></li>
+                <li><a href="requisicoes.html">REQUISIÇÕES</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+            <ul class="ouvidoria">
+                <li><a href="#">OUVIDORIA</a></li>
+            </ul>
+        </div>
+        <!-- LOGO -->
+        <!-- LOGO -->
+        <div class="elementos-header">
+            <div class="elementos-header-row">
+                <img src="imagens/logo.png" class="logo">
+                <h1 class="title">EVENTOS</h1>
+            </div>
+            <!--MENU MOBILE-->
+            <div class="menu_mobile">
+                <img src="imagens/icon_menu.png" onclick="click_menu()" class="icon_menu">
+            </div>
+        </div>
+    
+        <!--CAIXA FLUTUANTE P/ OUVIDORIA-->
+        <div class="box-flutuante">
+            <a href="#">
+                <img src="imagens/Ouvidoria.png" class="box-flutuante-icon">
+            </a>
+        </div>
+    
+    </header>
+    <main>
+        <!--CAIXA DE BUSCA P/ EVENTOS-->
+        <div class="search-box">
+            <div class="busca">
+                <input class="search-txt" type="text" name="" placeholder="Buscar Evento">
+                <img src="imagens/eventos_icon.png" class="search-btn">
+            </div>
+
+            <!--BOTÃO DE HISTÓRICO EVENTOS -->
+            <button class="historico">
+                <p class="texto-botao-historico">Próximos Eventos</p>
+                <img src="imagens/historico.png" class="search-btn1">
+            </button>
+        </div>
+
+        <!--BLOCO DE  EVENTOS MAIOR-->
+        <div class="todosEventos">
+            <div class="evento" onclick="destacarEvento('evento1')">
+                <div class="data_evento_hist data_eventoPC_hist">
+                    <h3 class="dia_hist">07</h3>
+                    <h3 class="mes_hist">Nov</h3>
+                    <h3 class="ano_hist">2022</h3>
+                </div>
+                <div class="conteudo_evento">
+                    <h2>Semac</h2>
+                    <p>Descrição do evento...</p>
+                </div>
+            </div>
+
+            <!--BLOCO DE EVENTOS MENOR-->
+            <div class="eventoPC" onclick="destacarEvento('evento2')">
+                    <div class="evento">
+                        <div class="data_evento_hist">
+                            <h3 class="dia_hist">08</h3>
+                            <h3 class="mes_hist">Nov</h3>
+                            <h3 class="ano_hist">2022</h3>
+                        </div>
+                    <div class="conteudo_evento">
+                        <h2>Semac</h2>
+                        <p>Descrição do evento...</p>
+                    </div>
+                    </div>
+            </div>
+            <div class="eventoPC" onclick="destacarEvento('evento3')">
+                <div class="evento">
+                    <div class="data_evento_hist">
+                        <h3 class="dia_hist">09</h3>
+                        <h3 class="mes_hist">Nov</h3>
+                        <h3 class="ano_hist">2022</h3>
+                    </div>
+                <div class="conteudo_evento">
+                    <h2>Semac</h2>
+                    <p>Descrição do evento...</p>
+                </div>
+                </div>
+            </div>
+            <div class="eventoPC" onclick="destacarEvento('evento4')">
+                <div class="evento">
+                    <div class="data_evento_hist">
+                        <h3 class="dia_hist">13</h3>
+                        <h3 class="mes_hist">Ago</h3>
+                        <h3 class="ano_hist">2022</h3>
+                    </div>
+                <div class="conteudo_evento">
+                    <h2>Evento A</h2>
+                    <p>Descrição do evento...</p>
+                </div>
+                </div>
+            </div>
+            <div class="eventoPC" onclick="destacarEvento('evento5')">
+                <div class="evento">
+                    <div class="data_evento_hist">
+                        <h3 class="dia_hist">27</h3>
+                        <h3 class="mes_hist">Dez</h3>
+                        <h3 class="ano_hist">2022</h3>
+                    </div>
+                <div class="conteudo_evento">
+                    <h2>Evento J</h2>
+                    <p>Descrição do evento...</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!--EVENTOS - DETALHES-->
+        <div class="evento-click" id="evento1">
+            <div class="historico-destaque">
+                <div class="historico-img01">
+                    <!--img de divulgação do evento-->
+                </div>
+                <h3>SEMAC</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
+                <div class="requisicoes-row">
+                    <button class="evento-botao" onclick="botaoVoltar('evento1')">VOLTAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="evento-click" id="evento2">
+            <div class="historico-destaque">
+                <div class="historico-img02">
+                    <!--img de divulgação do evento-->
+                </div>
+                <h3>SEMAC</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
+                <div class="requisicoes-row">
+                    <button class="evento-botao" onclick="botaoVoltar('evento2')">VOLTAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="evento-click" id="evento3">
+            <div class="historico-destaque">
+                <div class="historico-img03">
+                    <!--img de divulgação do evento-->
+                </div>
+                <h3>SEMAC</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
+                <div class="requisicoes-row">
+                    <button class="evento-botao" onclick="botaoVoltar('evento3')">VOLTAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="evento-click" id="evento4">
+            <div class="historico-destaque">
+                <div class="historico-img04">
+                    <!--img de divulgação do evento-->
+                </div>
+                <h3>EVENTO A</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
+                <div class="evento-row">
+                    <button class="evento-botao" onclick="botaoVoltar('evento4')">VOLTAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="evento-click" id="evento5">
+            <div class="evento-destaque">
+                <div class="evento-img">
+                    <!--img de divulgação do evento-->
+                </div>
+                <h3>EVENTO J</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
+                <div class="evento-row">
+                    <button class="evento-botao" onclick="botaoVoltar('evento5')">VOLTAR</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <p class="texto-rodape">© 2024 CALICOMP - Centro Acadêmico Livre de Computação</p>
+        </div>
+    </footer> 
+    
+    <script src="script.js"></script>
+</html>
