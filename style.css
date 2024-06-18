@@ -840,6 +840,14 @@ a:hover{
         background-position: center;
         background-size: contain;
     }
+    .historico-img04{ 
+        width: 15em;
+        height: 12em;
+        background-image:url(imagens/img03.JPG);
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        
     .historico-destaque{
         position: fixed;
         bottom: 2em;
@@ -1412,15 +1420,6 @@ a:hover{
         border-radius: 10px;
     }
     /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
-    .eventoPC{
-        width: 48%;
-    }
-    .todosEventos{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-    }
     .conteudo_req_big>p{
         text-align: justify;
         margin-bottom: 0.5em;
@@ -1717,7 +1716,19 @@ a:hover{
         bottom: 2em;
         width: 55em;
     }
-    .historico-img{
+    .historico-img01{
+        width: 48em;
+        height: 25em;
+    }
+    .historico-img02{
+        width: 48em;
+        height: 25em;
+    }
+    .historico-img03{
+        width: 48em;
+        height: 25em;
+    }
+    .historico-img04{
         width: 48em;
         height: 25em;
     }
@@ -2047,7 +2058,19 @@ a:hover{
       bottom: 2em;
       width: 75em;
     }
-    .historico-img{
+    .historico-img01{
+        width: 69em;
+        height: 23em;
+    }
+    .historico-img02{
+        width: 69em;
+        height: 23em;
+    }
+    .historico-img03{
+        width: 69em;
+        height: 23em;
+    }
+    .historico-img04{
         width: 69em;
         height: 23em;
     }
@@ -2413,7 +2436,19 @@ a:hover{
         width: 115em;
         padding: 2em;
     }
-    .historico-img{
+    .historico-img01{
+        width: 100em;
+        height: 35em;
+    }
+    .historico-img02{
+        width: 100em;
+        height: 35em;
+    }
+    .historico-img03{
+        width: 100em;
+        height: 35em;
+    }
+    .historico-img04{
         width: 100em;
         height: 35em;
     }
