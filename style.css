@@ -465,7 +465,6 @@ a:hover{
     .h2-1997{
         letter-spacing: 3px;
     }
-
     /*ESTILIZAÇÃO PÁGINA EVENTOS*/
     .search-box{
         width: 90%;
@@ -502,6 +501,7 @@ a:hover{
     .historico{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         padding: 3px 2px 3px 2px;
         gap: 5px;
@@ -519,8 +519,6 @@ a:hover{
     .search-btn1{
         width: 1.7em;
         height: 1.7em;
-        padding: 0em 0.3em;
-    
     }
     .search-txt{
         color: #fff;
@@ -533,6 +531,29 @@ a:hover{
         width: 6em;
         display: flex;
         font-family: Poppins;
+    }
+    .link_pag{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .link_pag>a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    .link_pag>a:hover{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
     .todosEventos{
         display: flex;
@@ -755,37 +776,35 @@ a:hover{
         gap: 0.5em;
     }
     .requisicoes_big{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         width: 100%;
-        height: 6em;
+        box-sizing: border-box;
         background: rgb(63,46,62);
         border-radius: 5px;
-        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
-        gap: 0.5em;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        padding: 1em;
+    }
+    .icon_contato{
+        width: 1em;
+        height: 1em;
     }
     .conteudo_req_big>p{
-        text-align: justify;
-        margin-bottom: 0.5em;
-        color: #A78295;
-        font-size: 0.9em;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-shadow: none;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgb(236, 223, 224) 43%, rgba(239,225,209,1) 73%);
+    
     }
     .conteudo_req_big>h2{
         text-align: justify;
         color: #A78295;
-        font-size: 0.6em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
+        font-size: 0.9em;
+        font-weight: 500;
     }
     .requisicoes_enquad{
         display: flex;
         align-items: center;
-        padding: 2em 1em 1.5em 1em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
     }
     .req_dowload{
         display: flex;
@@ -969,7 +988,7 @@ a:hover{
         width: 100%;
         height: 1em;
         display: flex;
-        align-items: center;
+        align-items: cener;
         justify-content: center;
     }
     .mes_hist{
@@ -1001,7 +1020,8 @@ a:hover{
         flex-direction: column;
         margin-top: 1em;
         gap: 1em;
-    }k_right{
+    }
+    .right{
         height: 11em;
     }
     .navegacaoManual{
@@ -1082,6 +1102,14 @@ a:hover{
     .mapa{
         width: 22em;
         margin-bottom: 4.5em;
+    }
+    /*Estilização Página Requisições*/
+    .requisicoes_big{
+        width: 21.2em;
+    }
+    .conteudo_req_big{
+        gap: 1em;
+        align-items: center;
     }
     /*Estilizações Página Histórico*/
     .historico-img04{
@@ -1178,28 +1206,30 @@ a:hover{
         height: 13em;
     }
      /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
+     .requisicoes_big{
+        width: 24em;
+    }
+    .conteudo_req_big{
+        gap: 1.2em;
+        align-items: center;
+    }
+    .icon_contato{
+        width: 1.5em;
+        height: 1.5em;
+    }
     .conteudo_req_big>p{
         text-align: justify;
         margin-bottom: 0.5em;
-        color: #A78295;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
         font-size: 1em;
     }
     .conteudo_req_big>h2{
         text-align: justify;
         color: #A78295;
         font-size: 0.9em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
-    }
-    .requisicoes_enquad{
-        display: flex;
-        align-items: center;
-        padding: 2em 1em 1.5em 1em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
-    }
+        }
     .req_dowload{
         display: flex;
         flex-direction:column;
@@ -1486,24 +1516,29 @@ a:hover{
         border-radius: 10px;
     }
     /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
+     .requisicoes_big{
+        width: 100%;
+    }
+    .conteudo_req_big{
+        gap: 1.2em;
+        align-items: center;
+    }
     .conteudo_req_big>p{
         text-align: justify;
         margin-bottom: 0.5em;
-        color: #A78295;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
         font-size: 1em;
     }
     .conteudo_req_big>h2{
         text-align: justify;
         color: #A78295;
         font-size: 0.9em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
     }
     .requisicoes_enquad{
         display: flex;
         align-items: center;
-        padding: 2em 1em 1.5em 1em;
         color:transparent;
         background-clip: text;
         background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
@@ -1726,27 +1761,33 @@ a:hover{
         height: 20em;
     }
     /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
+    .requisicoes_big{
+        width: 100%;
+    }
+    .conteudo_req_big{
+        gap: 1.2em;
+        align-items: center;
+    }
     .conteudo_req_big>p{
         text-align: justify;
         margin-bottom: 0.5em;
-        color: #A78295;
-        font-size: 1.2em;
-    }
-    .conteudo_req_big>h2{
-        text-align: justify;
-        color: #A78295;
-        font-size: 0.9em;
         color:transparent;
         background-clip: text;
         background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
+        font-size: 1.3em;
     }
     .requisicoes_enquad{
         display: flex;
         align-items: center;
-        padding: 2em 1em 1.5em 1em;
+        padding: 1em;
         color:transparent;
         background-clip: text;
         background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+    }
+    .conteudo_req_big>h2{
+        text-align: justify;
+        font-size: 1.2em;
+        color: #A78295;
     }
     .req_dowload{
         display: flex;
@@ -1801,9 +1842,10 @@ a:hover{
     .historico-destaque>h3{
         font-size: 2em;
     }
-    .evento-destaque>p{
-        font-size: 1.3em;
+    .evento-destaque>.p{
+        font-size: 0.8em;
         width: 60em;
+       
     }
     .evento-botao{
         width: 9em;
@@ -2072,16 +2114,16 @@ a:hover{
         margin-bottom: 4em;
     }
     /*ESPECIFICACOES PAGINA REQUISICOES*/
-     .conteudo_req_big>p{
+     .conteudo_req_big>h2{
         text-align: justify;
         margin-bottom: 0.5em;
         color: #A78295;
         font-size: 1.4em;
     }
-    .conteudo_req_big>h2{
+    .conteudo_req_big>p{
         text-align: justify;
         color: #A78295;
-        font-size: 1em;
+        font-size: 1.4em;
         color:transparent;
         background-clip: text;
         background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
@@ -2089,7 +2131,6 @@ a:hover{
     .requisicoes_enquad{
         display: flex;
         align-items: center;
-        padding: 2em 1em 1.5em 1em;
         color:transparent;
         background-clip: text;
         background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
@@ -2431,26 +2472,22 @@ a:hover{
         margin-bottom: 6em;
     }
     /*ESPECIFICACOES PAGINA REQUISICOES*/
-    .todosEventos{
-        margin-top: 4em;
-        margin-bottom: 4em;
-    }
     .requisicoes{
         height: 15em;
     }
     .req_dowload{
         width: 15em;
     }
-     .conteudo_req_big>p{
+     .conteudo_req_big>h2{
         text-align: justify;
         margin-bottom: 0.5em;
         color: #A78295;
         font-size: 2.4em;
     }
-    .conteudo_req_big>h2{
+    .conteudo_req_big>p{
         text-align: justify;
         color: #A78295;
-        font-size: 1.8em;
+        font-size: 2em;
         color:transparent;
         background-clip: text;
         background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
