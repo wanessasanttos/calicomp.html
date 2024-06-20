@@ -367,9 +367,9 @@ a:hover{
     }
     .fundo_detalhes{
         display: none;
-        position: absolute;
+        position: fixed;
         width: 100%;
-        height: 110%;
+        height: 100%;
         top: 0px;
         background-color: rgba(0, 0, 0, 0.5);
         align-items: center;
@@ -636,10 +636,10 @@ a:hover{
         font-size:0.7em;
     }
     .evento-click{
-        position: absolute;
+        position: fixed;
         top: 0px;
         width: 100%;
-        height: 130%;
+        height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         display: flex;
         align-items: center;
@@ -929,6 +929,7 @@ a:hover{
     }
 
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
+
     .perfil{
         width: 41%;
         height: 9em; 
@@ -1274,6 +1275,26 @@ a:hover{
     .perfil h3{
         font-size: 0.7em;
     }
+    .perfil_destaque{
+        width: 20em;
+        height: 30em;   
+        position: relative;
+        top: 5em;
+    }
+    .icon_perfil_destaque{
+        width: 10em;
+        height: 10em;
+        padding-bottom: 0.5em;
+    }
+    .perfil_destaque h2{
+        font-size: 1.3em;
+    }
+    .perfil_destaque h3{
+        font-size: 0.9em;
+    }
+    .perfil_destaque p{
+        font-size: 0.7em;
+    }
 
 
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
@@ -1344,9 +1365,6 @@ a:hover{
     }
     .data_eventoPC{
         width: 5em;
-    }
-    .evento-click{
-        height: 137%;
     }
     .evento-destaque{
         width: 40em;
@@ -1524,9 +1542,6 @@ a:hover{
     }
     .perfil h3{
         font-size: 0.7em; 
-    }
-    .fundo_detalhes{
-        height: 120%;
     }
     .perfil_destaque{
         width: 20em;
@@ -1796,14 +1811,9 @@ a:hover{
     .perfil h3{
         font-size: 0.9em; 
     }
-    .fundo_detalhes{
-        height: 145%;
-    }
     .perfil_destaque{
         width: 25em;
         height: 35em;
-        position: relative;
-        bottom: 5em;
     }
     .icon_perfil_destaque{
         width: 12em;
@@ -1896,9 +1906,6 @@ a:hover{
     }
     .conteudo_evento>p{
         font-size:0.9em;
-    }
-    .evento-click{
-        height: 230%;
     }
     .evento-destaque{
         position: fixed;
