@@ -82,3 +82,13 @@ function botaoVoltar(ID){
         destaque.style.display = "none";
     }
 }
+
+//EVENTOS - BOTAO HISTORICO -------------------------------------
+function historico(){
+    window.location.href = 'historico.html'
+}
+
+//EVENTOS - BOTAO PROXIMOS EVENTOS -------------------------------------
+function eventos(){
+    window.location.href = 'eventos.html'
+}

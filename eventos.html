@@ -31,7 +31,6 @@
             </ul>
         </div>
         <!-- LOGO -->
-        <!-- LOGO -->
         <div class="elementos-header">
             <div class="elementos-header-row">
                 <img src="imagens/logo.png" class="logo">
@@ -60,15 +59,18 @@
             </div>
 
             <!--BOTÃO DE HISTÓRICO EVENTOS -->
-            <button class="historico">
+            <button class="historico" onclick="historico()">
                 <div class="link_pag">
-                    <a href="historico.html" class=texto-botao-historico></a> <p class="texto-botao-historico">Histórico de Eventos</p>
+                    <p class="texto-botao-historico">Histórico de Eventos</p>
                     <img src="imagens/historico.png" class="search-btn1">
                 </div>
             </button>
         </div>
 
-        <!--BLOCO DE  EVENTOS MAIOR-->
+        <!--NOTIFICAÇÃO DE QUANDO NÃO HÁ EVENTOS -->
+        <h1 class="title no-event">NÃO HÁ EVENTOS</h1>
+
+        <!--BLOCO DE  EVENTOS MAIOR
         <div class="todosEventos">
             <div class="evento" onclick="destacarEvento('evento1')">
                 <div class="data_evento data_eventoPC">
@@ -81,7 +83,7 @@
                 </div>
             </div>
 
-            <!--BLOCO DE EVENTOS MENOR-->
+            <!--BLOCO DE EVENTOS MENOR
             <div class="eventoPC" onclick="destacarEvento('evento2')">
                     <div class="evento">
                         <div class="data_evento">
@@ -132,11 +134,11 @@
             </div>
         </div>
 
-        <!--EVENTOS - DETALHES-->
+        <!--EVENTOS - DETALHES
         <div class="evento-click" id="evento1">
             <div class="evento-destaque">
                 <div class="evento-img">
-                    <!--img de divulgação do evento-->
+                    <!--img de divulgação do evento
                 </div>
                 <h3>EVENTO V</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
@@ -149,7 +151,7 @@
         <div class="evento-click" id="evento2">
             <div class="evento-destaque">
                 <div class="evento-img">
-                    <!--img de divulgação do evento-->
+                    <!--img de divulgação do evento
                 </div>
                 <h3>EVENTO W</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
@@ -162,7 +164,7 @@
         <div class="evento-click" id="evento3">
             <div class="evento-destaque">
                 <div class="evento-img">
-                    <!--img de divulgação do evento-->
+                    <!--img de divulgação do evento
                 </div>
                 <h3>EVENTO Z</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
@@ -175,7 +177,7 @@
         <div class="evento-click" id="evento4">
             <div class="evento-destaque">
                 <div class="evento-img">
-                    <!--img de divulgação do evento-->
+                    <!--img de divulgação do evento
                 </div>
                 <h3>EVENTO A</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
@@ -188,7 +190,7 @@
         <div class="evento-click" id="evento5">
             <div class="evento-destaque">
                 <div class="evento-img">
-                    <!--img de divulgação do evento-->
+                    <!--img de divulgação do evento
                 </div>
                 <h3>EVENTO J</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget velit vel sapien commodo tempor. Praesent tincidunt justo eu vehicula vestibulum. Suspendisse sapien elit, efficitur aliquet malesuada vel, eleifend nec est. Cras nec scelerisque felis, a ultricies ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam velit erat, auctor nec tincidunt quis, convallis at eros. Cras tincidunt in diam eget sodales. Sed nec arcu efficitur, molestie turpis consectetur, porttitor enim. In vel sapien nulla. Phasellus finibus nec arcu id venenatis.</p>
@@ -198,8 +200,9 @@
                 </div>
             </div>
         </div>
+    -->
     </main>
-    <footer>
+    <footer class="footer-fixed">
         <div class="rodape">
             <p class="texto-rodape">© 2024 CALICOMP - Centro Acadêmico Livre de Computação</p>
         </div>

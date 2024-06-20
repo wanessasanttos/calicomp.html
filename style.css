@@ -33,6 +33,10 @@ footer{
     box-sizing: border-box;
     margin-top: 2em;
 }
+.footer-fixed{
+    position: fixed;
+    bottom: 0;
+}
 li {
     display: flex;
     align-items: center; 
@@ -465,6 +469,7 @@ a:hover{
     .h2-1997{
         letter-spacing: 3px;
     }
+
     /*ESTILIZAÇÃO PÁGINA EVENTOS*/
     .search-box{
         width: 90%;
@@ -498,7 +503,7 @@ a:hover{
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-    .historico{
+    .historico, .historico1{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -509,6 +514,12 @@ a:hover{
         border: none;
         background: rgb(167, 130, 149);
         background: linear-gradient(203deg, rgba(167, 130, 149, 1) 2%, rgba(239, 225, 209, 1) 34%);
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+        font-family: Poppins;
+        font-size: 0.7em;
+    }
+    .historico1{
+        background: rgb(167, 130, 149);
         box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
         font-family: Poppins;
         font-size: 0.7em;
@@ -621,7 +632,7 @@ a:hover{
         margin-bottom: 0.5em;
     }
     .conteudo_evento>p{
-        color: #EFE1D1;
+        color: #fff;
         font-size:0.7em;
     }
     .evento-click{
@@ -639,7 +650,7 @@ a:hover{
         position: fixed;
         bottom: 2em;
         display: flex;
-        width: 80%;
+        width: 90%;
         height: auto;
         background: rgb(56,37,52);
         background: linear-gradient(0deg, rgba(56,37,52,1) 12%, rgba(71,48,63,1) 40%, rgba(68,46,61,1) 55%, rgba(56,37,52,1) 83%);
@@ -651,16 +662,24 @@ a:hover{
         box-sizing: border-box;
     }
     .evento-img{
-        width: 15em;
-        height: 12em;
+        width: 16em;
+        height: 7em;
         margin-top: 1em;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 0.5em;
     }
+    .img1{
+        width: 16em;
+        border-radius: 0.5em;
+    }
+
     .evento-destaque>h3{
         font-size: 1.5em;
         color:transparent;
         background-clip: text;
         background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
-        margin-top: 2em;
+        margin-top: 1em;
 
     }
     .evento-destaque>p{
@@ -692,6 +711,42 @@ a:hover{
         cursor: pointer;
         background: rgb(167, 130, 149);
         background: linear-gradient(203deg, rgba(167, 130, 149, 1) 2%, rgba(239, 225, 209, 1) 34%); 
+    }
+
+    /*ESTILIZAÇÃO PÁGINA HISTORICO DE EVENTOS*/
+    .data_evento_hist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+        box-sizing: border-box;
+        width: 30%;
+    }    
+    .dia_hist{
+        font-size: 3em;
+    }
+    .mes-ano{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        bottom: 1em;
+        gap: 0.3em;
+    }
+    .mes_hist, .ano_hist{
+        font-size: 0.7em;
+        color:transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+    }
+    .historico-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 15em;
+        box-sizing: border-box;
+        margin-bottom: 1em;
     }
 
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
@@ -776,35 +831,26 @@ a:hover{
         gap: 0.5em;
     }
     .requisicoes_big{
-        width: 100%;
         box-sizing: border-box;
         background: rgb(63,46,62);
         border-radius: 5px;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        padding: 1em;
+        padding: 1em 2em;
+        margin-bottom: 1em;
     }
-    .icon_contato{
-        width: 1em;
-        height: 1em;
-    }
-    .conteudo_req_big>p{
-        font-size: 0.8em;
-        font-weight: bold;
-        text-shadow: none;
+    .requisicoes_big>h2{
+        font-size: 1.1em;
+        font-style: normal;
+        margin-bottom: 0.5em;
         color:transparent;
         background-clip: text;
-        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgb(236, 223, 224) 43%, rgba(239,225,209,1) 73%);
-    
+        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 16%, rgba(239,225,209,1) 43%, rgba(239,225,209,1) 73%);
     }
-    .conteudo_req_big>h2{
+    .requisicoes_big>p{
+        color:#A78295;
+        font-size:0.7em;
         text-align: justify;
-        color: #A78295;
-        font-size: 0.9em;
-        font-weight: 500;
-    }
-    .requisicoes_enquad{
-        display: flex;
-        align-items: center;
+        margin-bottom: 1em;
     }
     .req_dowload{
         display: flex;
@@ -814,133 +860,30 @@ a:hover{
         padding: 0.5em;
     }
     .icon_dowload{
-        width: 4.5em;
+        width: 3em;
     }
     .req_dowload>a{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 4.5em;
-        padding: 0.5em;
+        padding: 0.3em;
+        color: white;
+        font-size: 0.7em;
+        margin-left: 0.5em;
+        gap: 0.5em;
+
     }
     .req_dowload>a:hover{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        color: rgb(63,46,62);
         width: 4.5em;
-        padding: 0.5em;
+        padding: 0.3em;
     }
     .req_dowload>h5{
         color: #fff;
         font-size: 0.6em;
     }
-     /* ESTILIZAÇÃO PÁGINA HISTORICO*/
-     .historico-img01{
-        width: 15em;
-        height: 12em;
-        background-image:url(imagens/img01.JPG);
-        background-repeat:no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-    .historico-img02{
-        width: 15em;
-        height: 12em;
-        background-image:url(imagens/img02.jpg);
-        background-repeat:no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-    .historico-img03{
-        width: 15em;
-        height: 12em;
-        background-image:url(imagens/img03.JPG);
-        background-repeat:no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-    .historico-img04{
-        width: 15em;
-        height: 12em;
-        background-image:url(imagens/img04.JPEG);
-        background-repeat:no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-    .historico-destaque{
-        position: fixed;
-        bottom: 2em;
-        display: flex;
-        width: 80%;
-        height: auto;
-        background: rgb(56,37,52);
-        background: linear-gradient(0deg, rgba(56,37,52,1) 12%, rgba(71,48,63,1) 40%, rgba(68,46,61,1) 55%, rgba(56,37,52,1) 83%);
-        border-radius: 10px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 1em;
-        box-sizing: border-box;
-    }
-    .historico-destaque>h3{
-        font-size: 1.5em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
-        margin-top: 0.5em;
-    }
-    .historico-destaque>p{
-        font-size: 0.6em;
-        text-align: justify;
-        margin-top: 1em;
-        margin-bottom: 2em;
-    }
-    .requsicoes-row{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 15em;
-        box-sizing: border-box;
-    }
-    .data_evento_hist{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 5em;
-        padding: 0.5em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
-    }    
-    .eventoPC_hist{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 1em;
-        gap: 1em;
-    }
-    .dia_hist{
-        font-size: 3em;
-        margin-top: 0.5em;
-        width: 100%;
-        height: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .mes_hist{
-        font-size: 0.7em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
-    }
-    .ano_hist{
-        font-size: 0.7em;
-        margin-bottom:2em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%); 
-    }
+
 }
 
 @media (min-width: 375px){
@@ -958,71 +901,12 @@ a:hover{
         width: 24em;
         height: 11em; 
     }
-    .seta_click, .seta_clic.eventoPC_hist{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 1em;
+    .seta_click{
+        height: 100%;
         gap: 1em;
     }
-    .data_evento_hist{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 5em;
-        padding: 0.5em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
-    }    
-    .eventoPC_hist{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 1em;
-        gap: 1em;
-    }
-    .dia_hist{
-        font-size: 3em;
-        margin-top: 0.5em;
-        width: 100%;
-        height: 1em;
-        display: flex;
-        align-items: cener;
-        justify-content: center;
-    }
-    .mes_hist{
-        font-size: 0.7em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
-    }
-    .ano_hist{
-        font-size: 0.7em;
-        margin-bottom:2em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
-    }
-    .data_evento_hist{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 5em;
-        padding: 0.5em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
-    }    
-    .dataeventoPC_hist{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 1em;
-        gap: 1em;
-    }
-    .right{
-        height: 11em;
+    .seta_click_right{
+        height: 100%;
     }
     .navegacaoManual{
         width: 24em;
@@ -1043,6 +927,7 @@ a:hover{
     .rodape{
         width: 21.9em;
     }
+
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
     .perfil{
         width: 41%;
@@ -1075,12 +960,17 @@ a:hover{
     .topico_hist>h2{
         font-size: 2em;
     }
+
     /*ESTILIZAÇÃO PÁGINA EVENTOS*/
     .busca>input{
         width: 22em;
     }
     .evento-img{
-        width: 17em;
+        width: 19em;
+        height: 9em;
+    }
+    .img1{
+        width: 19em;
     }
     
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
@@ -1103,6 +993,7 @@ a:hover{
         width: 22em;
         margin-bottom: 4.5em;
     }
+
     /*Estilização Página Requisições*/
     .requisicoes_big{
         width: 21.2em;
@@ -1111,10 +1002,7 @@ a:hover{
         gap: 1em;
         align-items: center;
     }
-    /*Estilizações Página Histórico*/
-    .historico-img04{
-        width: 17em;
-    }
+
 }
 
 @media (min-width: 425px){
@@ -1153,6 +1041,7 @@ a:hover{
     .rodape{
         width: 24.9em;
     }
+
     /*ESTILIZAÇÃO PÁGINA EVENTOS*/
     .busca>input{
         width: 26em;
@@ -1163,8 +1052,11 @@ a:hover{
         border-bottom-left-radius: 5px;
     }
     .evento-img{
-        width: 19em;
-        height: 8em;
+        width: 22em;
+        height: 10em;
+    }
+    .img1{
+        width: 22em;
     }
 
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
@@ -1217,19 +1109,6 @@ a:hover{
         width: 1.5em;
         height: 1.5em;
     }
-    .conteudo_req_big>p{
-        text-align: justify;
-        margin-bottom: 0.5em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
-        font-size: 1em;
-    }
-    .conteudo_req_big>h2{
-        text-align: justify;
-        color: #A78295;
-        font-size: 0.9em;
-        }
     .req_dowload{
         display: flex;
         flex-direction:column;
@@ -1238,7 +1117,7 @@ a:hover{
         padding: 0.5em;
     }
     .icon_dowload{
-        width: 4.5em;
+        width: 3.5em;
     }
     .req_dowload>a{
         display: flex;
@@ -1441,6 +1320,9 @@ a:hover{
     .busca>input{
         width: 40em;
     }
+    .historico, .historico1{
+        width: 14em;
+    }
     .texto-botao-historico{
         display: block;
         color: #331D2C;
@@ -1463,12 +1345,18 @@ a:hover{
     .data_eventoPC{
         width: 5em;
     }
+    .evento-click{
+        height: 137%;
+    }
     .evento-destaque{
         width: 40em;
     }
     .evento-img{
         width: 36em;
-        height: 15em;
+        height: 18em;
+    }
+    .img1{
+        width: 36em;
     }
     .evento-destaque>h3{
         font-size: 2em;
@@ -1486,6 +1374,11 @@ a:hover{
         width: 9em;
         font-size: 0.9em;
     }
+
+    /*ESTILIZAÇÃO PÁGINA HISTORICO*/
+    .data_evento_hist{
+        width: 15%;
+    }    
 
  
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
@@ -1515,33 +1408,10 @@ a:hover{
         margin-bottom: 2em;
         border-radius: 10px;
     }
+    
     /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
      .requisicoes_big{
         width: 100%;
-    }
-    .conteudo_req_big{
-        gap: 1.2em;
-        align-items: center;
-    }
-    .conteudo_req_big>p{
-        text-align: justify;
-        margin-bottom: 0.5em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
-        font-size: 1em;
-    }
-    .conteudo_req_big>h2{
-        text-align: justify;
-        color: #A78295;
-        font-size: 0.9em;
-    }
-    .requisicoes_enquad{
-        display: flex;
-        align-items: center;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
     }
     .req_dowload{
         display: flex;
@@ -1551,7 +1421,7 @@ a:hover{
         padding: 0.5em;
     }
     .icon_dowload{
-        width: 4.5em;
+        width: 3.5em;
     }
     .req_dowload>a{
         display: flex;
@@ -1678,14 +1548,23 @@ a:hover{
     }
 
     /*ESTILIZAÇÃO PÁGINA EVENTOS*/
+    .historico, .historico1{
+        width: 17em;
+    }
     .evento-destaque{
         position: fixed;
         bottom: 2em;
         width: 55em;
     }
     .evento-img{
-        width: 48em;
-        height: 18em;
+        width: 45em;
+        height: 22em;
+    }
+    .img1{
+        width: 45em;
+    }
+    .img1{
+        width: 45em;
     }
     .evento-destaque>h3{
         font-size: 2em;
@@ -1699,6 +1578,11 @@ a:hover{
         padding: 5px;
         font-size: 0.9em;
     }
+
+    /*ESTILIZAÇÃO PÁGINA HISTORICO*/
+    .data_evento_hist{
+        width: 12%;
+    }    
 
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
     .sobre{
@@ -1760,14 +1644,8 @@ a:hover{
         width: 55em;
         height: 20em;
     }
+
     /* ESTILIZAÇÃO PÁGINA REQUISICOES*/
-    .requisicoes_big{
-        width: 100%;
-    }
-    .conteudo_req_big{
-        gap: 1.2em;
-        align-items: center;
-    }
     .conteudo_req_big>p{
         text-align: justify;
         margin-bottom: 0.5em;
@@ -1775,14 +1653,6 @@ a:hover{
         background-clip: text;
         background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
         font-size: 1.3em;
-    }
-    .requisicoes_enquad{
-        display: flex;
-        align-items: center;
-        padding: 1em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
     }
     .conteudo_req_big>h2{
         text-align: justify;
@@ -1797,7 +1667,7 @@ a:hover{
         padding: 0.5em;
     }
     .icon_dowload{
-        width: 5em;
+        width: 4em;
     }
     .req_dowload>a{
         display: flex;
@@ -1816,41 +1686,6 @@ a:hover{
     .req_dowload>h5{
         font-size: 0.8em;
         color: #fff;
-    }
-    /*ESPECIFICAÇÕES PÁGINA HISTÓRICO*/
-    .historico-destaque{
-        position: fixed;
-        bottom: 2em;
-        width: 55em;
-    }
-    .historico-img01{
-        width: 48em;
-        height: 25em;
-    }
-    .historico-img02{
-        width: 48em;
-        height: 25em;
-    }
-    .historico-img03{
-        width: 48em;
-        height: 25em;
-    }
-    .historico-img04{
-        width: 48em;
-        height: 25em;
-    }
-    .historico-destaque>h3{
-        font-size: 2em;
-    }
-    .evento-destaque>.p{
-        font-size: 0.8em;
-        width: 60em;
-       
-    }
-    .evento-botao{
-        width: 9em;
-        padding: 5px;
-        font-size: 0.9em;
     }
 }
 
@@ -2024,8 +1859,9 @@ a:hover{
         height: 1.8em;
         padding: 0.13em 0.5em;
     }
-    .historico{
+    .historico, .historico1{
         font-size: 1em;
+        width: 20em;
     }
     .search-btn1{
         width: 2em;
@@ -2062,7 +1898,7 @@ a:hover{
         font-size:0.9em;
     }
     .evento-click{
-        height: 137%;
+        height: 230%;
     }
     .evento-destaque{
         position: fixed;
@@ -2070,8 +1906,11 @@ a:hover{
         width: 75em;
     }
     .evento-img{
-        width: 69em;
-        height: 23em;
+        width: 45em;
+        height: 22em;
+    }
+    .img1{
+        width: 45em;
     }
     .evento-destaque>h3{
         font-size: 2.5em;
@@ -2084,6 +1923,17 @@ a:hover{
         width: 11em;
         padding: 8px;
         font-size: 0.9em;
+    }
+
+    /*ESTILIZAÇÃO PÁGINA HISTORICO DE EVENTOS*/
+    .data_evento_hist{
+        width: 10%;
+    }    
+    .dia_hist{
+        font-size: 4.5em;
+    }
+    .mes_hist, .ano_hist{
+        font-size: 1em;
     }
 
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
@@ -2114,43 +1964,31 @@ a:hover{
         margin-bottom: 4em;
     }
     /*ESPECIFICACOES PAGINA REQUISICOES*/
-     .conteudo_req_big>h2{
-        text-align: justify;
-        margin-bottom: 0.5em;
-        color: #A78295;
-        font-size: 1.4em;
-    }
-    .conteudo_req_big>p{
-        text-align: justify;
-        color: #A78295;
-        font-size: 1.4em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
-    }
-    .requisicoes_enquad{
-        display: flex;
-        align-items: center;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
+    .requisicoes_big{
+        font-size: 1.3em;
     }
     .req_dowload{
         display: flex;
         flex-direction:column;
         align-items: center;
-        width: 5em;
-        padding: 0.5em;
+        width: 8em;
     }
     .icon_dowload{
-        width: 5em;
+        width: 4.5em;
     }
     .req_dowload>a{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 5em;
-        padding: 0.5em;
+        font-size: 1em;
+        margin-left: 1.5em;
+    }
+    .req_dowload>a:hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 5em;
     }
     .todosEventos{
         margin-top: 2em;
@@ -2158,55 +1996,6 @@ a:hover{
     }
     .requisicoes{
         height: 10em;
-    }
-    /*ESPECIFICAÇÕES PÁGINA HISTÓRICO*/
-    .historico-destaque{
-      position: fixed;
-      bottom: 2em;
-      width: 75em;
-    }
-    .historico-img01{
-        width: 69em;
-        height: 23em;
-    }
-    .historico-img02{
-        width: 69em;
-        height: 23em;
-    }
-    .historico-img03{
-        width: 69em;
-        height: 23em;
-    }
-    .historico-img04{
-        width: 69em;
-        height: 23em;
-    }
-    .historico-destaque>h3{
-        font-size: 2.5em;
-    }
-    .historico-destaque>p{
-        font-size: 0.9em;
-        width: 75em;
-    }
-    .evento-botao{
-        width: 11em;
-        padding: 8px;
-        font-size: 0.9em;
-    }
-    .data_evento_hist{
-        width: 15em;
-    }
-    .data_eventoPC_hist{
-        width: 10em;
-    }
-    .dia_hist{
-        font-size: 5em;
-    }
-    .mes_hist{
-        font-size: 1.1em;
-    }
-    .ano_hist{
-        font-size: 1.1em;
     }
     
 }
@@ -2288,6 +2077,7 @@ a:hover{
     .texto-rodape{
         font-size: 1.7em;
     }
+
     /*ESTILIZAÇÃO PÁGINA MEMBROS*/
     .membros{
         width: 95%;
@@ -2330,6 +2120,7 @@ a:hover{
     .perfil_destaque p{
         font-size: 1.3em;
     }
+
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
     .sobre{
         width: 130em;
@@ -2374,9 +2165,8 @@ a:hover{
         padding: 0.13em 1em;
         border: solid 2px #A78295;
     }
-    .historico{
+    .historico, .historico1{
         font-size: 1.7em;
-        gap: 2em;
     }
     .search-btn1{
         width: 2em;
@@ -2412,7 +2202,6 @@ a:hover{
         margin-bottom: 0.2em;
     }
     .conteudo_evento>p{
-        color: #EFE1D1;
         font-size:1.5em;
     }
     .evento-destaque{
@@ -2422,8 +2211,11 @@ a:hover{
         padding: 2em;
     }
     .evento-img{
-        width: 100em;
-        height: 35em;
+        width: 83em;
+        height: 40em;
+    }
+    .img1{
+        width: 83em;
     }
     .evento-destaque>h3{
         font-size: 4em;
@@ -2436,6 +2228,17 @@ a:hover{
         width: 12em;
         padding: 15px;
         font-size: 1.5em;
+    }
+
+    /*ESTILIZAÇÃO PÁGINA HISTORICO DE EVENTOS*/
+    .data_evento_hist{
+        width: 13%;
+    }    
+    .dia_hist{
+        font-size: 7em;
+    }
+    .mes_hist, .ano_hist{
+        font-size: 2em;
     }
 
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
@@ -2471,34 +2274,16 @@ a:hover{
         height: 40em;
         margin-bottom: 6em;
     }
+
     /*ESPECIFICACOES PAGINA REQUISICOES*/
     .requisicoes{
         height: 15em;
     }
+    .requisicoes_big{
+        font-size: 2em;
+    }
     .req_dowload{
         width: 15em;
-    }
-     .conteudo_req_big>h2{
-        text-align: justify;
-        margin-bottom: 0.5em;
-        color: #A78295;
-        font-size: 2.4em;
-    }
-    .conteudo_req_big>p{
-        text-align: justify;
-        color: #A78295;
-        font-size: 2em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(-192deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 63%);
-    }
-    .requisicoes_enquad{
-        display: flex;
-        align-items: center;
-        padding: 2em 1em 1.5em 1em;
-        color:transparent;
-        background-clip: text;
-        background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
     }
     .icon_dowload{
         width: 4.5em;
@@ -2508,6 +2293,7 @@ a:hover{
         flex-direction: column;
         align-items: center;
         width: 5em;
+        font-size: 1.5em;
         padding: 0.5em;
     }
     .req_dowload>a:hover{
@@ -2517,65 +2303,6 @@ a:hover{
         width: 5em;
         padding: 0.5em;
     }
-    .req_dowload>h5{
-        font-size: 1.2em;
-        color: #fff;
-    }
-    .requisicoes_big{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-        height: 12em;
-        background: rgb(63,46,62);
-        border-radius: 5px;
-        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
-        gap: 0.5em;
-    }
-    /*Estlizações Página Histórico*/
-    .historico-destaque{
-        position: fixed;
-        bottom: 5em;
-        width: 115em;
-        padding: 2em;
-    }
-    .historico-img01{
-        width: 100em;
-        height: 35em;
-    }
-    .historico-img02{
-        width: 100em;
-        height: 35em;
-    }
-    .historico-img03{
-        width: 100em;
-        height: 35em;
-    }
-    .historico-img04{
-        width: 100em;
-        height: 35em;
-    }
-    .historico-destaque>h3{
-        font-size: 4em;
-    }
-    .historico-destaque>p{
-        font-size: 1.4em;
-        width: 72em;
-    }
-    .data_evento_hist{
-        width: 15em;
-    }
-    .data_eventoPC_hist{
-        width: 10em;
-    }
-    .dia_hist{
-        font-size: 6em;
-    }
-    .mes_hist{
-        font-size: 1.8em;
-    }
-    .ano_hist{
-        font-size: 1.8em;
-    }
+
 
 }
