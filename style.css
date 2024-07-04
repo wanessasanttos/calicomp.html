@@ -142,7 +142,8 @@ a:hover{
         height: 8.1em;
         overflow: hidden;
         margin-top: 2em;
-        margin-bottom: 1em;  
+        margin-bottom: 1em; 
+        border-radius: 1em; 
     }
     .slideshow-filho{
         display: flex;
@@ -351,9 +352,8 @@ a:hover{
         transform: scale(1.2);
     }
     .icon_perfil{
-        width: 3em;
-        height: 3em;
-        padding-bottom: 0.3em;
+        border-radius: 50%;
+        width: 4em;
     }
     .perfil h2{
         font-size: 0.6em;
@@ -364,6 +364,7 @@ a:hover{
         color: white;
         letter-spacing: 1px;
         font-weight: normal; 
+        text-align: center;
     }
     .fundo_detalhes{
         display: none;
@@ -387,8 +388,8 @@ a:hover{
     }
     .icon_perfil_destaque{
         width: 6em;
-        height: 6em;
-        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+        border-radius: 50%;
     }
     .perfil_destaque h2{
         font-size: 1em;
@@ -958,9 +959,9 @@ a:hover{
         transform: scale(1.2);
     }
     .icon_perfil{
+        border-radius: 50%;
         width: 5em;
-        height: 5em;
-        padding-bottom: 0.4em;
+        margin-bottom: 0.4em;
     }
     .perfil h2{
         font-size: 0.7em;
@@ -1304,8 +1305,7 @@ a:hover{
     }
     .icon_perfil_destaque{
         width: 10em;
-        height: 10em;
-        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
     }
     .perfil_destaque h2{
         font-size: 1.3em;
@@ -1555,9 +1555,8 @@ a:hover{
         margin-bottom: 1em;  
     }
     .icon_perfil{
-        width: 5em;
-        height: 5em;
-        padding-bottom: 0.8em;
+        width: 5.5em;
+        margin-bottom: 0.8em;
     }
     .perfil h2{
         font-size: 0.9em;
@@ -1571,8 +1570,7 @@ a:hover{
     }
     .icon_perfil_destaque{
         width: 10em;
-        height: 10em;
-        padding-bottom: 2em;
+        margin-bottom: 2em;
     }
     .perfil_destaque h2{
         font-size: 1.2em;
@@ -1824,9 +1822,8 @@ a:hover{
         margin-bottom: 2em;  
     }
     .icon_perfil{
-        width: 8em;
-        height: 8em;
-        padding-bottom: 1.2em;
+        width: 9em;
+        margin-bottom: 1.2em;
     }
     .perfil h2{
         font-size: 1.1em;
@@ -1840,7 +1837,6 @@ a:hover{
     }
     .icon_perfil_destaque{
         width: 12em;
-        height: 12em;
     }
     .perfil_destaque h2{
         font-size: 1.3em;
@@ -2124,9 +2120,8 @@ a:hover{
         margin-bottom: 3em;  
     }
     .icon_perfil{
-        width: 12em;
-        height: 12em;
-        padding-bottom: 2em;
+        width: 15em;
+        margin-bottom: 2em;
     }
     .perfil h2{
         font-size: 1.7em;
@@ -2140,7 +2135,6 @@ a:hover{
     }
     .icon_perfil_destaque{
         width: 20em;
-        height: 20em;
     }
     .perfil_destaque h2{
         font-size: 2em;

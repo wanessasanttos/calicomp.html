@@ -13,6 +13,7 @@ function click_menu(){
 //SLIDESHOW NOTÍCIAS -------------------------------------
 if(window.location.pathname.includes('/index.html') || window.location.hostname.includes('calicomp.vercel.app')){ //verifica se é a página inicial
     let contador = 1;
+    let intervalo;
 
     document.getElementById("radio1").checked = true;
     
@@ -27,9 +28,10 @@ if(window.location.pathname.includes('/index.html') || window.location.hostname.
         }
         document.getElementById("radio"+contador).checked = true;
     }
-    function resetarTime(){
-        clearInterval(intervalID);
-        iniciarShideshow();
+
+    function resetarIntervalo() {
+        clearInterval(intervalo);
+        intervalo = setInterval(iniciarShideshow, 7000);
     }
 
     function proximaImagem(){
@@ -38,7 +40,7 @@ if(window.location.pathname.includes('/index.html') || window.location.hostname.
             contador = 1;
         }
         document.getElementById("radio"+contador).checked = true;
-        resetarTime();
+        resetarIntervalo();
     }
     function antecederImagem(){
         contador--;
@@ -46,7 +48,7 @@ if(window.location.pathname.includes('/index.html') || window.location.hostname.
             contador = 5;
         }
         document.getElementById("radio"+contador).checked = true;
-        resetarTime();
+        resetarIntervalo();
     }   
 }
 
