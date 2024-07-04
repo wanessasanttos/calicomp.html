@@ -659,7 +659,6 @@ a:hover{
         align-items: center;
         justify-content: flex-start;
         padding: 1em;
-        box-sizing: border-box;
     }
     .evento-img{
         width: 16em;
@@ -668,9 +667,11 @@ a:hover{
         background: white;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         border-radius: 0.5em;
+
     }
     .img1{
         width: 16em;
+        height: 8em;
         border-radius: 0.5em;
     }
 
@@ -680,7 +681,7 @@ a:hover{
         background-clip: text;
         background-image: linear-gradient(180deg, rgba(167,130,149,1) 26%, rgba(203,177,179,1) 43%, rgba(239,225,209,1) 60%);
         margin-top: 1em;
-
+        box-sizing: border-box;
     }
     .evento-destaque>p{
         font-size: 0.7em;
@@ -989,6 +990,8 @@ a:hover{
     }
     .img1{
         width: 19em;
+        height: 10em;
+
     }
     
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
@@ -1075,6 +1078,7 @@ a:hover{
     }
     .img1{
         width: 22em;
+        height: 11em;
     }
 
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
@@ -1392,6 +1396,7 @@ a:hover{
     }
     .img1{
         width: 36em;
+        height: 19em;
     }
     .evento-destaque>h3{
         font-size: 2em;
@@ -1594,6 +1599,7 @@ a:hover{
     }
     .img1{
         width: 45em;
+        height: 23em;
     }
     .img1{
         width: 45em;
@@ -1935,6 +1941,7 @@ a:hover{
     }
     .img1{
         width: 45em;
+        height: 23em;
     }
     .evento-destaque>h3{
         font-size: 2.5em;
@@ -2240,6 +2247,7 @@ a:hover{
     }
     .img1{
         width: 83em;
+        height: 41em;
     }
     .evento-destaque>h3{
         font-size: 4em;
@@ -2327,6 +2335,4 @@ a:hover{
         width: 5em;
         padding: 0.5em;
     }
-
-
 }
