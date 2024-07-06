@@ -275,7 +275,7 @@ a:hover{
         margin-left: 2em;
         width: 12em;
         color: #331D2C;
-        font-family: Poppins;
+        font-family: Poppins+;
         font-weight: bold;
         font-size: 0.5em;
         flex-direction: row;
@@ -628,13 +628,13 @@ a:hover{
     }
     .conteudo_evento>h2{
         color:#A78295;
-        font-size: 1.1em;
+        font-size: 0.8em;
         font-style: normal;
         margin-bottom: 0.5em;
     }
     .conteudo_evento>p{
         color: #fff;
-        font-size:0.7em;
+        font-size:0.6em;
     }
     .evento-click{
         position: fixed;
@@ -749,6 +749,23 @@ a:hover{
         width: 15em;
         box-sizing: border-box;
         margin-bottom: 1em;
+    }
+    .conteudo_evento_hist{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .conteudo_evento_hist>h2{
+        color:#A78295;
+        font-size: 0.8em;
+        font-style: normal;
+        margin-bottom: 0.5em;
+        text-align: justify;
+    }
+    .conteudo_evento_hist>p{
+        color: #fff;
+        font-size:0.7em;
+        text-align: justify;
     }
 
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
@@ -874,12 +891,14 @@ a:hover{
         font-size: 0.7em;
         margin-left: 0.5em;
         gap: 0.5em;
+        cursor: pointer;
 
     }
     .req_dowload>a:hover{
         color: rgb(63,46,62);
         width: 4.5em;
         padding: 0.5em;
+        cursor: pointer;
     }
     .req_dowload>h5{
         color: #fff;
@@ -1160,7 +1179,24 @@ a:hover{
         color: #fff;
         font-size: 0.6em;
     }
-}
+
+     /* ESTILIZAÇÃO PÁGINA HISTÓRICO DE EVENTOS*/
+    .conteudo_evento_hist{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .conteudo_evento_hist>h2{
+        color:#A78295;
+        font-size: 1em;
+        font-style: normal;
+        margin-bottom: 0.8em;
+    }
+    .conteudo_evento_hist>p{
+        color: #fff;
+        font-size:0.6em;
+    }
+    }
 
 
 @media (min-width: 768px){
@@ -1619,7 +1655,13 @@ a:hover{
     .data_evento_hist{
         width: 12%;
     }    
-
+    .conteudo_evento_hist>h2{
+        font-size: 1.2em;
+        margin-bottom: 0.7em;
+    }
+    .conteudo_evento_hist>p{
+        font-size:0.8em;
+    }
     /*ESTILIZAÇÃO PÁGINA SOBRE*/
     .sobre{
         width: 55em;
@@ -1962,6 +2004,13 @@ a:hover{
     .mes_hist, .ano_hist{
         font-size: 1em;
     }
+    .conteudo_evento_hist>h2{
+        font-size: 1.4em;
+        margin-bottom: 0.8em;
+    }
+    .conteudo_evento_hist>p{
+        font-size:1em;
+    }
 
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
     .contato{
@@ -2265,6 +2314,13 @@ a:hover{
     }
     .mes_hist, .ano_hist{
         font-size: 2em;
+    }
+    .conteudo_evento_hist>h2{
+        font-size: 2.4em;
+        margin-bottom: 0.8em;
+    }
+    .conteudo_evento_hist>p{
+        font-size:1.8em;
     }
 
     /*ESTILIZAÇÃO PÁGINA CONTATO*/
