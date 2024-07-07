@@ -52,6 +52,14 @@ if(window.location.pathname.includes('/index.html') || window.location.hostname.
     }   
 }
 
+//INDEX - BOTAO SABER MAIS ---------------------------------------
+function saberMais(){
+    window.location.href = "sobre.html";
+}
+const botaoSaberMais = document.querySelector(".botao");
+botaoSaberMais.addEventListener("click", saberMais);
+
+
 //MEMBROS - CLIQUE PARA DETALHES -------------------------------------
 function destacarPerfil(ID){                                               
     let destaque = document.getElementById(ID);
@@ -94,3 +102,4 @@ function historico(){
 function eventos(){
     window.location.href = 'eventos.html'
 }
+
