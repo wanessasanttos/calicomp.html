@@ -24,9 +24,18 @@
                 <li><a href="sobre.html" >SOBRE</a></li>
                 <li><a href="contato.html" >CONTATO</a></li>
             </ul>
-            <ul class="ouvidoria">
-                <li><a href="#">OUVIDORIA</a></li>
-            </ul>
+            <div class="ouvidoria-box">
+                <ul class="ouvidoria ouvidoria-button" onclick="clickMenuOuvidoria()">
+                    <li>OUVIDORIA</li>
+                    <img src="imagens/menu-ouvidoria.png" class="ouvidoria-icon" id="ouvidoriaIcon">
+                </ul>
+                <ul class="ouvidoria ouvidoria-links" id="ouvidoria-click">
+                    <li><a href="ouvidoria/avaliar-disciplinas.html" >Avaliar Disciplinas</a></li>
+                    <li><a href="ouvidoria/avaliar-estrutura-departamental.html" >Avaliar Estrutura Departamental</a></li>
+                    <li><a href="ouvidoria/reclamacoes.html" >Reclamações</a></li>
+                    <li><a href="ouvidoria/propostas.html" class="border-none">Propostas</a></li>
+                </ul>
+            </div>
         </div>
         <!-- LOGO -->
         <div class="elementos-header">
@@ -40,14 +49,6 @@
             </div>
             <p class="text-header">Um Centro Acadêmico é uma entendidade responsável por promover a integração entre os alunos, professores e demais membros da comunidade acadêmica, criando um ambiente propício para o desenvolvimento pessoal e profissional dos estudantes. Atua por meio da organização de eventos acadêmicos, culturais, esportivos e sociais, que visam enriquecer a experiência universitária e fortalecer os laços de camaradagem entre os estudantes.</p>
         </div>
-
-        <!--CAIXA FLUTUANTE P/ OUVIDORIA-->
-        <div class="box-flutuante">
-            <a href="#" >
-                <img src="imagens/Ouvidoria.png" class="box-flutuante-icon">
-            </a>
-        </div>
-
     </header>
 
     <main>

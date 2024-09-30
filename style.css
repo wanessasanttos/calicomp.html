@@ -64,7 +64,7 @@ a:hover{
         background-color: #3F2E3E;
         border-radius: 5px;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        width: 100px;
+        width: 120px;
         position: absolute;
         top: 0.65em;
         left: 2em;
@@ -77,12 +77,27 @@ a:hover{
         flex-direction: column;
         gap: 3px;
     }
+    .topicos a{
+        width: 100%;
+    }
     .ouvidoria {
         background: #A78295;
         border-radius: 10px;
         margin-top: 15px;
-        margin-bottom: 5px;
         color: #331D2C;
+    }
+    .ouvidoria-button{
+        font-size: 0.5em;
+        padding: 0.5em 1.2em;
+        letter-spacing: 1.5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    .ouvidoria-icon{
+        width: 10px;
+        height: 7px;
     }
     a{  
         width: 100px;
@@ -91,6 +106,24 @@ a:hover{
     .ouvidoria a{
         color: #331D2C;
         padding-right: 15px;
+    }
+    .ouvidoria-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 0.5em;
+        display: none;
+    }
+    .ouvidoria-links a{
+        font-size: 0.35em;
+        border-bottom: 1px solid #795d6b;
+        padding: 0.8em 0.5em;
+        margin-left: 0.7em;
+        box-sizing: content-box;
+    }
+    .ouvidoria-links .border-none{
+        border-bottom: none;
     }
     .icon_menu{ /*menu mobile*/
         width: 1.3em;
@@ -1220,8 +1253,6 @@ a:hover{
         justify-content: space-around;
         align-items: center;
         padding: 0.4em 1em;
-        left: 50%;
-        transform: translateX(-50%);
     }
     .topicos {
         display: flex;
@@ -1229,18 +1260,32 @@ a:hover{
         width: 600px;
         gap: 10px;
     }
-    a{  
-        width: 100%;
-        padding: 0.2em 1em;
+    .topicos a{
+        padding: 0.5em 0.7em;
     }
     .ouvidoria {
         margin-top: 0px;
         margin-bottom: 0px;
-        background: #A78295;
-        border-radius: 10px;
+    }
+    .ouvidoria-button{
+        gap: 2em;
     }
     .linkOuvidoria{
         color: #331D2C;
+    }
+    .ouvidoria-box{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .ouvidoria-links{
+        position: fixed;
+        top: 3em;
+        height: 120px;
+    }
+    .ouvidoria-links a{
+        width: 113px;
+        font-size: 0.4em;
     }
     .elementos-header{
         margin-bottom: 2em;
@@ -1526,7 +1571,14 @@ a:hover{
 
 @media (min-width: 1024px){
     .menu{
-        width: 95%;
+        width: 90%;
+        box-sizing: border-box;
+    }
+    .topicos{
+        gap: 1.5em;
+    }
+    .ouvidoria-box{
+        font-size: 1em;
     }
     .title{
         font-size: 4em;
@@ -1775,6 +1827,19 @@ a:hover{
     .topicos{
         width: 1000px;
         gap: 50px;
+    }
+    .ouvidoria-button{
+        width: 120px;
+        font-size: 0.7em;
+        gap: 0.5em;
+    }
+    .ouvidoria-links{
+        top: 3.5em;
+        height: 150px;
+    }
+    .ouvidoria-links a{
+        font-size: 0.5em;
+        width: 140px;
     }
     a{
         font-size: 0.7em;
@@ -2091,6 +2156,18 @@ a:hover{
     .menu{
         padding: 0.5em 5em 0.5em 5em;
         justify-content: space-between;
+    }
+    .ouvidoria-button{
+        font-size: 1em;
+        width: 170px;
+    }
+    .ouvidoria-links{
+        height: 240px;
+        top: 5em;
+    }
+    .ouvidoria-links a{
+        font-size: 0.8em;
+        width: 191px;
     }
     a{
         font-size: 1.3em;
