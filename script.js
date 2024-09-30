@@ -10,6 +10,20 @@ function click_menu(){
     }
 }
 
+//CLICK MENU-OUVIDORIA
+const clickMenuOuvidoria = () => {
+    const menuOuvidoria = document.getElementById("ouvidoria-click");
+    const iconOuvidoria = document.getElementById("ouvidoriaIcon")
+    if(menuOuvidoria.style.display === "block"){
+        menuOuvidoria.style.display = "none";
+        iconOuvidoria.src = "imagens/menu-ouvidoria.png"
+    }
+    else{
+        menuOuvidoria.style.display = "block";
+        iconOuvidoria.src = "imagens/menu-ouvidoria-closed.png"
+    }
+}
+
 //SLIDESHOW NOTÍCIAS -------------------------------------
 if(window.location.pathname.includes('/index.html') || window.location.hostname.includes('calicomp.vercel.app')){ //verifica se é a página inicial
     let contador = 1;
